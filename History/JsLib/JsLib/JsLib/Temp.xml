@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root Attr="rootAttr">
+	<content Successful="true">
+		<users Attr="usersAttr">
+			<user DisplayName="Michael Yuan" Age="17" Username="my" Password="321" >User Michael Yuan</user>
+			<user DisplayName="Francis Gao" Age="17" Username="fg" Password="321" >
+				<![CDATA[&]]>
+			</user>
+		</users>
+	</content>
+</root>

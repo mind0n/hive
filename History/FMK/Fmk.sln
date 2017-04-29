@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodgenXML", "CodgenXML\CodgenXML.csproj", "{1478836E-CCDE-42BB-A5E8-932EA9AC64BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fs", "Fs\Fs.csproj", "{CAB8050F-3B67-4483-9E72-9479AB5B53B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWeb", "TestWeb\TestWeb.csproj", "{9A0DBE66-8413-44FE-A48F-4FEBB8C5BFB6}"
+EndProject
+Project("{00000000-0000-0000-0000-000000000000}") = "FSUI", "FSUI\FSUI.csproj", "{CB469727-3488-40C1-946D-FFFEA9AAF53D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1478836E-CCDE-42BB-A5E8-932EA9AC64BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1478836E-CCDE-42BB-A5E8-932EA9AC64BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1478836E-CCDE-42BB-A5E8-932EA9AC64BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1478836E-CCDE-42BB-A5E8-932EA9AC64BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAB8050F-3B67-4483-9E72-9479AB5B53B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAB8050F-3B67-4483-9E72-9479AB5B53B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAB8050F-3B67-4483-9E72-9479AB5B53B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAB8050F-3B67-4483-9E72-9479AB5B53B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A0DBE66-8413-44FE-A48F-4FEBB8C5BFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A0DBE66-8413-44FE-A48F-4FEBB8C5BFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A0DBE66-8413-44FE-A48F-4FEBB8C5BFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A0DBE66-8413-44FE-A48F-4FEBB8C5BFB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB469727-3488-40C1-946D-FFFEA9AAF53D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB469727-3488-40C1-946D-FFFEA9AAF53D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB469727-3488-40C1-946D-FFFEA9AAF53D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB469727-3488-40C1-946D-FFFEA9AAF53D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

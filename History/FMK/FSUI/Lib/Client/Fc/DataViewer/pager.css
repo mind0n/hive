@@ -1,0 +1,14 @@
+﻿.pager
+{
+	font:12px arial;
+}
+.pager .page
+{
+	line-height:16px;
+	padding:0px 4px 0px 4px;
+	cursor:pointer;
+}
+.pager .page:hover
+{
+	color:Maroon;
+}

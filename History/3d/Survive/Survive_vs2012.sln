@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Startup", "Wpf.Startup\Wpf.Startup.csproj", "{B32CFB2B-B663-40E0-85ED-31C83D94FBED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Common", "Game.Common\Game.Common.csproj", "{E4E55591-6FC0-4C8A-843E-495D6FA9EBF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Wpf", "Game.Wpf\Game.Wpf.csproj", "{979E47C9-FFF0-4623-ACF3-03129D1D6C91}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs35
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Wpf.Startup\\Wpf.Startup.csproj
+		SccProjectName1 = Wpf.Startup
+		SccLocalPath1 = Wpf.Startup
+		SccProjectUniqueName2 = Game.Common\\Game.Common.csproj
+		SccProjectName2 = Game.Common
+		SccLocalPath2 = Game.Common
+		SccProjectUniqueName3 = Game.Wpf\\Game.Wpf.csproj
+		SccProjectName3 = Game.Wpf
+		SccLocalPath3 = Game.Wpf
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B32CFB2B-B663-40E0-85ED-31C83D94FBED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B32CFB2B-B663-40E0-85ED-31C83D94FBED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B32CFB2B-B663-40E0-85ED-31C83D94FBED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B32CFB2B-B663-40E0-85ED-31C83D94FBED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4E55591-6FC0-4C8A-843E-495D6FA9EBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E55591-6FC0-4C8A-843E-495D6FA9EBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E55591-6FC0-4C8A-843E-495D6FA9EBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E55591-6FC0-4C8A-843E-495D6FA9EBF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{979E47C9-FFF0-4623-ACF3-03129D1D6C91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979E47C9-FFF0-4623-ACF3-03129D1D6C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979E47C9-FFF0-4623-ACF3-03129D1D6C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979E47C9-FFF0-4623-ACF3-03129D1D6C91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

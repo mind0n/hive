@@ -1,0 +1,21 @@
+.sass-issue{cursor:default;}
+
+$bg:white;
+$bg-primary:linear-gradient(to bottom, #FEB118, #FF7517);
+$bg-primary-hover:linear-gradient(to bottom, #FF7517, #FEB118);
+$bd-primary:solid 1px #ff8875;
+$bd-primary-hover:solid 1px #ff7517;
+$cl-primary:white;
+
+$bg-default:#eee;
+$bg-hover:rgba(238, 238, 238, 255);
+$bg-active:rgba(228, 228, 228, 255);
+$bd-default:solid 1px #ccc;
+$bd-hover:solid 1px #aaa;
+$cl-default:#555;
+$cl-toggle:#888;
+
+$bd-disable:solid 1px #ddd;
+$cl-disable:#bbb;
+
+$cl-highlight:#14c;

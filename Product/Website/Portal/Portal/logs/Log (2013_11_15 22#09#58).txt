@@ -1,0 +1,6 @@
+1:	[2013.11.15|22:9:58|527]	>> Exception Detected >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+2:	[2013.11.15|22:9:58|537]	System.NullReferenceException: Object reference not set to an instance of an object.
+   at Joy.Users.Web.WebTicketService.PreAuthTicket(String uname, String clientToken) in c:\__TFSCodes\Product\Website\Portal\Joy.Users\Web\WebTicketService.cs:line 79
+3:	[2013.11.15|22:11:6|75]	>> Exception Detected >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+4:	[2013.11.15|22:11:6|78]	System.NullReferenceException: Object reference not set to an instance of an object.
+   at Joy.Users.Web.WebTicketService.PreAuthTicket(String uname, String clientToken) in c:\__TFSCodes\Product\Website\Portal\Joy.Users\Web\WebTicketService.cs:line 79

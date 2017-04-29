@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B557750F-81B7-456D-A624-BCB94E6D3D42}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dw</RootNamespace>
+    <AssemblyName>DeskWall</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\StrongArray.cs" />
+    <Compile Include="Window\PluginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\MainModule.cs" />
+    <Compile Include="Module\Module.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Window\MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Output\plugins\Coder\Plugin.Config" />
+    <None Include="Output\plugins\IdGen\Plugin.Config" />
+    <None Include="Output\plugins\NotifyIcon\Plugin.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Output\plugins\PowerMgr\Plugin.Config" />
+    <None Include="Output\plugins\StickyNotes\Backup\2936ab17-ce53-443a-9a46-eccbb015b36f.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Backup\35a8fc36-fad3-4993-aa24-9ec3b4f8c663.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Backup\414df07d-d6e1-474f-9915-f41976eb16cf.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Backup\4fe8d27c-8b0e-4acf-862d-7574336c3b1f.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Backup\5b42971c-caba-4d42-9cd6-c6f6c37f66a3.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Backup\7e3b7c19-1082-4253-85e7-65a966b7d689.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Backup\875693db-44a1-4350-bca7-6891e5349cba.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Backup\ba696674-5a0c-496d-a1ae-43d6c594734a.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Backup\f243e108-1614-467e-a64b-c5e522356498.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Backup\f4cf62dc-03f5-415b-a858-0a8df8857e76.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Notes\2936ab17-ce53-443a-9a46-eccbb015b36f.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Notes\414df07d-d6e1-474f-9915-f41976eb16cf.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Notes\4fe8d27c-8b0e-4acf-862d-7574336c3b1f.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Notes\7e3b7c19-1082-4253-85e7-65a966b7d689.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Notes\875693db-44a1-4350-bca7-6891e5349cba.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Notes\ba696674-5a0c-496d-a1ae-43d6c594734a.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Notes\f243e108-1614-467e-a64b-c5e522356498.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Notes\f4cf62dc-03f5-415b-a858-0a8df8857e76.txt.rmd" />
+    <None Include="Output\plugins\StickyNotes\Plugin.Config" />
+    <None Include="Output\plugins\WallRegistry\Plugin.Config" />
+    <None Include="Output\Wall.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\OA\Fs\Fs.csproj">
+      <Project>{CAB8050F-3B67-4483-9E72-9479AB5B53B4}</Project>
+      <Name>Fs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Native\Native.csproj">
+      <Project>{8F287FC9-B299-4490-A01D-70E7F1C9899C}</Project>
+      <Name>Native</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Output\BgImg\default.PNG" />
+    <Content Include="Output\BgImg\lotus.PNG" />
+    <Content Include="Output\BgImg\mf_5_2.PNG" />
+    <Content Include="Output\BgImg\testing.PNG" />
+    <Content Include="Output\DeskWall.vshost.exe" />
+    <Content Include="Output\plugins\NotifyIcon\Tray.ico" />
+    <Content Include="Output\plugins\StickyNotes\Backup\0912a8fe-c364-4598-88e3-eca0b06a3c5d.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\0cb2613b-fc9a-4165-8958-c5b690d7aa17.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\10f6cc2d-99cd-487f-88a7-b62a5df3846d.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\2627bebb-21f6-42f3-95a8-05142f0d3edf.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\2692fa16-3c72-47cd-b726-16af22c1707e.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\2936ab17-ce53-443a-9a46-eccbb015b36f.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\2cafeb16-cdb2-48aa-8463-7386eb349d52.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\35a8fc36-fad3-4993-aa24-9ec3b4f8c663.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\3f02758c-eb8f-4f7a-afdf-8861c99e8980.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\3fcec1e2-b2b0-4137-a7b5-9ab9964ea14a.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\414df07d-d6e1-474f-9915-f41976eb16cf.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\4864efad-a1c8-4376-84cb-36e149ac5aa4.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\4fe8d27c-8b0e-4acf-862d-7574336c3b1f.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\5b42971c-caba-4d42-9cd6-c6f6c37f66a3.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\5e1012b8-b312-4dfb-840e-88f34efa3389.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\7a171337-f31c-4dcd-bb41-1f28f143c626.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\7e3b7c19-1082-4253-85e7-65a966b7d689.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\85363d00-056b-4c84-8698-d88d16f3f43b.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\875693db-44a1-4350-bca7-6891e5349cba.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\9cdd7444-931c-437c-912d-3e1d07292919.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\ba696674-5a0c-496d-a1ae-43d6c594734a.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\bcd6a076-d78a-4e79-a004-badc222e5d91.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\c823ef82-a54a-4f81-ba69-63f005b4d62d.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\cbbbdf46-5200-4fb1-8058-fe56144b3ca7.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\d2509f43-41e5-4235-a26b-5ceea64ccf6a.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\d2a9e631-8646-496c-bcfe-32ad9682d2c9.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\d6ea9e09-3ea0-4101-a0c3-df9a06b36d3a.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\db370133-5e9a-4555-9b0f-c1a8c1afaf19.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\db92726d-f214-4371-bcde-0b926e6a7747.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\ddc3680f-b9fa-4fba-88c1-6623414ea911.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\e2816d7f-ee41-4fc0-886e-2aaa5f55ca57.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\f243e108-1614-467e-a64b-c5e522356498.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\f461463b-283e-4996-b4d3-ef27b4e4cdeb.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\f4cf62dc-03f5-415b-a858-0a8df8857e76.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\f705a818-d521-4cf1-81b3-ee22900e644d.txt" />
+    <Content Include="Output\plugins\StickyNotes\Backup\f791b56c-1f49-48fa-9ac1-4984d56daefe.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\0912a8fe-c364-4598-88e3-eca0b06a3c5d.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\0cb2613b-fc9a-4165-8958-c5b690d7aa17.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\10f6cc2d-99cd-487f-88a7-b62a5df3846d.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\2627bebb-21f6-42f3-95a8-05142f0d3edf.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\2692fa16-3c72-47cd-b726-16af22c1707e.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\2936ab17-ce53-443a-9a46-eccbb015b36f.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\2cafeb16-cdb2-48aa-8463-7386eb349d52.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\3d7a6cdf-85d0-4220-8788-2c14d49d0162.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\3f02758c-eb8f-4f7a-afdf-8861c99e8980.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\3fcec1e2-b2b0-4137-a7b5-9ab9964ea14a.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\414df07d-d6e1-474f-9915-f41976eb16cf.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\4864efad-a1c8-4376-84cb-36e149ac5aa4.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\4fe8d27c-8b0e-4acf-862d-7574336c3b1f.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\5b42971c-caba-4d42-9cd6-c6f6c37f66a3.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\5e1012b8-b312-4dfb-840e-88f34efa3389.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\7a171337-f31c-4dcd-bb41-1f28f143c626.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\7e3b7c19-1082-4253-85e7-65a966b7d689.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\85363d00-056b-4c84-8698-d88d16f3f43b.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\875693db-44a1-4350-bca7-6891e5349cba.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\9cdd7444-931c-437c-912d-3e1d07292919.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\ba696674-5a0c-496d-a1ae-43d6c594734a.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\bcd6a076-d78a-4e79-a004-badc222e5d91.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\bed5d85c-e27f-46fa-8037-6e305b843727.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\c823ef82-a54a-4f81-ba69-63f005b4d62d.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\cbbbdf46-5200-4fb1-8058-fe56144b3ca7.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\d2509f43-41e5-4235-a26b-5ceea64ccf6a.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\d2a9e631-8646-496c-bcfe-32ad9682d2c9.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\d6ea9e09-3ea0-4101-a0c3-df9a06b36d3a.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\db370133-5e9a-4555-9b0f-c1a8c1afaf19.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\db92726d-f214-4371-bcde-0b926e6a7747.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\ddc3680f-b9fa-4fba-88c1-6623414ea911.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\e2816d7f-ee41-4fc0-886e-2aaa5f55ca57.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\ea5b0c14-bc15-4572-b950-ac98de509107.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\f243e108-1614-467e-a64b-c5e522356498.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\f461463b-283e-4996-b4d3-ef27b4e4cdeb.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\f4cf62dc-03f5-415b-a858-0a8df8857e76.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\f705a818-d521-4cf1-81b3-ee22900e644d.txt" />
+    <Content Include="Output\plugins\StickyNotes\Notes\f791b56c-1f49-48fa-9ac1-4984d56daefe.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

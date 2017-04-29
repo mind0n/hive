@@ -1,0 +1,7 @@
+{
+	"owin": {
+		"port": 13774,
+		"ssl": false,
+		"domain": "+"
+	}
+}

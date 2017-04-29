@@ -1,0 +1,16 @@
+/*
+	样式命名法则：表名+下划线+字段名
+*/
+
+/*-------- News --------*/
+.News_nid { width: 80px; ; }
+.News_ntitle { width: 350px; ; }
+.News_ntype { width: 100px; ; }
+.News_ndate { width: 120px; ; }
+/*-------- End --------*/
+
+/*-------- newstype --------*/
+.newstype_tid { width: 80px; ; }
+.newstype_tname { width: 200px; ; }
+/*-------- End --------*/
+

@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PageTemplate.master.cs" Inherits="PmSys.web.MasterPage.PageTemplate" %>
+<html>
+<head runat="server">
+    <title>签证管理系统</title>
+    <link rel="stylesheet" href="../css/Site_Css.css" type="text/css">
+    <link rel="stylesheet" href="../css/table/default/Css.css" type="text/css">
+    <link rel="shortcut icon" href="../images/Icon.ico" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+    
+
+<!--#include-bak file="/inc/page_guage.aspx"-->
+<body bgColor="#FFFFFF" topMargin="5" >    
+    <div>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <form id="form1" runat="server" enctype="multipart/form-data" onsubmit="javascript:return checkForm(this)">
+    <tr><td>
+    
+        <asp:ContentPlaceHolder ID="PageBody" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+    </td></tr>
+    </form>
+    <tr><td height="5"></td></tr>
+    </table>
+    </div>
+</body>
+</html>

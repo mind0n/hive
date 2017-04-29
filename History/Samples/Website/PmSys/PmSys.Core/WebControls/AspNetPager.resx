@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET PmSys object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET PmSys object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="autohideinfo" xml:space="preserve">
+    <value>记录总数只有一页，AspNetPager已自动隐藏，若需在只有一页数据时显示AspNetPager，请将AlwaysShow属性值设为true！</value>
+  </data>
+  <data name="cat_InputBox" xml:space="preserve">
+    <value>文本框及提交按钮</value>
+  </data>
+  <data name="cat_Navigation" xml:space="preserve">
+    <value>导航</value>
+  </data>
+  <data name="cat_Paging" xml:space="preserve">
+    <value>分页</value>
+  </data>
+  <data name="checkinputscript" xml:space="preserve">
+    <value>function ANP_checkInput(bid,mv){var el=document.getElementById(bid);var r=new RegExp("^\\s*(\\d+)\\s*$");
+if(r.test(el.value)){if(RegExp.$1&lt;1||RegExp.$1&gt;mv){alert("%PageIndexOutOfRangeErrorMessage%");el.focus();el.select();return false;}
+return true;}alert("%InvalidPageIndexErrorMessage%");el.focus();el.select();return false;}</value>
+  </data>
+  <data name="clonefromexeption" xml:space="preserve">
+    <value>控件“%controlID%”不存在或不是“Wuqi.Webdiyer.AspNetPager”类型。</value>
+  </data>
+  <data name="def_InvalidPIErrorMsg" xml:space="preserve">
+    <value>页索引不是有效的数值！</value>
+  </data>
+  <data name="def_NavigationToolTipTextFormatString" xml:space="preserve">
+    <value>转到第{0}页</value>
+  </data>
+  <data name="def_PIOutOfRangerMsg" xml:space="preserve">
+    <value>页索引超出范围！</value>
+  </data>
+  <data name="desc_AlwaysShow" xml:space="preserve">
+    <value>总是显示分页控件，即使要分页的数据只要一页</value>
+  </data>
+  <data name="desc_AspNetPager" xml:space="preserve">
+    <value>专用于ASP.Net Web应用程序的分页控件</value>
+  </data>
+  <data name="desc_ButtonImageAlign" xml:space="preserve">
+    <value>指定当使用图片按钮时，图片的对齐方式</value>
+  </data>
+  <data name="desc_ButtonImageExtension" xml:space="preserve">
+    <value>当使用图片按钮时，图片的类型，如gif或jpg，该值即图片文件的后缀名</value>
+  </data>
+  <data name="desc_ButtonImageNameExtension" xml:space="preserve">
+    <value>自定义图片文件名的后缀字符串（非文件后缀名），如图片“1f.gif”的ButtonImageNameExtension即为“f”</value>
+  </data>
+  <data name="desc_CloneFrom" xml:space="preserve">
+    <value>克隆指定的另一个AspNetPager的相关属性及事件处理程序等</value>
+  </data>
+  <data name="desc_CpiButtonImageNameExtension" xml:space="preserve">
+    <value>当前页索引按钮的图片名后缀字符串</value>
+  </data>
+  <data name="desc_CssClass" xml:space="preserve">
+    <value>应用于控件的CSS类名</value>
+  </data>
+  <data name="desc_CurrentPageButtonClass" xml:space="preserve">
+    <value>应用于当前页导航按钮的CSS类名</value>
+  </data>
+  <data name="desc_CurrentPageButtonStyle" xml:space="preserve">
+    <value>应用于当前页导航按钮的CSS样式</value>
+  </data>
+  <data name="desc_CurrentPageIndex" xml:space="preserve">
+    <value>当前页的索引</value>
+  </data>
+  <data name="desc_CustomInfoClass" xml:space="preserve">
+    <value>应用于用户自定义信息区的级联样式表类名</value>
+  </data>
+  <data name="desc_CustomInfoHTML" xml:space="preserve">
+    <value>要显示在用户自定义信息区的用户自定义HTML信息文本</value>
+  </data>
+  <data name="desc_CustomInfoSectionWidth" xml:space="preserve">
+    <value>用户自定义信息区的宽度</value>
+  </data>
+  <data name="desc_CustomInfoStyle" xml:space="preserve">
+    <value>应用于用户自定义信息区的CSS样式文本</value>
+  </data>
+  <data name="desc_CustomInfoTextAlign" xml:space="preserve">
+    <value>用户自定义信息区文本的对齐方式</value>
+  </data>
+  <data name="desc_DisabledButtonImageNameExtension" xml:space="preserve">
+    <value>已禁用的页导航按钮的图片名后缀字符串</value>
+  </data>
+  <data name="desc_EnableUrlWriting" xml:space="preserve">
+    <value>是否启用Url重写</value>
+  </data>
+  <data name="desc_FirstPageText" xml:space="preserve">
+    <value>第一页按钮上显示的文本</value>
+  </data>
+  <data name="desc_ImagePath" xml:space="preserve">
+    <value>当使用图片按钮时，指定图片文件的路径</value>
+  </data>
+  <data name="desc_InputBoxClass" xml:space="preserve">
+    <value>应用于页索引输入文本框的CSS类名</value>
+  </data>
+  <data name="desc_InputBoxStyle" xml:space="preserve">
+    <value>应用于页索引输入文本框的CSS样式文本</value>
+  </data>
+  <data name="desc_InvalidPIErrorMsg" xml:space="preserve">
+    <value>当用户输入无效的页索引（负值或非数字）时在客户端显示的错误信息。</value>
+  </data>
+  <data name="desc_LastPageText" xml:space="preserve">
+    <value>最后一页按钮上显示的文本</value>
+  </data>
+  <data name="desc_MoreButtonType" xml:space="preserve">
+    <value>“更多页”（...）按钮的类型</value>
+  </data>
+  <data name="desc_NavigationButtonType" xml:space="preserve">
+    <value>第一页、上一页、下一页和最后一页按钮的类型</value>
+  </data>
+  <data name="desc_NavigationToolTipTextFormatString" xml:space="preserve">
+    <value>分页导航按钮上显示的提示文本的格式</value>
+  </data>
+  <data name="desc_NBTFormatString" xml:space="preserve">
+    <value>页索引数值按钮上文字的显示格式</value>
+  </data>
+  <data name="desc_NextPageText" xml:space="preserve">
+    <value>下一页按钮上显示的文本</value>
+  </data>
+  <data name="desc_NumericButtonCount" xml:space="preserve">
+    <value>要显示的页索引数值按钮的数目</value>
+  </data>
+  <data name="desc_NumericButtonType" xml:space="preserve">
+    <value>页导航数值按钮的类型</value>
+  </data>
+  <data name="desc_PageSize" xml:space="preserve">
+    <value>每页显示的记录数</value>
+  </data>
+  <data name="desc_PagingButtonSpacing" xml:space="preserve">
+    <value>分页导航按钮之间的间距</value>
+  </data>
+  <data name="desc_PagingButtonType" xml:space="preserve">
+    <value>分页导航按钮的类型，是使用文字还是图片</value>
+  </data>
+  <data name="desc_PIOutOfRangeMsg" xml:space="preserve">
+    <value>当用户输入的页索引超出范围（大于最大页索引或小于最小页索引）时在客户端显示的错误信息。</value>
+  </data>
+  <data name="desc_PrevPageText" xml:space="preserve">
+    <value>上一页按钮上显示的文本</value>
+  </data>
+  <data name="desc_RecordCount" xml:space="preserve">
+    <value>要分页的所有记录的总数，该值须在程序运行时设置，默认值为225是为设计时支持而设置的参照值。</value>
+  </data>
+  <data name="desc_ShowBoxThreshold" xml:space="preserve">
+    <value>指定当ShowInputBox设为ShowInputBox.Auto时，当总页数达到多少时才显示页索引输入文本框</value>
+  </data>
+  <data name="desc_ShowCustomInfoSection" xml:space="preserve">
+    <value>显示当前页和总页数信息，默认值为不显示，值为ShowCustomInfoSection.Left时将显示在页索引前，为ShowCustomInfoSection.Right时将显示在页索引后</value>
+  </data>
+  <data name="desc_ShowDisabledButtons" xml:space="preserve">
+    <value>是否显示已禁用的按钮</value>
+  </data>
+  <data name="desc_ShowFirstLast" xml:space="preserve">
+    <value>是否在页导航元素中显示第一页和最后一页按钮</value>
+  </data>
+  <data name="desc_ShowInputBox" xml:space="preserve">
+    <value>指定页索引文本框的显示方式</value>
+  </data>
+  <data name="desc_ShowNavigationToolTip" xml:space="preserve">
+    <value>指定当鼠标停留在导航按钮上时，是否显示工具提示</value>
+  </data>
+  <data name="desc_ShowPageIndex" xml:space="preserve">
+    <value>是否在页导航元素中显示数值按钮</value>
+  </data>
+  <data name="desc_ShowPrevNext" xml:space="preserve">
+    <value>是否在页导航元素中显示上一页和下一页按钮</value>
+  </data>
+  <data name="desc_SubmitButtonClass" xml:space="preserve">
+    <value>应用于提交按钮的CSS类名</value>
+  </data>
+  <data name="desc_SubmitButtonStyle" xml:space="preserve">
+    <value>应用于提交按钮的CSS样式</value>
+  </data>
+  <data name="desc_SubmitButtonText" xml:space="preserve">
+    <value>提交按钮上的文本</value>
+  </data>
+  <data name="desc_TextAfterInputBox" xml:space="preserve">
+    <value>页索引输入文本框后的文本内容字符串</value>
+  </data>
+  <data name="desc_TextBeforeInputBox" xml:space="preserve">
+    <value>页索引输入文本框前的文本内容字符串</value>
+  </data>
+  <data name="desc_UrlPageIndexName" xml:space="preserve">
+    <value>当启用Url分页方式时，显示在url中表示要传递的页索引的参数的名称</value>
+  </data>
+  <data name="desc_UrlPaging" xml:space="preserve">
+    <value>是否使用url传递分页信息的方式来分页</value>
+  </data>
+  <data name="desc_UrlRewritePattern" xml:space="preserve">
+    <value>Url重写格式</value>
+  </data>
+  <data name="FirstPageText" xml:space="preserve">
+    <value>首页</value>
+  </data>
+  <data name="keydownscript" xml:space="preserve">
+    <value>function ANP_keydown(e,btnId){
+var kcode;
+if(window.event){kcode=e.keyCode;}
+else if(e.which){kcode=e.which;}
+var validKey=(kcode==8||kcode==46||kcode==37||kcode==39||(kcode&gt;=48&amp;&amp;kcode&lt;=57)||(kcode&gt;=96&amp;&amp;kcode&lt;=105));
+if(!validKey){
+if(kcode==13) document.getElementById(btnId).click();
+if(e.preventDefault) e.preventDefault();else{event.returnValue=false};
+}
+}</value>
+  </data>
+  <data name="LastPageText" xml:space="preserve">
+    <value>尾页</value>
+  </data>
+  <data name="NextPageText" xml:space="preserve">
+    <value>下一页</value>
+  </data>
+  <data name="PrevPageText" xml:space="preserve">
+    <value>上一页</value>
+  </data>
+  <data name="recusiveclonefrom" xml:space="preserve">
+    <value>无效的CloneFrom属性值，AspNetPager控件不能被递归克隆</value>
+  </data>
+</root>

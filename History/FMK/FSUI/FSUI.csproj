@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB469727-3488-40C1-946D-FFFEA9AAF53D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FSUI</RootNamespace>
+    <AssemblyName>FSUI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>0</FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Lib\Client\Fc\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lib\Client\Fc\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Lib\Server\Ajax\Login\LoginModule.ascx.cs">
+      <DependentUpon>LoginModule.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lib\Server\Ajax\Login\LoginModule.ascx.designer.cs">
+      <DependentUpon>LoginModule.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Lib\Server\Authentication\AuthImg.aspx.cs">
+      <DependentUpon>AuthImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lib\Server\Authentication\AuthProxy.aspx.cs">
+      <DependentUpon>AuthProxy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\Client\Fc\Core.js" />
+    <Content Include="Lib\Client\Fc\Core\Base64.js" />
+    <Content Include="Lib\Client\Fc\DataForm\DataForm.js" />
+    <Content Include="Lib\Client\Fc\DataViewer\DataViewer.css" />
+    <Content Include="Lib\Client\Fc\DataViewer\DataViewer.js" />
+    <Content Include="Lib\Client\Fc\DataViewer\DataViewerEvents.js" />
+    <Content Include="Lib\Client\Fc\DataViewer\FormEditor.css" />
+    <Content Include="Lib\Client\Fc\DataViewer\FormEditor.js" />
+    <Content Include="Lib\Client\Fc\DataViewer\FormEditorEvents.js" />
+    <Content Include="Lib\Client\Fc\DataViewer\pager.css" />
+    <Content Include="Lib\Client\Fc\Fc.css" />
+    <Content Include="Lib\Client\Fc\Header.ascx" />
+    <Content Include="Lib\Client\Fc\ListViewer\ListViewer.js" />
+    <Content Include="Lib\Client\Fc\Request\Request.js" />
+    <Content Include="Lib\Client\Fc\TabController\TabController.js" />
+    <Content Include="Lib\Client\jquery\css\lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Lib\Client\jquery\css\lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Lib\Client\jquery\css\lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Lib\Client\jquery\css\lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Lib\Client\jquery\css\lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Lib\Client\jquery\css\lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Lib\Client\jquery\css\lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Lib\Client\jquery\css\lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Lib\Client\jquery\css\lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Lib\Client\jquery\css\lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Lib\Client\jquery\css\lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Lib\Client\jquery\css\lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Lib\Client\jquery\css\lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Lib\Client\jquery\css\lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Lib\Client\jquery\css\lightness\ui.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\AUTHORS.txt" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\accordion\collapsible.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\accordion\custom-icons.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\accordion\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\accordion\fillspace.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\accordion\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\accordion\mouseover.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\accordion\no-auto-height.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\accordion\sortable.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\addClass\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\addClass\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\animate\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\animate\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\autocomplete\categories.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\autocomplete\combobox.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\autocomplete\custom-data.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\autocomplete\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\autocomplete\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\autocomplete\london.xml" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\autocomplete\remote-jsonp.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\autocomplete\remote-with-cache.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\autocomplete\remote.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\autocomplete\xml.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\button\checkbox.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\button\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\button\icons.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\button\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\button\radio.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\button\splitbutton.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\button\toolbar.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\alt-field.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\animation.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\buttonbar.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\date-formats.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\dropdown-month-year.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\event-search.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\icon-trigger.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\images\calendar.gif" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\inline.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\localization.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\min-max.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\multiple-calendars.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\other-months.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\datepicker\show-week.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\demos.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\dialog\animated.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\dialog\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\dialog\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\dialog\modal-confirmation.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\dialog\modal-form.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\dialog\modal-message.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\dialog\modal.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\draggable\constrain-movement.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\draggable\cursor-style.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\draggable\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\draggable\delay-start.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\draggable\events.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\draggable\handle.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\draggable\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\draggable\revert.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\draggable\scroll.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\draggable\snap-to.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\draggable\sortable.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\draggable\visual-feedback.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\accepted-elements.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\images\high_tatras.jpg" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\images\high_tatras2.jpg" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\images\high_tatras2_min.jpg" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\images\high_tatras3.jpg" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\images\high_tatras3_min.jpg" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\images\high_tatras4.jpg" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\images\high_tatras4_min.jpg" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\images\high_tatras_min.jpg" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\photo-manager.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\propagation.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\revert.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\droppable\visual-feedback.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\effect\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\effect\easing.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\effect\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\hide\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\hide\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\images\calendar.gif" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\images\demo-config-on-tile.gif" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\images\demo-config-on.gif" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\images\demo-spindown-closed.gif" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\images\demo-spindown-open.gif" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\images\icon-docs-info.gif" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\images\jqueryui_32x32.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\images\jquery_32x32.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\images\pbar-ani.gif" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\images\sizzlejs_32x32.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\images\transparent_1x1.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\position\cycler.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\position\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\position\images\earth.jpg" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\position\images\flight.jpg" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\position\images\rocket.jpg" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\position\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\progressbar\animated.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\progressbar\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\progressbar\images\pbar-ani.gif" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\progressbar\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\progressbar\resize.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\removeClass\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\removeClass\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\resizable\animate.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\resizable\aspect-ratio.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\resizable\constrain-area.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\resizable\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\resizable\delay-start.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\resizable\helper.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\resizable\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\resizable\max-min.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\resizable\snap-to-grid.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\resizable\synchronous-resize.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\resizable\textarea.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\resizable\visual-feedback.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\selectable\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\selectable\display-grid.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\selectable\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\selectable\serialize.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\show\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\show\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\slider\colorpicker.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\slider\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\slider\hotelrooms.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\slider\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\slider\multiple-vertical.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\slider\range-vertical.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\slider\range.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\slider\rangemax.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\slider\rangemin.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\slider\side-scroll.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\slider\slider-vertical.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\slider\steps.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\slider\tabs.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\sortable\connect-lists-through-tabs.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\sortable\connect-lists.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\sortable\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\sortable\delay-start.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\sortable\display-grid.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\sortable\empty-lists.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\sortable\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\sortable\items.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\sortable\placeholder.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\sortable\portlets.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\switchClass\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\switchClass\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\tabs\ajax.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\tabs\ajax\content1.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\tabs\ajax\content2.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\tabs\bottom.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\tabs\collapsible.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\tabs\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\tabs\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\tabs\manipulation.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\tabs\mouseover.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\tabs\sortable.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\tabs\vertical.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\toggleClass\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\toggleClass\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\toggle\default.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\demos\toggle\index.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\accordion.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\addClass.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\animate.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\autocomplete.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\button.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\datepicker.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\dialog.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\draggable.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\droppable.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\effect.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\hide.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\position.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\progressbar.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\removeClass.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\resizable.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\selectable.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\show.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\slider.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\sortable.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\switchClass.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\tabs.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\toggle.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\docs\toggleClass.html" />
+    <Content Include="Lib\Client\jquery\development-bundle\external\jquery.bgiframe-2.1.1.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\external\jquery.cookie.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\external\jquery.metadata.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\external\qunit.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\external\qunit.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\GPL-LICENSE.txt" />
+    <Content Include="Lib\Client\jquery\development-bundle\jquery-1.4.2.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\MIT-LICENSE.txt" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\images\ui-anim_basic_16x16.gif" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\jquery.ui.all.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\jquery.ui.base.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\jquery.ui.button.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\jquery.ui.core.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\jquery.ui.slider.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\base\jquery.ui.theme.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\jquery-ui-1.8.custom.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\jquery.ui.accordion.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\jquery.ui.all.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\jquery.ui.autocomplete.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\jquery.ui.base.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\jquery.ui.button.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\jquery.ui.core.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\jquery.ui.datepicker.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\jquery.ui.dialog.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\jquery.ui.progressbar.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\jquery.ui.resizable.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\jquery.ui.slider.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\jquery.ui.tabs.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\themes\lightness\jquery.ui.theme.css" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery-ui-i18n.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-af.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ar.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-az.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-bg.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-bs.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ca.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-cs.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-da.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-de.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-el.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-en-GB.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-eo.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-es.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-et.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-eu.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fa.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fi.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fo.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fr-CH.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fr.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-he.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-hr.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-hu.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-hy.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-id.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-is.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-it.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ja.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ko.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-lt.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-lv.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ms.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-nl.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-no.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-pl.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ro.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ru.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sk.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sl.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sq.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sr-SR.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sr.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sv.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ta.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-th.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-tr.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-uk.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-vi.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-zh-CN.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-zh-HK.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\i18n\jquery.ui.datepicker-zh-TW.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery-ui-1.8.custom.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.effects.blind.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.effects.bounce.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.effects.clip.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.effects.core.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.effects.drop.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.effects.explode.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.effects.fold.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.effects.highlight.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.effects.pulsate.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.effects.scale.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.effects.shake.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.effects.slide.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.effects.transfer.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.accordion.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.autocomplete.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.button.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.core.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.datepicker.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.dialog.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.draggable.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.droppable.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.mouse.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.position.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.progressbar.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.resizable.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.selectable.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.slider.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.sortable.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.tabs.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\jquery.ui.widget.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.effects.blind.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.effects.bounce.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.effects.clip.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.effects.core.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.effects.drop.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.effects.explode.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.effects.fold.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.effects.highlight.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.effects.pulsate.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.effects.scale.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.effects.shake.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.effects.slide.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.effects.transfer.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.accordion.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.autocomplete.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.button.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.core.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.datepicker.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.dialog.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.draggable.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.droppable.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.mouse.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.position.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.progressbar.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.resizable.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.selectable.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.slider.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.sortable.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.tabs.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\ui\minified\jquery.ui.widget.min.js" />
+    <Content Include="Lib\Client\jquery\development-bundle\version.txt" />
+    <Content Include="Lib\Client\jquery\js\jquery-1.4.2.min.js" />
+    <Content Include="Lib\Client\jquery\js\jquery-ui-1.8.custom.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Lib\Client\jquery\development-bundle\demos\autocomplete\search.php" />
+    <None Include="Lib\Client\jquery\development-bundle\demos\tabs\ajax\content3-slow.php" />
+    <None Include="Lib\Client\jquery\development-bundle\demos\tabs\ajax\content4-broken.php" />
+    <Content Include="Lib\Client\FC%24\Core.js" />
+    <Content Include="Lib\Client\FC%24\DataViewer\Template.htm" />
+    <Content Include="Lib\Client\FC%24\Request\Request.js" />
+    <Content Include="Lib\Server\Ajax\Login\LoginModule.ascx" />
+    <Content Include="Lib\Server\Authentication\AuthImg.aspx" />
+    <Content Include="Lib\Server\Authentication\AuthProxy.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fs\Fs.csproj">
+      <Project>{CAB8050F-3B67-4483-9E72-9479AB5B53B4}</Project>
+      <Name>Fs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3459</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

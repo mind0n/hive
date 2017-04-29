@@ -1,0 +1,85 @@
+﻿<Window x:Class="SampleApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="950">
+
+    <Grid x:Name="LayoutRoot" Background="White" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Margin="0,10,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="253" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="White" Width="Auto" Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="180" />
+                <ColumnDefinition Width="142" />
+                <ColumnDefinition Width="162" />
+                <ColumnDefinition Width="142" />
+                <ColumnDefinition Width="138" />
+                <ColumnDefinition Width="142" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Vertical" Grid.Column="0" Margin="0">
+                <Button Content="Create" Height="22" Name="BtnCreate" Width="120" Click="BtnCreate_Click" Margin="0,10,0,0" />
+                <Button Content="Add records" Height="22" Name="BtnAddRecords" Width="120" Click="BtnAddRecords_Click" Margin="0,10,0,0" />
+                <Button Content="Open" Height="22" HorizontalAlignment="Center" Name="BtnOpen" VerticalAlignment="Top" Width="120" Click="BtnOpen_Click" Margin="0,10,0,0" />
+                <Button Content="Open w/Encryption" Height="22" HorizontalAlignment="Center" Name="BtnOpenEncrypted" VerticalAlignment="Top" Width="120" Margin="0,10,0,0" Click="BtnOpenEncrypted_Click" />
+                <Button Content="Close" Height="22" HorizontalAlignment="Center" Name="BtnClose" VerticalAlignment="Top" Width="120" Click="BtnClose_Click" Margin="0,10,0,0" />
+                <Separator Height="5" Width="138" Margin="0,10,0,0" />
+                <Button Content="Drop" Height="22" HorizontalAlignment="Center" Name="BtnDrop" VerticalAlignment="Top" Width="120" Click="BtnDrop_Click" Margin="0,10,0,0" />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Column="1" Margin="0">
+                <Button Height="40" HorizontalAlignment="Center" Name="BtnGetAllRecords" VerticalAlignment="Bottom" Width="120" Click="BtnGetAllRecords_Click" Margin="0,10,0,0">
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center">Get all records<LineBreak/>sorted</TextBlock>
+                </Button>
+                <Button Height="40" HorizontalAlignment="Center" Margin="0,10,0,0" Name="BtnGetAllRecordsReverseSort" VerticalAlignment="Top" Width="120" HorizontalContentAlignment="Stretch" Click="BtnGetAllRecordsReverseSort_Click" >
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center">Get all records reverse sort</TextBlock>
+                </Button>
+                <Button Content="Get records Regex" Height="22" HorizontalAlignment="Center" Name="BtnGetRecords" VerticalAlignment="Top" Width="120" Click="BtnGetRecordsRegex_Click" Margin="0,10,0,0" />
+                <Button Height="36" HorizontalAlignment="Center" Margin="0,10,0,0" Name="BtnGetRecords2" VerticalAlignment="Top" Width="120" Click="BtnGetMatchingRecords_Click" >
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,0,0,0">Get matching records</TextBlock>
+                </Button>
+                <Button Content="Get record by index" Height="22" HorizontalAlignment="Center" Name="BtnGetRecordByIndex" VerticalAlignment="Top" Width="120" Margin="0,10,0,0" Click="BtnGetRecordByIndex_Click" />
+                <Button Content="Get record by key" Height="22" HorizontalAlignment="Center" Name="BtnGetRecordByKey" VerticalAlignment="Top" Width="120" Margin="0,10,0,0" Click="BtnGetRecordByKey_Click" />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Column="2" Margin="0">
+                <Button Content="Update matching record" Height="22" Name="BtnUpdateMatchingRecord" VerticalAlignment="Top" Click="BtnUpdateRecord_Click" HorizontalAlignment="Center" Width="147" Margin="0,10,0,0" />
+                <Button Content="Update matching records" Height="22" HorizontalAlignment="Center" Name="BtnUpdateMatchingRecords" VerticalAlignment="Top" Width="147" Click="BtnUpdateMatchingRecords_Click" Margin="0,10,0,0" />
+                <Button Content="Update records Regex" Height="22" HorizontalAlignment="Center" Name="BtnUpdateRecordsRegex" VerticalAlignment="Top" Width="147" Click="BtnUpdateRecordsRegex_Click" Margin="0,10,0,0" />
+                <Separator Height="5" Width="138" Margin="0,10,0,0" />
+                <Button Content="Encrypt/Decrypt Value" Height="22" HorizontalAlignment="Center" Name="BtnEncryptValue" VerticalAlignment="Top" Width="147" Margin="0,10,0,0" Click="BtnEncryptValue_Click" />
+                <Separator Height="5" Width="138" Margin="0,10,0,0" />
+                <Button Content="Table to DB" Height="22" HorizontalAlignment="Center" Name="BtnTableToDB" VerticalAlignment="Top" Width="147" Margin="0,10,0,0" Click="BtnTableToDB_Click" />
+                <Button Content="Table from Table" Height="22" HorizontalAlignment="Center" Name="BtnTableFromTable" VerticalAlignment="Top" Width="147" Margin="0,10,0,0" Click="BtnTableFromTable_Click" />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Column="3" Margin="0">
+                <Button Content="Remove by Key" Height="22" HorizontalAlignment="Center" Margin="0,10,0,0" Name="BtnRemoveByKey" VerticalAlignment="Top" Width="120" Click="BtnRemoveByKey_Click" />
+                <Button Content="Remove by Index" Height="22" Margin="0,10,0,0" Name="BtnRemoveByIndex" VerticalAlignment="Top" Click="BtnRemoveByIndex_Click" HorizontalAlignment="Center" Width="118" />
+                <Button Content="Remove by Value 1" Height="22" HorizontalAlignment="Center" Margin="0,10,0,0" Name="BtnRemoveByValue" VerticalAlignment="Top" Width="120" Click="BtnRemoveByValue_Click" />
+                <Button Content="Remove By Value 2" Height="22" HorizontalAlignment="Center" Name="RemoveByValue2" VerticalAlignment="Top" Width="120" Click="RemoveByValue2_Click" Margin="0,10,0,0" />
+                <Button Content="Get/Set MetaData" Height="22" HorizontalAlignment="Center" Name="BtnMetaData" VerticalAlignment="Top" Width="120" Margin="0,10,0,0" Click="BtnMetaData_Click" />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Column="4" Margin="0">
+                <Button Content="Clean" Height="22" HorizontalAlignment="Center" Margin="0,10,0,0" Name="BtnClean" VerticalAlignment="Top" Width="120" Click="BtnClean_Click" />
+                <Button Content="Num records" Height="22" HorizontalAlignment="Center" Margin="0,10,0,0" Name="BtnNumRecords" VerticalAlignment="Top" Width="120" Click="BtnNumRecords_Click" />
+                <Button Content="Num deleted" Height="22" HorizontalAlignment="Center" Margin="0,10,0,0" Name="BtnNumDeleted" VerticalAlignment="Top" Width="120" Click="BtnNumDeleted_Click" />
+                <Button Content="Iterate" Height="22" HorizontalAlignment="Center" Margin="0,10,0,0" Name="BtnIterate" VerticalAlignment="Top" Width="120" Click="BtnIterate_Click" Grid.Row="1" />
+                <Button Content="Reindex" Height="22" HorizontalAlignment="Center" Margin="0,10,0,0" Name="BtnReindex" VerticalAlignment="Top" Width="120" Click="BtnReindex_Click" />
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" Grid.Column="5" Margin="0">
+                <Button Content="Linq Select" Height="22" HorizontalAlignment="Center" Name="BtnLinqSelect" VerticalAlignment="Top" Width="133" Margin="0,10,0,0" Click="BtnLinqSelect_Click" />
+                <Button Content="Linq Join" Height="22" HorizontalAlignment="Center" Name="BtnLinqJoin" VerticalAlignment="Top" Width="133" Margin="0,10,0,0" Click="BtnLinqJoin_Click" />
+                <Button Content="Linq GroupBy" Height="22" HorizontalAlignment="Center" Name="BtnLinqGroupBy" VerticalAlignment="Top" Width="133" Margin="0,10,0,0" Click="BtnLinqGroupBy_Click" />
+                <Button Content="Linq Hierarchical Objects" Height="22" HorizontalAlignment="Center" Name="BtnLinqHierarchicalObjects" VerticalAlignment="Top" Width="133" Margin="0,10,0,0" Click="BtnLinqHierarchicalObjects_Click" />
+                <Button Content="Linq Aggregates" Height="22" HorizontalAlignment="Center" Name="BtnLinqAggregates" VerticalAlignment="Top" Width="133" Margin="0,10,0,0" Click="BtnLinqAggregates_Click" />
+            </StackPanel>
+        </Grid>
+        <DataGrid Grid.Row="1" Name="grid" Height="Auto" VerticalAlignment="Stretch" IsReadOnly="True" />
+    </Grid>
+</Window>

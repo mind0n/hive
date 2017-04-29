@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Template Generator="TestConsole.TestXml" NoEmptyLine="true">
+	<Output Path="D:\TestCodgen.txt" />
+	<ContentReplace Handler="Introduction">
+		<![CDATA[
+		// This is 
+		// Introduction
+		// area.]]>
+	</ContentReplace>
+	<ContentReplace Handler="Comment" Scope="GlobalReplace">
+		<![CDATA[
+			// This is 
+			// comment
+			// area.]]>
+	</ContentReplace>
+	<Replace Namespace="Codgen.Generated" />
+	<GlobalReplace  ClassName="CodgenTest" />
+<![CDATA[
+	using System;
+	using System.Collections.Generic;
+	using System.Text;
+	namespace >Namespace<
+	{
+		>Introduction<
+		public class >ClassName<
+		{
+]]>			
+	<Import Url="MethodBuilder.xml" />
+<![CDATA[
+		}
+	}
+]]>
+</Template>

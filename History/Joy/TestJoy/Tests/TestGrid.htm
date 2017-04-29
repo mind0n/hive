@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+<link rel="stylesheet" type="text/css" href="/theme/Site.css" />
+<link href="/Joy/Theme/Default/grid.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+    div.editablerect
+    {
+		height:20px;
+    }
+    div.editablerect div.label, div.editablerect div.dropdown_box
+    {
+    	line-height:18px;
+		text-align:left;
+		padding:0px 4px 0px 4px;
+    }
+	.editablerect input, .editablerect .editbox
+	{
+		border:0px;
+		background:white;
+		font:12px arial;
+		line-height:18px;
+		height:18px;
+		height:100%;
+		width:100%;
+		padding:0px 4px 0px 4px;
+	}
+	.simple_menu_item
+	{
+		line-height:18px;
+	}
+    .simple_menu
+    {
+        background:white;
+    }
+	.editablerect .checkbox
+	{
+	}
+</style>
+<script src="/Joy/Joy.js" type="text/javascript"></script>
+<script src="/Joy/Controls/SimpleMenu.js" type="text/javascript"></script>
+<script src="/Joy/Controls/DropDown.js" type="text/javascript"></script>
+<script src="/Joy/Controls/EditableRect.js" type="text/javascript"></script>
+<script src="/Joy/Controls/RowEditor.js" type="text/javascript"></script>
+<script src="/Joy/Controls/Grid.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var config = {
+		defaultEditor: 'editbox',
+		styles: {
+			uname: { width: '70px' },
+			upwd: { width: '70px' },
+			utype: { width: '70px' },
+			unote: { width: '70px' }
+		},
+		cols: [
+            { field: 'uname', caption: 'Username', type: 'string' }
+            , { field: 'upwd', caption: 'Password', type: 'string' }
+            , { field: 'utype', caption: 'User Type', type: 'int' }
+            , { field: 'unote', caption: 'Description', type: 'string' }
+        ]
+	};
+    var data = {
+        rows: [
+            { uname: 'admin', upwd: 'nothing', utype: 0, unote: 'System administrator' }
+            , { uname: 'temp', upwd: 'nothing' }
+            , { uname: 'guest', upwd: 'nothing' }
+            , { uname: 'user' }
+        ]
+    };
+    Joy.ready(function ()
+    {
+    	var grid = Joy.make('Grid');
+    	grid.init(config);
+    	grid.setData(data);
+    	//var gridarea = document.getElementById('gridarea');
+    	//gridarea.appendChild(grid);
+    	document.body.appendChild(grid);
+    	grid.update();
+    });
+</script>
+</head>
+<body>
+<!--<div id='gridarea'>
+</div>-->
+</body>
+</html>

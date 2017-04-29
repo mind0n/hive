@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XnaEditor", "XnaEditor\XnaEditor.csproj", "{4B374FCC-7EAD-4733-A68C-36020F9066A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XnaPanelContent", "XnaPanel\XnaPanelContent\XnaPanelContent.contentproj", "{AC2A680D-2D32-40F1-BA60-DC35E04CC81A}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs35
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = XnaEditor\\XnaEditor.csproj
+		SccProjectName1 = XnaEditor
+		SccLocalPath1 = XnaEditor
+		SccProjectUniqueName2 = XnaPanel\\XnaPanelContent\\XnaPanelContent.contentproj
+		SccProjectName2 = XnaPanel/XnaPanelContent
+		SccLocalPath2 = XnaPanel\\XnaPanelContent
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B374FCC-7EAD-4733-A68C-36020F9066A7}.Debug|x86.ActiveCfg = Debug|x86
+		{4B374FCC-7EAD-4733-A68C-36020F9066A7}.Debug|x86.Build.0 = Debug|x86
+		{4B374FCC-7EAD-4733-A68C-36020F9066A7}.Release|x86.ActiveCfg = Release|x86
+		{4B374FCC-7EAD-4733-A68C-36020F9066A7}.Release|x86.Build.0 = Release|x86
+		{AC2A680D-2D32-40F1-BA60-DC35E04CC81A}.Debug|x86.ActiveCfg = Debug|x86
+		{AC2A680D-2D32-40F1-BA60-DC35E04CC81A}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

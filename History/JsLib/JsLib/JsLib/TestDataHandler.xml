@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<invoke>
+	<method Name="TestDataHandler">
+		<param Name="add">
+			<Managers>
+				<row id="352" ManagerName="success1" Age="1" />
+				<row id="353" ManagerName="ok2" Age="1" />
+				<row id="354" ManagerName="success3" Age="1" />
+				<row id="355" ManagerName="ok4" Age="1" />
+				<row id="356" ManagerName="ok5" Age="1" />
+			</Managers>
+		</param>
+		<param Name="amend">
+			<Managers>
+				<row id="352" ManagerName="amended1" Age="99" />
+				<row id="353" ManagerName="amended2" Age="88" />
+				<row id="354" ManagerName="amended3" Age="99" />
+				<row id="355" ManagerName="amended4" Age="88" />
+				<row id="356" ManagerName="amended5" Age="88" />
+			</Managers>
+		</param>
+		<param Name="del">
+			<Managers>
+				<row id="352" ManagerName="amended1" Age="1" />
+				<row id="353" ManagerName="amended2" Age="1" />
+				<row id="354" ManagerName="amended3" Age="1" />
+				<row id="355" ManagerName="amended4" Age="1" />
+				<row id="356" ManagerName="amended5" Age="1" />
+			</Managers>
+		</param>
+	</method>
+</invoke>

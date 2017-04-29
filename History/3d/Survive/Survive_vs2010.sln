@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Wpf_vs2010", "Game.Wpf\Game.Wpf_vs2010.csproj", "{F6E4A600-9BF2-4F9F-8513-77C1F13D20D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Common_vs2010", "Game.Common\Game.Common_vs2010.csproj", "{11D2BDBE-1087-42E8-B938-5D94F7C4A0E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf.Startup_vs2010", "Wpf.Startup\Wpf.Startup_vs2010.csproj", "{BFBD5CEF-E4D6-4C69-B841-4038065DD0F7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs35
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Game.Wpf\\Game.Wpf_vs2010.csproj
+		SccProjectName1 = Game.Wpf
+		SccLocalPath1 = Game.Wpf
+		SccProjectUniqueName2 = Game.Common\\Game.Common_vs2010.csproj
+		SccProjectName2 = Game.Common
+		SccLocalPath2 = Game.Common
+		SccProjectUniqueName3 = Wpf.Startup\\Wpf.Startup_vs2010.csproj
+		SccProjectName3 = Wpf.Startup
+		SccLocalPath3 = Wpf.Startup
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6E4A600-9BF2-4F9F-8513-77C1F13D20D2}.Debug|x86.ActiveCfg = Debug|x86
+		{F6E4A600-9BF2-4F9F-8513-77C1F13D20D2}.Debug|x86.Build.0 = Debug|x86
+		{F6E4A600-9BF2-4F9F-8513-77C1F13D20D2}.Release|x86.ActiveCfg = Release|x86
+		{F6E4A600-9BF2-4F9F-8513-77C1F13D20D2}.Release|x86.Build.0 = Release|x86
+		{11D2BDBE-1087-42E8-B938-5D94F7C4A0E1}.Debug|x86.ActiveCfg = Debug|x86
+		{11D2BDBE-1087-42E8-B938-5D94F7C4A0E1}.Debug|x86.Build.0 = Debug|x86
+		{11D2BDBE-1087-42E8-B938-5D94F7C4A0E1}.Release|x86.ActiveCfg = Release|x86
+		{11D2BDBE-1087-42E8-B938-5D94F7C4A0E1}.Release|x86.Build.0 = Release|x86
+		{BFBD5CEF-E4D6-4C69-B841-4038065DD0F7}.Debug|x86.ActiveCfg = Debug|x86
+		{BFBD5CEF-E4D6-4C69-B841-4038065DD0F7}.Debug|x86.Build.0 = Debug|x86
+		{BFBD5CEF-E4D6-4C69-B841-4038065DD0F7}.Release|x86.ActiveCfg = Release|x86
+		{BFBD5CEF-E4D6-4C69-B841-4038065DD0F7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

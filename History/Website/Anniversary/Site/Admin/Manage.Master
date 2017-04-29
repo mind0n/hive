@@ -1,0 +1,173 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Manage.master.cs" Inherits="Site.Admin.Manage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Css/MasterPage.css" rel="Stylesheet" type="text/css" />
+    <link href="Scripts/Admin_JScript.js" type="text/jscript" rel="Stylesheet" />
+    <link href="Css/ManageStyle.css" rel="Stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+        function menuChange(obj, menu) {
+            if (typeof (menu) == "string") { menu = document.getElementById(menu); }
+            if (menu.style.display != "") {
+                obj.className = "menu_title";
+                menu.style.display = "";
+            } else {
+                obj.className = "menu_title_empty";
+                menu.style.display = "none";
+            }
+        }
+
+        function hover(obj, menu) {
+            if (typeof (menu) == "string") { menu = document.getElementById(menu); }
+            obj.className = "menu_title_hover";
+            if (menu.style.display == "") {
+                obj.className = "menu_title_hover";
+            }
+            else {
+                obj.className = "menu_title_empty_hover";
+            }
+        }
+
+        function mouseout(obj, menu) {
+            if (typeof (menu) == "string") { menu = document.getElementById(menu); }
+            obj.className = "menu_title";
+            if (menu.style.display == "") {
+                obj.className = "menu_title";
+            }
+            else {
+                obj.className = "menu_title_empty";
+            }
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="padding: 0px; margin: 0px; position: absolute;
+    top: 0px; right: 0px; bottom: 0px; left: 0px;">
+    <div style="display: block; width: 100%; height:100%;">
+        <%--管理页面头部--%>
+        <table class="bgpic" style="width: 100%; height:100%;">
+            <tr>
+                <td class="style2">
+                    <asp:Label ID="Label1" runat="server" ForeColor="White" Text="当前用户："></asp:Label>
+                    <asp:Label ID="lbappername" runat="server"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" ForeColor="White" Text="上次登入时间："></asp:Label>
+                    <asp:Label ID="lbapplgtime" runat="server" Text="Label"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="style1" style=" display:none; ">
+                    <table style="padding: 0px; margin: 0px; width: 100%; height: 50px;" border="0" cellpadding="0"
+                        cellspacing="0">
+                        <tr>
+                            <td style="text-align: center;">
+                               
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <%--管理页面中间部--%>
+        <table class="inputtabcolor" style="width: 100%; height: 425px; background-color: White;">
+            <tr>
+                <td style=" width:15%; padding: 0px; margin: 0px; background-color: White;" valign="top" class="style4">
+                    <table cellpadding="0" cellspacing="0" style="border-color: #0066CC; width: 100%;
+                        height: 100%; padding: 0px; margin: 0px" border="1">
+                        <tr>
+                            <td class="left" align="center">
+                                功能导航
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" class="style6">
+                                <%--<asp:TreeView ID="TreeView1" runat="server" ImageSet="News" NodeIndent="10" BackColor="White"
+                                    ShowLines="True">
+                                    <ParentNodeStyle Font-Bold="False" />
+                                    <HoverNodeStyle Font-Underline="True" />
+                                    <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" VerticalPadding="0px" />
+                                    <Nodes>
+                                        <asp:TreeNode Text="管理中心" Value="管理中心">
+                                            <asp:TreeNode Text="用户信息管理" Value="用户信息管理" NavigateUrl="ApplyInput.aspx"></asp:TreeNode>
+                                            <asp:TreeNode Text="类别管理" Value="类别管理" NavigateUrl="ApplyDetailInfo.aspx?state=0">
+                                            </asp:TreeNode>
+                                            <asp:TreeNode Text="文章管理" Value="文章管理" NavigateUrl="ApplyDetailInfo.aspx?state=2">
+                                            </asp:TreeNode>
+                                        </asp:TreeNode>
+                                    </Nodes>
+                                    <NodeStyle Font-Names="Arial" Font-Size="10pt" ForeColor="#1e4d9d" HorizontalPadding="5px"
+                                        NodeSpacing="0px" VerticalPadding="0px" Font-Bold="True" />
+                                </asp:TreeView>--%>
+                                <div class="item">
+                                    <div class="menu_title_empty">
+                                        <div class="menu_words_top">
+                                            <a href="DefaultForm.aspx" >管理首页</a> | <a href="LoginOut.aspx"
+                                                target="_parent">退出管理</a></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="menu_title" onclick="menuChange(this,'menu2');" onmouseover="hover(this,'menu2');"
+                                        onmouseout="mouseout(this,'menu2');">
+                                        用户管理</div>
+                                    <div class="menu_content" id="menu2">
+                                        <div class="menu_words">
+                                            <a href="UsersManage.aspx" >用户添加和修改</a>
+                                        </div>
+                                        <div class="menu_bottom">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="menu_title" onclick="menuChange(this,'menu3');" onmouseover="hover(this,'menu3');"
+                                        onmouseout="mouseout(this,'menu3');">
+                                        分类管理</div>
+                                    <div class="menu_content" id="menu3">
+                                        <div class="menu_words">
+                                            <a href="CategoriesManage.aspx" >类别添加和修改</a>
+                                        </div>
+                                        <div class="menu_bottom">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="menu_title" onclick="menuChange(this,'menu4');" onmouseover="hover(this,'menu4');"
+                                        onmouseout="mouseout(this,'menu4');">
+                                        文章管理</div>
+                                    <div class="menu_content" id="menu4">
+                                        <div class="menu_words">
+                                            <a href="ArticleAddModify.aspx" >添加文章</a> | <a href="ArticlesManage.aspx"
+                                                >文章列表</a>
+                                        </div>
+                                        <div class="menu_bottom">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="80%" valign="top" style=" height:100px; padding: 0px; margin: 0px; background-image: url(../Images/bodyBg.gif); background-repeat:repeat-x;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        <%--    管理页面底部--%>
+        <table style="height: 28px; width: 100%">
+            <tr>
+                <td class="style3" align="center">
+                    © 20011 - 2012 电子信息学院校庆网 .All Rights Reserved
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

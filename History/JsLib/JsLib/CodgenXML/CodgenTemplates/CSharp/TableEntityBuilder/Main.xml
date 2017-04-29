@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Template NoEmptyLine="true">
+	<Output Path="D:\TableEntity.cs" />
+	
+	<Replace Namespace="TestWeb.Entity" />
+	<![CDATA[
+	using System;
+	using System.Collections.Generic;
+	using System.Web;
+	using Fs.Entities;
+	using Fs.Data;
+
+	namespace >Namespace<
+	{
+	]]>			
+	<Import Url="ClassBuilder.xml" />
+	<![CDATA[
+	}
+	]]>
+</Template>

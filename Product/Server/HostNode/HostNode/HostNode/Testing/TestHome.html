@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!-- Js References -->
+    <link rel="stylesheet" href="/joy/css/jQueryUI/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="/joy/css/joy.units.css" type="text/css" />
+    <link rel="stylesheet" href="/joy/css/joy.datesilver.css" type="text/css" />
+    <link rel="stylesheet" href="/joy/css/joy.debug.css" type="text/css" />
+    <link rel="stylesheet" href="/ts/css" type="text/css" />
+    
+    <script type="text/javascript" src="/joy/js/joy.js"></script>
+    <script type="text/javascript" src="/joy/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/joy/js/jQueryUI/jquery-ui.js"></script>
+    <script type="text/javascript" src="/joy/js/jquery.json.js"></script>
+    <script type="text/javascript" src="/joy/js/jquery.dom.js"></script>
+    <script type="text/javascript" src="/joy/js/jquery.request.js"></script>
+    <script type="text/javascript" src="/joy/js/jquery.form.js"></script>
+    <script type="text/javascript" src="/joy/js/jquery.mouse.js"></script>
+    <script type="text/javascript" src="/joy/js/jquery.upload.js"></script>
+    <script type="text/javascript" src="/joy/js/controls/cell/cell.js"></script>
+    <script type="text/javascript" src="/joy/js/controls/form/form.js"></script>
+    <script type="text/javascript" src="/joy/js/controls/menu/menu.js"></script>
+    <script type="text/javascript" src="/joy/js/3d/three.js"></script>
+    <script type="text/javascript" src="/joy/js/3d/colladaloader.js"></script>
+    <script type="text/javascript" src="/joy/js/3d/j3d.js"></script>
+    <script type="text/javascript" src="/joy/js/3d/g3d.js"></script>
+    <script type="text/javascript" src="/joy/js/Security/AES.js"></script>
+    <!-- End of Js Reference -->
+    <title>Test Home</title>
+    <style type="text/css">
+        .form.menu{
+            left:0px;
+            top:24px;
+            width:200px;
+            height:400px;
+        }
+        .inner {
+        }
+        .mask .maskcontent {
+        }
+        .mask .maskcontent>.relative {
+        }
+        #box{
+            right:10px;
+            top:10px;
+            
+        }
+        .edarea {
+            position:fixed;
+            right:24px;
+            top:24px;
+            width:400px;
+            height:400px;
+            background:silver;
+            border:solid 1px black;
+        }
+        #overflow {
+            height:4000px;
+            width:4000px;
+            background:green;
+            position:relative;
+        }
+        #float {
+            width:100px;
+            height:100px;
+            left:400px;
+            top:500px;
+            background:lightblue;
+            position:absolute;
+            z-index:20;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var cell = false;
+        function TestFlexArgs() {
+            return '#area';
+        }
+        function Test3dArgs() {
+            return '#area';
+        }
+        function TestThinForm() {
+            if ($('#frm').hasClass('thin')) {
+                $('#frm').removeClass('thin');
+            } else {
+                $('#frm').addClass('thin');
+            }
+        }
+        function TestFlex() {
+            if (!cell) {
+                cell = $.u('Cell');
+                cell.className = 'edarea';
+                document.body.appendChild(cell);
+                var el = $(cell).dom();
+                el.enflex($('#area').dom());
+            } else {
+                var el = $(cell).dom();
+                el.deflex($('#area').dom());
+                cell = false;
+            }
+        }
+        var page = {
+            cn: 'Cell'
+            , className: 'main container cell overhide'
+            , $: [
+                {
+                    cn: 'Form', alias: 'frm', id: 'frm', className: 'menu form fixed', $: 
+                        { cn: 'Menu', alias: 'menu', className: 'menu', tar:'#area' }
+                }
+                , { cn: 'Cell', alias: 'area', id:'area', className: 'area cell container', $:'content' }
+            ]
+        };
+        $(function () {
+            var el = $.u(page);
+            //$(el.$frm).addClass('thin');
+            el.appendTo(document.body);
+            el.$frm.val({ caption: 'Test Items' }, true);
+            el.$frm.$menu.val({ url: '/ts/read/testhomemenu.json' });
+        });
+    </script>
+</head>
+<body class="jui">
+</body>
+</html>

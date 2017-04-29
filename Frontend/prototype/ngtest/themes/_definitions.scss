@@ -1,0 +1,26 @@
+$root:".wo";
+
+// Devices
+$phone-p:"max-width:480px";
+$phone-l:"max-width:768px";
+$tablet-p:"max-width:992px";
+$tablet-l:"max-width:1080px";
+$desktop:"min-width:1081px";
+$desktop-lg:"min-width:1280";
+
+#{$root} .fill-x{
+    width:100%;
+}
+
+.noselect{
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+$bradius:.2em;
+$bradius-large: 1em;
+$weight-default:normal;
+$weight-title:600;

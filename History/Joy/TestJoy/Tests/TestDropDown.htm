@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+	<link href="/Joy/Theme/Default/AdSwitcher.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+		table
+		{
+			width:200px;
+			table-layout:fixed;
+		}
+		table td
+		{	
+			font:12px arial;
+			line-height:18px;
+		}
+		#narrow
+		{
+			width:30%;
+		}
+		#wide
+		{
+		}
+</style>
+<script src="/Joy/Joy.js" type="text/javascript"></script>
+<script src="/Joy/Controls/SimpleMenu.js" type="text/javascript"></script>
+<script src="/Joy/Controls/DropDown.js" type="text/javascript"></script>
+<script src="/Joy/Controls/AdSwitcher.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	Joy.ready(function () {
+		var n = document.getElementById('narrow');
+		var w = document.getElementById('wide');
+		var dn = Joy.make('DropDown');
+		dn.setData({
+			items: [{ text: 'item1', value: 1 }, { text: 'item2', value: 2}]
+		});
+		var dw = Joy.make('DropDown');
+		dw.setData({
+			items: [{ text: 'item1', value: 1 }, { text: 'item2', value: 2}]
+		});
+		n.appendChild(dn);
+		w.appendChild(dw);
+		var ad = Joy.make('adswitcher');
+		var abox = Joy('abox');
+		abox.appendChild(ad);
+		ad.setData({ srcs:
+		[
+			'/images/a.jpg',
+			'/images/b.jpg',
+			'/images/c.jpg'
+		] });
+	});
+</script>
+</head>
+<body>
+	<input id='box' type="text" value='' />
+	 <table>
+	 <tr><td id="narrow"></td><td id="wide"></td></tr></table>
+	 <div id="abox" style="width:300px; height:200px; border:solid 1px red;"></div>
+</body>
+</html>

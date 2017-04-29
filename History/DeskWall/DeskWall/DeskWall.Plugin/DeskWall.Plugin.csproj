@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EBF16F7A-0BBD-4CE0-8613-AEE78E47AFDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dw.Plugins</RootNamespace>
+    <AssemblyName>DeskWall.Plugins</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DeskWall\Output\plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\DeskWall\Output\plugins\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Coder\Coder.cs" />
+    <Compile Include="Coder\CoderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coder\CoderForm.Designer.cs">
+      <DependentUpon>CoderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUID\IdGen.cs" />
+    <Compile Include="NotifyIcon\Notifier.cs" />
+    <Compile Include="NotifyIcon\NotifierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotifyIcon\NotifierForm.Designer.cs">
+      <DependentUpon>NotifierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerMgr\PowerMgr.cs" />
+    <Compile Include="PowerMgr\PowerMgrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PowerMgr\PowerMgrForm.Designer.cs">
+      <DependentUpon>PowerMgrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistryMgr\WallRegistry.cs" />
+    <Compile Include="Reminder\RemindModule.cs" />
+    <Compile Include="Reminder\SetRemindersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reminder\SetRemindersForm.Designer.cs">
+      <DependentUpon>SetRemindersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StickyNotes\StickyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StickyNotes\StickyForm.Designer.cs">
+      <DependentUpon>StickyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StickyNotes\StickyNote.cs" />
+    <Compile Include="StickyNotes\StickyNotesController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StickyNotes\StickyNotesController.Designer.cs">
+      <DependentUpon>StickyNotesController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\OA\Fs\Fs.csproj">
+      <Project>{CAB8050F-3B67-4483-9E72-9479AB5B53B4}</Project>
+      <Name>Fs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DeskWall\DeskWall.csproj">
+      <Project>{B557750F-81B7-456D-A624-BCB94E6D3D42}</Project>
+      <Name>DeskWall</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Native\Native.csproj">
+      <Project>{8F287FC9-B299-4490-A01D-70E7F1C9899C}</Project>
+      <Name>Native</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Coder\CoderForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotifyIcon\NotifierForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NotifierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PowerMgr\PowerMgrForm.resx">
+      <DependentUpon>PowerMgrForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reminder\SetRemindersForm.resx">
+      <DependentUpon>SetRemindersForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StickyNotes\StickyForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StickyForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

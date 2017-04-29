@@ -1,0 +1,72 @@
+﻿.grid
+{
+	min-height:24px;
+	overflow:hidden;
+	font:12px arial;
+	border:solid 1px red;
+	position:relative;
+	width:400px;
+	margin:100px 0px 0px 100px;
+}
+.grid .caption,.grid .body,.grid .foot
+{
+	border-bottom:solid 1px silver;
+}
+.grid, .grid table
+{
+	border-collapse:collapse;
+}
+.grid table td
+{
+	padding:0px;
+	margin:0px;
+	/*border:solid 1px;*/
+}
+.grid table td div.header_cell_content
+{
+	border:0px;
+	padding:1px 4px 1px 4px;
+}
+.grid .header_cell_content
+{	  
+	white-space:nowrap;
+	overflow:hidden;
+	line-height:20px;	
+}
+.grid .header_table, .grid .body_table
+{
+	table-layout:fixed;
+	width:2px;
+}
+.grid .header_container
+{
+	width:100%;
+}
+.grid .header_cell
+{
+	width:70px;
+	border-left:solid 1px silver;
+	border-right:solid 1px silver;
+	background:#EBEADB;
+}
+.grid .header_cell_dragger
+{
+	border-right: solid 1px white;
+	line-height:20px;
+}
+.grid .body
+{
+	width:100%;
+	height:300px;
+	overflow:auto;
+	position:relative;
+}
+.grid .caption
+{
+	
+}
+.grid .body td
+{
+    border-bottom:solid 1px #E0DEDE;
+    width:80px;
+}

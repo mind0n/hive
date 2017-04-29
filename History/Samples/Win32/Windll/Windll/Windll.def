@@ -1,0 +1,7 @@
+LIBRARY	"Windll.dll"
+
+EXPORTS
+    WinDbgExtensionDllInit
+    ExtensionApiVersion
+    dumpstrings
+    help

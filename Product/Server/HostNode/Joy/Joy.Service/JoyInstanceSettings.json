@@ -1,0 +1,4 @@
+﻿{
+    "BaseDir": "{0}..\\..\\..\\..\\Joy\\Joy.Service\\Js"
+	, ProviderName: "Joy.Service.FileContentProvider"
+}

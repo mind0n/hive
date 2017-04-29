@@ -1,0 +1,20 @@
+﻿<Window x:Class="Wpf.Startup.EncodeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Encoder" Height="287" Width="295" WindowStartupLocation="CenterScreen" AllowDrop="True" Drop="Window_Drop_1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37"/>
+            <RowDefinition Height="233*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox Name="encType" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="95">
+            <ComboBoxItem Content="Base64" IsSelected="True"/>
+            <ComboBoxItem Content="DES"/>
+        </ComboBox>
+        <Button Content="Run" Name="bEncode" HorizontalAlignment="Right" Height="21" Margin="0,10,10,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="1.088,0.531" />
+        <TextBox Name="box" HorizontalAlignment="Stretch" AcceptsReturn="True" Margin="10,9.781,10,10" Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" Text="" VerticalAlignment="Stretch"/>
+    </Grid>
+</Window>

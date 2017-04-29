@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<begin>
+	<Descriptions>
+		<item> </item>
+	</Descriptions>	
+
+	<set Id="Is Clear Data" />
+	<set Id="Repeat" IsCondition="false" Content="160000"  />
+	<sqlconnect Id="d" Server="." IsTrusted="true" User="" Pwd="" />
+	<if IsTrue="Is Clear Data">
+		<executesql ConnectionId="d" Database="DBA" Sql="truncate table tb" />
+		<executesql ConnectionId="d" Database="DBA" Sql="delete from ta" />
+	</if>
+	<insertalarm Connection="d" Repeat="$Repeat" Database="Database" />
+</begin>

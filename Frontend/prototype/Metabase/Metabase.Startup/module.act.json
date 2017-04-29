@@ -1,0 +1,21 @@
+﻿{
+	"module": {
+		"basedir": "./",
+		"pattern": "Act.Infrastructure.dll",
+		"domain": "sample-module",
+		"enabled": true,
+		"entry": ".sampleentry",
+		"settings": {
+			"test": "Success~"
+		}
+	},"another": {
+		"basedir": "./",
+		"pattern": "Act.Infrastructure.dll",
+		"domain": "another-module",
+		"enabled": false,
+		"entry": ".sampleentry",
+		"settings": {
+			"test": "Success~"
+		}
+	}
+}

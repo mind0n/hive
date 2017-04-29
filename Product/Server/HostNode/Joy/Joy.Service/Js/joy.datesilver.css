@@ -1,0 +1,118 @@
+﻿
+
+.flex .ui-resizable-e, .flex .ui-resizable-s, .flex .ui-resizable-se, .flex .ui-resizable-m {
+    border:solid 1px gray;
+    background:white;
+}
+.flex .ui-resizable-m {
+}
+.flex .ui-resizable-e {
+}
+.flex .ui-resizable-s {
+}
+.flex .ui-resizable-se {
+}
+.form {
+    background:#F2F2F2;
+    border:solid 1px silver;
+}
+.form .content{
+    background:#dcdcdc;
+    border:solid 1px gray;
+    padding-right:1px;
+}
+.form .container .caption{
+    background:#e3c89e;
+    color:black;
+    border:solid 1px gray;
+}
+.form .container .resizer{
+}
+.thin.form {
+    background:#F2F2F2;
+    border:solid 1px silver;
+}
+.thin.form .container .caption{
+    border-left:solid 1px white;
+    border-top:solid 1px white;
+    border-right:solid 0px white;
+    border-bottom:solid 0px white;
+    
+    background:#e3c89e;
+    color:black;
+}
+.thin.form .content{
+    background:#dcdcdc;
+    padding-right:1px;
+    border:0;
+    border-top:solid 1px gray;
+}
+
+.mask{
+    color:darkred;
+    background:white;
+    opacity:0.9;
+}
+.menu {
+    
+}
+.menuitem{
+    border-top: solid 1px white;
+    border-bottom: solid 1px gray;
+    border-left: solid 1px white;
+    min-height:24px;
+}
+.menuitem > .itemarea {
+}
+.menuitem>.itemarea.mouseover{
+    background:silver;
+    color:black;
+}
+.menuitem>.itemarea.selected {
+    background:#9F7273;
+    color:white;
+    border-right:white;
+}
+.menuitem > .itemarea > .lexp, .menuitem.expanded > .itemarea > .lexp,
+.menuitem > .itemarea > .rexp, .menuitem.expanded > .itemarea > .rexp {
+    background-image:url(/joy/img/jqueryui/images/ui-icons_222222_256x240.png);
+}
+.menuitem > .itemarea > .rexp {
+    background-position:-32px 0px;
+    /*
+    background-position:-48px -192px;
+    */
+}
+.menuitem.expanded > .itemarea > .rexp {
+    background-position:-64px 0px;
+    /*
+    background-position:-64px -192px;
+    */
+}
+.menuitem > .itemarea > .lexp {
+    background-position:-32px 0px;
+    /*
+    background-position:-16px -128px;
+    */
+}
+.menuitem.expanded > .itemarea > .lexp {
+    background-position:-64px 0px;
+    /*
+    background-position:-48px -128px;
+    */
+}
+.menuitem >.itemarea> .rexp, .menuitem>.itemarea > .lexp, .menuitem>.itemarea > .link {
+    font:12px arial, verdana;
+    line-height:24px;
+    cursor:pointer;
+}
+
+.menuitem > .subs {
+    border-top:solid 1px gray;
+    border-left:solid 0px gray;
+    background:#F2F2F2;
+    color:black;
+}
+.thin.form .menuitem > .subs{
+    border-right:solid 0px white;
+}

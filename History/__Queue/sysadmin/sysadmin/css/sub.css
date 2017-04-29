@@ -1,0 +1,62 @@
+﻿img { border:0; }
+.map { background-color:#ccc; overflow:hidden; height:30px; line-height:30px; text-align:left; padding-left:10px; }
+
+.content { float:left; margin:10px 0 0 10px; text-align:left; }
+fieldset { width:100%; margin-bottom:10px; line-height:30px; text-align:left; margin:auto; }
+a { text-decoration:none; color:#0467a6; }
+a:hover { text-decoration:underline; }
+
+/*input { border:1px solid #999999; }*/
+
+.input_txt { border:1px solid #999999; height:16px; }
+.optbtn { border:1px solid gray;FONT-SIZE: 12px; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 22px; LINE-HEIGHT: normal }
+
+.btn 
+{
+	border:#06597D 1px solid; 
+	padding:3px 12px 2px 12px; 
+	font-size:12px; 
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#dcf4fd, EndColorStr=#3eb1e0); 
+	cursor:pointer;
+	_cursor: hand;
+	color: black; 
+}
+
+.contsub { float:left; border-bottom:1px solid #99bbe8; border-left:1px solid #99bbe8; border-right:1px solid #99bbe8; width:100%; }
+.headdiv { float:left; background:url(../images/white-top-bottom.gif); height:27px; width:100%; border-bottom:1px solid #99bbe8; line-height:27px; text-align:left; }
+.operdiv { float:left; width:100%; border-bottom:1px solid #99bbe8; line-height:27px; text-align:left; margin-top:5px; }
+.table
+{
+	width:100%;
+	border-collapse:collapse;
+	font-size:13px;
+}
+.table td { /*width:100px;*/height:29px;border-bottom:1px solid #d0d0d0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; }
+.table th { border-right:1px solid #d0d0d0;background:url(../images/grid3-hrow.gif);height:24px; }
+.table tr.odd { background:url(../images/row-over.gif); }
+
+.pagediv { float:left; margin-top:10px; text-align:center; margin-bottom:5px; width:100%; }
+.light { color:Red; }
+.remark { color:Gray; }
+
+.imgfrm { float:left; border:1px solid #dcdcdc; margin-right:10px; width:122px; }
+.imgbox { margin:10px 1px 5px 1px; width:120px; height:75px; overflow:hidden; }
+.imgbox img { width:120px; }
+.namebox { margin-top:5px; width:100%; overflow:hidden; }
+.chkbox { margin-top:5px; width:100%; text-align:center; }
+
+.tbfrm { width:100%; border-collapse:collapse; margin-bottom:10px; }
+.tbfrm td { border:1px solid #0099cc; padding:5px 5px 5px 5px; text-align:left; }
+
+.lsttb { width:100%; text-align:left; border-collapse:collapse; }
+.lsttb tr { border-bottom:1px solid gray; }
+
+.txltb { width:100%; text-align:left; border-collapse:collapse; border:1px solid #a4b8da; }
+.txltb thead { text-align:center; font-weight:bold; background-color:#dcdcdc; }
+.txltb tr { }
+.txltb tr.sel { background-color:#eef5fa; }
+.txltb tr td {  border:1px solid #a4b8da; }
+
+.csstable { width:100%; text-align:left; border-collapse:collapse; }
+.csstable tr { }
+.csstable tr td { border:1px solid gray; padding:0 5px 0 5px; }

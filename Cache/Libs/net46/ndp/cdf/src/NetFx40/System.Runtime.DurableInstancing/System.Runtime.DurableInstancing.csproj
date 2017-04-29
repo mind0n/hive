@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
+    <ProjectGuid>{80cb11eb-b358-4488-a069-874ea79bcc3e}</ProjectGuid>
+    <OutputPath>.</OutputPath>
+    <OutputType>Library</OutputType>
+    <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+    <UseVSHostingProcess>False</UseVSHostingProcess>
+    <NoStdLib>True</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <DefineConstants>CODE_ANALYSIS_BASELINE;TRACE;RETAIL;WIN32</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " >
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\clr\src\bcl\mscorlib.csproj">
+      <Project>{224f6f5b-c254-4b89-95cd-b690effa845e}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\fx\src\System.csproj">
+      <Project>{41970311-a2a7-4957-b118-3e82738754bb}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\fx\src\Core\System.Core.csproj">
+      <Project>{8237366e-c580-4edf-9fbc-6bc04dd169c7}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WCF\Serialization\System.Runtime.Serialization.csproj">
+      <Project>{37eb1eeb-513b-4952-b776-fdb6cd704c5f}</Project>
+      <Name>System.Runtime.Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\System.ServiceModel.Internals\System.ServiceModel.Internals.csproj">
+      <Project>{ca19e220-5feb-4181-80ff-d13fdd049bfa}</Project>
+      <Name>System.ServiceModel.Internals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NetFx20\System.Transactions\System.Transactions.csproj">
+      <Project>{3b5bed98-862f-47aa-b3c7-f3b8879a3d07}</Project>
+      <Name>System.Transactions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\fx\src\Xml\System.Xml.csproj">
+      <Project>{e8f114a4-6ee9-49ae-9129-c5d7579eb5e9}</Project>
+      <Name>System.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\fx\src\XLinq\System.Xml.Linq.csproj">
+      <Project>{b2264e1e-916e-43cf-9880-7fbc48493ee4}</Project>
+      <Name>System.Xml.Linq</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\DisassociateInstanceKeysExtension.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\IDurableInstancingOptions.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceCollisionException.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceCompleteException.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceHandle.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceHandleConflictException.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceHandleReference.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceKey.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceKeyCollisionException.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceKeyCompleteException.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceKeyNotReadyException.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceKeyState.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceKeyView.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceLockedException.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceLockLostException.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceLockQueryResult.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceNormalEvent.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceNotReadyException.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceOwner.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceOwnerException.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceOwnerQueryResult.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstancePersistence.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstancePersistenceCommand.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstancePersistenceCommandException.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstancePersistenceContext.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstancePersistenceEvent.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstancePersistenceException.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceState.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceStore.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceStoreQueryResult.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceValue.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceValueConsistency.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceValueOptions.cs" />
+    <Compile Include="System\Runtime\DurableInstancing\InstanceView.cs" />
+    <Compile Include="System\Runtime\ICancelable.cs" />
+    <Compile Include="System\Runtime\IPersistencePipelineModule.cs" />
+    <Compile Include="System\Runtime\PersistenceMetadataNamespace.cs" />
+    <Compile Include="System\Runtime\PersistencePipeline.cs" />
+    <Compile Include="System\Runtime\TransactedAsyncResult.cs" />
+    <Compile Include="System\Runtime\TransactionHelper.cs" />
+    <Compile Include="System\Runtime\Workflow45Namespace.cs" />
+    <Compile Include="System\Runtime\WorkflowNamespace.cs" />
+    <Compile Include="System\Runtime\WorkflowServiceNamespace.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

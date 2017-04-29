@@ -1,0 +1,48 @@
+﻿.dataviewer
+{
+	font:12px arial;	
+}
+.dataviewer .headerow
+{
+	font-weight:bolder;
+}
+
+.dataviewer .datarow.even
+{
+	background:silver;
+}
+.dataviewer .headerow .dragger
+{
+	background:none;
+	border-right:solid 0px silver;
+}
+.dataviewer .headerow .headercell, .dataviewer .datarow .datacell
+{
+	overflow:hidden;
+	white-space:nowrap;
+	
+	
+	display:block;
+	line-height:24px;
+	/*padding:0px 6px 0px 6px;*/
+	width:80px;
+	height:24px;
+	border-right:solid 1px silver;
+	border-bottom:solid 1px silver;
+}
+.dataviewer .headerow .headercell
+{
+	height: 24px;
+}
+.dataviewer .datarow .datacell
+{
+	
+	
+}
+/*
+.dataviewer .headerow .headercell:after, .dataviewer .datarow .datacell:after
+{
+	content:"...";
+	margin-left:5px;
+	font-size:12px;
+}/* for Firefox */

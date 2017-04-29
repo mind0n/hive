@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="/theme/Site.css" />
+<style type="text/css">
+	select
+	{
+		height:24px;
+	}
+    td
+    {
+        border:solid 1px gray;
+        width:180px;
+    }
+
+	.editablerect .editbox
+	{
+	}
+	.editablerect .checkbox
+	{
+	}
+</style>
+<script src="/Joy/Joy.js" type="text/javascript"></script>
+<script src="/Joy/Controls/SimpleMenu.js" type="text/javascript"></script>
+<script src="/Joy/Controls/DropDown.js" type="text/javascript"></script>
+<script src="/Joy/Controls/EditableRect.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var unameEl, upwdEl, utypeEl, unoteEl;
+    function edit() {
+        unameEl.edit();
+        upwdEl.edit();
+        utypeEl.edit();
+        unoteEl.edit();
+    }
+    function reject(){
+        unameEl.reject();
+        upwdEl.reject();
+        utypeEl.reject();
+        unoteEl.reject();
+    }
+    function accept(){
+        unameEl.accept();
+        upwdEl.accept();
+        utypeEl.accept();
+        unoteEl.accept();
+    }
+
+
+    var toolbox = {
+        tagName: 'div'
+        , $:[
+            {tagName:'input', type:'button', value:'Edit', onclick:edit}
+            , { tagName: 'input', type: 'button', value: 'Accept', onclick: accept }
+            , { tagName: 'input', type: 'button', value: 'Reject', onclick: reject }
+          ]
+    };
+    Joy.ready(function () {
+    	var box;
+    	unameEl = Joy.make('EditableRect');
+    	unameEl.setData({ value: 'Username' });
+    	unameEl.edit();
+
+    	upwdEl = Joy.make('EditableRect');
+    	upwdEl.setData({ value: 'Password' });
+    	upwdEl.edit();
+
+    	utypeEl = Joy.make('EditableRect');
+    	utypeEl.editor = 'dropdown';
+    	utypeEl.setData({
+    		items: [{ text: 'Administrator', value: 0 }, { text: 'User', value: 1 }, { text: 'Guest', value: 9}]
+		, value: 9
+    	});
+    	utypeEl.edit();
+
+    	unoteEl = Joy.make('EditableRect');
+    	unoteEl.setData({ value: 'Descriptions' });
+    	unoteEl.edit();
+
+    	box = document.getElementById('uname');
+        box.appendChild(unameEl);
+        box = document.getElementById('upwd');
+        box.appendChild(upwdEl);
+        box = document.getElementById('utype');
+        box.appendChild(utypeEl);
+        box = document.getElementById('unote');
+        box.appendChild(unoteEl);
+        document.getElementById('c').appendChild(Joy.make(toolbox));
+    });
+</script>
+</head>
+<body>
+<div id='c' style="width:2048px; height:2048px;">
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+    <table class="grid">
+    <tr>
+        <td id='uname'></td>
+        <td id='upwd'></td>
+        <td id='utype'></td>
+        <td id='unote'></td>
+    </tr>
+    </table>
+
+</div>
+</body>
+</html>

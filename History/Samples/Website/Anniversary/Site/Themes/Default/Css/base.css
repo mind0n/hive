@@ -1,0 +1,76 @@
+﻿div.bg
+{
+	position:relative;
+	min-height:500px;
+	width:100%;
+	margin:0px;
+	padding:100px 0px 0px 0px;
+}
+div.bg div.sixty
+{
+	position:absolute;
+	display:none;
+	width:100px;
+	height:100px;
+	left:140px;
+	top:0px;
+}
+div.bg div.sixty img
+{
+	width:100%;
+	height:100%;
+}
+div.bg div.main
+{
+	position:relative;
+	width:901px;
+	border:solid 0px white;
+	margin:0px auto;
+}
+div.bg div.main div.news
+{
+	border:solid 1px gold;
+	background:white;	
+	min-height:600px;
+	clear:both;
+	margin:0px;
+	padding:0px;
+    background-image:url(../../Default/Images/split.jpg);
+    background-repeat:repeat-y;
+    background-position:670px;
+}
+div.bg div.main div.leftpanel,div.bg div.main div.rightpanel
+{
+	padding-top:1px;
+}
+div.bg div.main div.leftpanel
+{
+	float:left;
+	width:680px;
+	height:100%;
+}
+div.bg div.main div.rightpanel
+{
+	margin-left:680px;
+	margin-top:0px;
+	height:100%;
+	position:relative;
+}
+div.bg div.bottom
+{
+	clear:both;
+	border-top: solid 1px #B50606;
+	border-left:solid 1px  gold;
+	border-right:solid 1px gold;
+	background:#9C2C2F;
+	color:White;
+	text-align:center;
+	line-height:24px;
+	padding:6px 12px 6px 12px;
+	margin:0px;
+	height:24px;
+}
+div.bg div.main div.bottom, div.bg div.main div.bottom *
+{
+	line-height:24px;
+}

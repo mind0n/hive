@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<invoke>
+	<method Name="GetDataTable">
+		<param>TableName</param>
+		<param Name="ParamName">ok</param>
+	</method>
+</invoke>

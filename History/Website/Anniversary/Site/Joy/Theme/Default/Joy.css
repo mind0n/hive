@@ -1,0 +1,48 @@
+﻿.opacity {
+	filter:alpha(opacity=50);
+}
+.notification {
+	z-index:900;
+	top:0px;
+	left:350px;
+	right:350px;
+	height:32px;
+	background:#57A9CE;
+	color:white;
+	position:fixed;
+	border: solid 1px white;
+}
+.notification .msgarea {
+	margin-right:32px;
+	padding:6px 12px 6px 12px;
+}
+.notification .btnclose {
+	position:absolute;
+	right:12px;
+	top:6px;
+	cursor:pointer;
+}
+.filelist {
+	margin:12px;
+}
+.filelist input {
+	width:80%;
+				
+}
+.filelist img {
+	width:64px;
+	height:64px;
+}
+.filelist div {
+	display:block;
+	height:24px;
+	vertical-align:middle;
+	padding-right:24px;
+}
+.filelist div.fleft {
+	float:left;
+}
+
+.filelist div.item {
+	margin-bottom:12px;
+}

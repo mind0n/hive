@@ -1,0 +1,32 @@
+﻿{
+	"assets": {
+		"asm": "../../../Act.Entry/bin/debug/Act.Entry.dll",
+		"domain": "assets-domain",
+		"enabled": true,
+		"entry": ".widgetentry",
+		"settings": {
+			"port": 80,
+			"threads": 12,
+			"dispatcher": {
+				"type": "Act.Infrastructure.SoloDispatcher,Act.Infrastructure",
+				"backup": "Act.Infrastructure.QueueDispatcher,Act.Infrastructure",
+				"timeout": 90
+			},
+			"loader": {
+				"type": "Act.Infrastructure.SeparateDomainLoader,Act.Infrastructure",
+				"processor": "Act.Processors.WidgetProcessor,Act.Processors",
+				"settings": {
+					"handlers": [
+						{
+							"type": "Act.Processors.StaticFileHandler,Act.Processors",
+							"basedir": "../../../../../github/widgets/assets/"
+						}
+					]
+				},
+				"domain": "assets-loader-domain",
+				"logger": "Act.Core.ConsoleLogManager,Act.Core"
+			},
+			"message": "Success~"
+		}
+	}
+}

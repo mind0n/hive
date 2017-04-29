@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+<script src="/Joy/Joy.js" type="text/javascript"></script>
+<script src="/Joy/Security/MD5.js" type="text/javascript"></script>
+<script src="/Joy/Security/sha1.js"></script>
+<script src="/Joy/Security/aes.js"></script>
+<script>
+//	var hash = CryptoJS.SHA1("Message");
+//	hash += " , " + CryptoJS.MD5("Message");
+//	alert(hash);
+</script>
+<script>
+//	var encrypted = CryptoJS.AES.encrypt("Message", "332211");
+//	alert(encrypted);
+//	var decrypted = CryptoJS.AES.decrypt(encrypted, "332211");
+//	alert(decrypted); // Message
+</script>
+
+<script type="text/javascript">
+	var b = {
+		tagName: 'input',
+		type: 'button',
+		value: 'Login',
+		onmousedown: function (evt) {
+			var pwd = '123';
+		}
+	};
+	Joy.ready(function () {
+		var btn = Joy.make(b);
+		document.body.appendChild(btn);
+	});
+</script>
+</head>
+<body>
+	 
+</body>
+</html>

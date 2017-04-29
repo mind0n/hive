@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.ServiceProcess;
+using System.Threading.Tasks;
+using Joy.Windows;
+
+namespace ServiceLoader
+{
+    static class Program
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        //[STAThread]
+        static void Main()
+        {
+            ServiceBase[] ServicesToRun;
+            ServicesToRun = new ServiceBase[] 
+            { 
+                new LoaderService() 
+            };
+            ServiceBase.Run(ServicesToRun);            
+
+            //MessageBox.Show("ok");
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new Form1());
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@mixin col($name, $i, $num){
+    @media(#{$name}){
+        .row .col-#{$name}-#{$i}{
+            width: $i / $num * 100%;
+            padding:.5em;
+            float:left;
+        }
+    }
+}
+
+@mixin cols($num){
+    @for $i from 1 through $num{
+        #{$root} {
+            @include col("phone-p", $i, $num);
+            @include col("phone-l", $i, $num);
+            @include col("tablet-p", $i, $num);
+            @include col("tablet-l", $i, $num);
+            @include col("desktop", $i, $num);
+            @include col("desktop-lg", $i, $num);
+        }        
+    }
+}
+
+@include cols(12);

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
+    <ProjectGuid>{91ffb6f3-b8cf-4e15-ade7-28f76d98bb60}</ProjectGuid>
+    <OutputPath>.</OutputPath>
+    <OutputType>Library</OutputType>
+    <AssemblyName>System.Web.Entity</AssemblyName>
+    <UseVSHostingProcess>False</UseVSHostingProcess>
+    <NoStdLib>True</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <DefineConstants>CODE_ANALYSIS_BASELINE;FEATURE_LEGACYSURFACEAREA;FEATURE_UTF32;FEATURE_UTF7;TRACE;RETAIL;WIN32</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " >
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\clr\src\bcl\mscorlib.csproj">
+      <Project>{224f6f5b-c254-4b89-95cd-b690effa845e}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.csproj">
+      <Project>{41970311-a2a7-4957-b118-3e82738754bb}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Configuration\System.Configuration.csproj">
+      <Project>{c8acffc3-9a67-4b99-b153-3456d8d6a9e2}</Project>
+      <Name>System.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\System.Core.csproj">
+      <Project>{8237366e-c580-4edf-9fbc-6bc04dd169c7}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\data\System.Data.csproj">
+      <Project>{43a395d8-b07e-4166-a2ec-54449a6112aa}</Project>
+      <Name>System.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataEntity\System.Data.Entity.csproj">
+      <Project>{9105a4b3-fdec-4e1b-bba5-ef590dff9680}</Project>
+      <Name>System.Data.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Drawing.csproj">
+      <Project>{25f1569b-f36d-466e-8854-89f1b79cd829}</Project>
+      <Name>System.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\cdf\src\WCF\Serialization\System.Runtime.Serialization.csproj">
+      <Project>{37eb1eeb-513b-4952-b776-fdb6cd704c5f}</Project>
+      <Name>System.Runtime.Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\cdf\src\NetFx20\System.Transactions\System.Transactions.csproj">
+      <Project>{3b5bed98-862f-47aa-b3c7-f3b8879a3d07}</Project>
+      <Name>System.Transactions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xsp\system\Web\System.Web.csproj">
+      <Project>{6a36d565-8a5f-41fa-8245-4a49dfc23278}</Project>
+      <Name>System.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\xsp\system\Extensions\System.Web.Extensions.csproj">
+      <Project>{c37e5a1e-64ef-463e-b903-09af6c049d62}</Project>
+      <Name>System.Web.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Windows.Forms.csproj">
+      <Project>{09e79805-e450-4d79-96d0-f9e426c6652e}</Project>
+      <Name>System.Windows.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xml\System.Xml.csproj">
+      <Project>{e8f114a4-6ee9-49ae-9129-c5d7579eb5e9}</Project>
+      <Name>System.Xml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSource.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceChangedEventArgs.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceChangingEventArgs.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceColumn.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceContextCreatedEventArgs.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceContextCreatingEventArgs.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceContextDisposingEventArgs.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceMemberPath.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceQueryBuilder.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceReferenceGroup.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceSelectedEventArgs.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceSelectingEventArgs.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceUtil.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceValidationException.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceView.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceViewSchema.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceWrapper.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceWrapperCollection.cs" />
+    <Compile Include="System\Data\WebControls\EntityDataSourceWrapperPropertyDescriptor.cs" />
+    <Compile Include="System\Data\WebControls\OrderByBuilder.cs" />
+    <Compile Include="System\Data\WebControls\ResourceDescriptionAttribute.cs" />
+    <Compile Include="System\Data\WebControls\ResourceDisplayNameAttribute.cs" />
+    <Compile Include="System\Data\WebControls\WebControlParameterProxy.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
+    <ProjectGuid>{9f4e2087-af84-4240-ab74-46ddd3546ed4}</ProjectGuid>
+    <OutputPath>.</OutputPath>
+    <OutputType>Library</OutputType>
+    <AssemblyName>PresentationFramework.Luna</AssemblyName>
+    <UseVSHostingProcess>False</UseVSHostingProcess>
+    <NoStdLib>True</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <DefineConstants>CODE_ANALYSIS_BASELINE;THEME_LUNA;TRACE;RETAIL;WIN32</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " >
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\ndp\clr\src\bcl\mscorlib.csproj">
+      <Project>{224f6f5b-c254-4b89-95cd-b690effa845e}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PresentationCore.csproj">
+      <Project>{e556ed9d-6b47-4362-a6e3-eda0139224e0}</Project>
+      <Name>PresentationCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\PresentationFramework.csproj">
+      <Project>{426d73ca-280b-4a37-956d-0883b44f5aa9}</Project>
+      <Name>PresentationFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\ndp\fx\src\System.csproj">
+      <Project>{41970311-a2a7-4957-b118-3e82738754bb}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WindowsBase.csproj">
+      <Project>{baac4c8e-f013-46b8-886c-06283b8f8005}</Project>
+      <Name>WindowsBase</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationUI" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Test\Common\FxCop\Suppression\Luna\Security.cs" />
+    <Compile Include="..\Shared\Microsoft\Windows\Themes\BulletChrome.cs" />
+    <Compile Include="..\Shared\Microsoft\Windows\Themes\DataGridHeaderBorder.cs" />
+    <Compile Include="..\Shared\Microsoft\Windows\Themes\KnownTypeHelper.cs" />
+    <Compile Include="..\Shared\Microsoft\Windows\Themes\PlatformCulture.cs" />
+    <Compile Include="..\Shared\Microsoft\Windows\Themes\ProgressBarBrushConverter.cs" />
+    <Compile Include="..\Shared\Microsoft\Windows\Themes\SystemDropShadowChrome.cs" />
+    <Compile Include="Microsoft\Windows\Themes\ButtonChrome.cs" />
+    <Compile Include="Microsoft\Windows\Themes\DataGridHeaderBorder.cs" />
+    <Compile Include="Microsoft\Windows\Themes\ScrollChrome.cs" />
+    <Compile Include="Microsoft\Windows\Themes\ScrollGlyph.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

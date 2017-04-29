@@ -1,0 +1,93 @@
+﻿<data>
+  <fields>
+    <field name="ID" type="Int" isPrimaryKey="true" autoIncStart="0"/>
+    <field name="FirstName" type="String"/>
+    <field name="LastName" type="String"/>
+    <field name="BirthDate" type="DateTime"/>
+    <field name="IsCitizen" type="Bool"/>
+    <field name="Float" type="Float"/>
+    <field name="Byte" type="Byte"/>
+    <field name="Double" type="Double"/>
+    <field name="UInt" type="UInt"/>
+    <field name="IntArray" type="Int" isArray="true"/>
+    <field name="StringArray" type="String" isArray="true"/>
+    <field name="DateTimeArray" type="DateTime" isArray="true"/>
+    <field name="BoolArray" type="Bool" isArray="true"/>
+    <field name="FloatArray" type="Float" isArray="true"/>
+    <field name="ByteArray" type="Byte" isArray="true"/>
+  </fields>
+  <rows>
+    <row>
+      <col></col>
+      <col>Nancy</col>
+      <col>Davolio</col>
+      <col>1968-12-8</col>
+      <col>true</col>
+      <col>1.23</col>
+      <col>1</col>
+      <col>4.56</col>
+      <col>100</col>
+      <col>100|200|300|400</col>
+      <col>one|two|three</col>
+      <col>1988-5-2|1990-10-24|1991-2-16</col>
+      <col>true|false|true|false</col>
+      <col>1.2|2.4|3.6|4.8</col>
+      <col>1|2|3|4</col>
+    </row>
+    <row>
+      <col></col>
+      <col>Andrew</col>
+      <col>Fuller</col>
+      <col>1962-2-19</col>
+      <col>true</col>
+      <col>2.567</col>
+      <col>2</col>
+      <col>.789</col>
+      <col>200</col>
+      <col>200|300|400|500</col>
+      <col>two|three|four</col>
+      <col>1976-5-18|1981-1-30|1999-12-11</col>
+      <col>false|true|true|false</col>
+    </row>
+    <row>
+      <col></col>
+      <col>Janet</col>
+      <col>Leverling</col>
+      <col>1963-8-30</col>
+      <col>false</col>
+      <col>3.14</col>
+      <col>3</col>
+      <col>8.43</col>
+      <col>300</col>
+      <col>300|400|500|600</col>
+      <col>three|four|five</col>
+    </row>
+    <row>
+      <col></col>
+      <col>Margaret</col>
+      <col>Peacock</col>
+      <col>1957-9-29</col>
+      <col>true</col>
+      <col>4.96</col>
+      <col>4</col>
+    </row>
+    <row>
+      <col></col>
+      <col>Steven</col>
+      <col>Buchanan</col>
+      <col>1965-3-4</col>
+      <col>true</col>
+      <col>5.7</col>
+      <col>5</col>
+    </row>
+    <row>
+      <col></col>
+      <col>Nancy</col>
+      <col>Fuller</col>
+      <col>1965-12-1</col>
+      <col>true</col>
+      <col>6.1</col>
+      <col>6</col>
+    </row>
+  </rows>
+</data>

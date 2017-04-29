@@ -1,0 +1,48 @@
+﻿@mixin theme($name, $color, $colorhover, $colorbtn, $bg, $bghover, $border, $borderOutline){
+	#{$root}.#{$name} btn, #{$root}.#{$name} button, #{$root}.#{$name} textarea, #{$root}.#{$name} .caption{
+		color:$color;
+	}
+	#{$root}.#{$name} .popup{
+		border:$borderOutline;
+		background:$bg;
+	}
+	#{$root}.#{$name} .cover{
+		background-color:black;
+	}
+	#{$root}.#{$name} .dropdown{
+		border:$border;
+	}
+	#{$root}.#{$name} .dropdown .toggle{
+	}
+	#{$root}.#{$name} .dropdown .toggle input[type=text]{
+	}
+	#{$root}.#{$name} .dropdown .toggle .caret-container{
+	}
+	#{$root}.#{$name} .dropdown .toggle .caret.right{
+	}
+	#{$root}.#{$name} .simple-menu{
+		border:$border;
+		background-color:$bg;
+	}
+	#{$root}.#{$name} .simple-menu-item{
+
+	}
+	#{$root}.#{$name} .simple-menu-item a{
+		
+	}
+	#{$root}.#{$name} .simple-menu-item:hover{
+		background-color:$bghover;
+	}
+	#{$root}.#{$name} .popup.form .btns .btn{
+		color:$colorbtn;
+	}
+	#{$root}.#{$name} .popup.form .btns .btn:hover, #{$root}.#{$name} .popup.form button:hover{
+		color:$colorhover;
+		background:$bghover;
+	}
+	#{$root}.#{$name} .popup.form button{
+		border:$border;
+	}
+}
+@include theme($name:'theme-basic', $color:#000, $colorhover:#fff, $colorbtn:#999, $bg:#fff, $bghover:#aaa, $border:solid 1px silver, $borderOutline:solid 1px silver);
+@include theme($name:'theme-dark', $color:#999, $colorhover:#fff, $colorbtn:#999, $bg:#111, $bghover:#333, $border:solid 1px #999, $borderOutline:solid 1px #eee);

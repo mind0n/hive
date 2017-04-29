@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="Site.Admin.Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="x-ua-compatible" content="ie=7" />
+    <title></title>
+    <style type="text/css">@import url("<%=RootUrl %>Themes/Admin/admin.css");</style>
+</head>
+<body>
+    <div class="total">
+        <form class="form" id="form1" runat="server">
+        <div class="header">
+            <table>
+                <tr>
+                    <td>
+                        <div class="userarea">
+                            <div class="username">
+                                当前用户：<span runat="server" id="curtuser">UserName</span>
+                            </div>
+                            <div style="float: right; margin-right: 24px;">
+                                <asp:Button CssClass="btnlogout" runat="server" ID="logoutbtn" Text="注销" /></div>
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+					<td rowspan="2" class="msgarea">                        
+						<asp:ContentPlaceHolder ID="msgplace" runat="server">
+                        </asp:ContentPlaceHolder>
+					</td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td class="tabarea">
+                        <span>
+                            <asp:ContentPlaceHolder ID="tabplace" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </span>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="middle">
+            <div class="menuarea">
+                <div class="menu">
+                    <div class="category">
+                        <div class="caption">
+                            用户管理</div>
+                        <div class="itemarea">
+                            <a href="UsersManage.aspx">添加修改用户</a></div>
+                    </div>
+                    <div class="category">
+                        <div class="caption">
+                            分类管理</div>
+                        <div class="itemarea">
+                            <a href="CategoriesManage.aspx">添加修改分类</a></div>
+                    </div>
+                    <div class="category">
+                        <div class="caption">
+                            文章管理</div>
+                        <div class="itemarea">
+                            <a href="ArticleAddModify.aspx">添加文章</a>&nbsp;|&nbsp;<a href="ArticlesManage.aspx">文章列表</a></div>
+                    </div>
+                    <div class="category">
+                        <div class="caption">
+                            显示配置管理</div>
+                        <div class="itemarea">
+                            <a href="PcMappingManage.aspx">添加修改显示方式</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="targetarea">
+                <div class="toolbar_area">
+                    <table>
+                        <tr>
+                            <td class="toolbar_pwa">
+                                <asp:ContentPlaceHolder ID="toolbarpwa" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                            <td class="toolbar_waa">
+                                <asp:ContentPlaceHolder ID="toolbarwaa" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contentarea">
+                    <asp:ContentPlaceHolder ID="targetplace" runat="server">
+                    
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+        </form>
+
+    </div>
+</body>
+</html>

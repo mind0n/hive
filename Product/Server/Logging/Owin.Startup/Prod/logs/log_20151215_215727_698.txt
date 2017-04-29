@@ -1,0 +1,53 @@
+[2015/12/15 21:51:02 075](-1):	Owin.Startup>	Hosted on port: 443
+[2015/12/15 21:51:25 036](-1):	Owin.Startup>	[::1-https://localhost/
+		Upgrade-Insecure-Requests=1
+		Connection=keep-alive
+		Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+		Accept-Encoding=gzip, deflate, sdch
+		Accept-Language=en-US,en;q=0.8
+		Host=localhost
+		User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36]
+[2015/12/15 21:51:25 608](571):	Owin.Startup>	[::1-https://localhost/favicon.ico
+		Connection=keep-alive
+		Accept=*/*
+		Accept-Encoding=gzip, deflate, sdch
+		Accept-Language=en-US,en;q=0.8
+		Host=localhost
+		Referer=https://localhost/
+		User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36]
+[2015/12/15 21:51:56 157](533):	Owin.Startup>	[::1-https://localhost/
+		Upgrade-Insecure-Requests=1
+		Cache-Control=max-age=0
+		Connection=keep-alive
+		Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+		Accept-Encoding=gzip, deflate, sdch
+		Accept-Language=en-US,en;q=0.8
+		Host=localhost
+		User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36]
+[2015/12/15 21:52:01 592](434):	Owin.Startup>	[::1-https://localhost/
+		Upgrade-Insecure-Requests=1
+		Cache-Control=max-age=0
+		Connection=keep-alive
+		Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+		Accept-Encoding=gzip, deflate, sdch
+		Accept-Language=en-US,en;q=0.8
+		Host=localhost
+		User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36]
+[2015/12/15 21:52:07 978](-1):	Owin.Startup>	[::1-https://localhost/
+		Upgrade-Insecure-Requests=1
+		Cache-Control=max-age=0
+		Connection=keep-alive
+		Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+		Accept-Encoding=gzip, deflate, sdch
+		Accept-Language=en-US,en;q=0.8
+		Host=localhost
+		User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36]
+[2015/12/15 21:52:13 097](118):	Owin.Startup>	[::1-https://localhost/
+		Upgrade-Insecure-Requests=1
+		Cache-Control=max-age=0
+		Connection=keep-alive
+		Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+		Accept-Encoding=gzip, deflate, sdch
+		Accept-Language=en-US,en;q=0.8
+		Host=localhost
+		User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36]

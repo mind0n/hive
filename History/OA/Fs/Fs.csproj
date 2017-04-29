@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CAB8050F-3B67-4483-9E72-9479AB5B53B4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fs</RootNamespace>
+    <AssemblyName>Fs</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentication\AuthCode.cs" />
+    <Compile Include="Collections\NodeReader.cs" />
+    <Compile Include="Core\Fs.cs" />
+    <Compile Include="Date\DateHelper.cs" />
+    <Compile Include="Drawing\OffsetImage.cs" />
+    <Compile Include="Drawing\RenderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drawing\RenderHelper.cs" />
+    <Compile Include="Drawing\RotateMatrix.cs" />
+    <Compile Include="Entities\BasicNode.cs" />
+    <Compile Include="Native\Windows\API\WinAPI.Const.cs" />
+    <Compile Include="Native\Windows\API\WinAPI.Import.cs" />
+    <Compile Include="Native\Windows\API\WinAPI.InnerClass.cs" />
+    <Compile Include="Native\Windows\API\WinAPI.Wrapper.cs" />
+    <Compile Include="Native\Windows\Desktop\Reminder.cs" />
+    <Compile Include="Native\Windows\Desktop\Screensaver.cs" />
+    <Compile Include="Native\Windows\Desktop\Taskbar.cs" />
+    <Compile Include="Native\Windows\Monitor\HookManager.cs" />
+    <Compile Include="Native\Windows\Monitor\Keyboard.cs" />
+    <Compile Include="Native\Windows\Monitor\MsgFilter.cs" />
+    <Compile Include="Native\Windows\RegistryReader.cs" />
+    <Compile Include="Test\TestPrivateCi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\TestXReader.cs" />
+    <Compile Include="UI\Controls\BasicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\BasicForm.Designer.cs">
+      <DependentUpon>BasicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\EventCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\EventCombo.Designer.cs">
+      <DependentUpon>EventCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\EventListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\EventListView.Designer.cs">
+      <DependentUpon>EventListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\EventListViewItem.cs" />
+    <Compile Include="UI\Controls\EventPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\EventTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\EventTreeNode.cs" />
+    <Compile Include="UI\Controls\FileOpener.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\FileOpener.Designer.cs">
+      <DependentUpon>FileOpener.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\HtmlBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\HtmlBox.Designer.cs">
+      <DependentUpon>HtmlBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\MClickCloseTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\MClickCloseTabControl.Designer.cs">
+      <DependentUpon>MClickCloseTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Authentication\Authenticate.cs">
+    </Compile>
+    <Compile Include="Authentication\AuthManager.cs" />
+    <Compile Include="Authentication\HashManager.cs" />
+    <Compile Include="Authentication\Passport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Core\Exceptions.cs" />
+    <Compile Include="Core\Logger.cs" />
+    <Compile Include="Data\DbHelper.cs" />
+    <Compile Include="Data\SqlHelper.cs" />
+    <Compile Include="Entities\Node.cs" />
+    <Compile Include="Entities\TableEntity.cs" />
+    <Compile Include="IO\Compression\Compression.cs" />
+    <Compile Include="IO\StorageHelper.cs" />
+    <Compile Include="Net\NetHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\ClassHelper.cs" />
+    <Compile Include="Text\Base64.cs" />
+    <Compile Include="Web\Client\HeaderControl.cs" />
+    <Compile Include="Web\WebHelper.cs" />
+    <Compile Include="Web\Services\Attributes.cs" />
+    <Compile Include="Web\Services\ClauseBuilder.cs" />
+    <Compile Include="Web\Services\HttpExecute.cs" />
+    <Compile Include="Web\Services\HttpQuery.cs" />
+    <Compile Include="Web\Services\HttpService.cs" />
+    <Compile Include="Xml\XReader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Data\DB.Config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Drawing\RenderForm.resx">
+      <DependentUpon>RenderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\BasicForm.resx">
+      <DependentUpon>BasicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\FileOpener.resx">
+      <DependentUpon>FileOpener.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\HtmlBox.resx">
+      <DependentUpon>HtmlBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\MClickCloseTabControl.resx">
+      <DependentUpon>MClickCloseTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

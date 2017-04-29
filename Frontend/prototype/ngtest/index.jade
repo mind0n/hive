@@ -1,0 +1,20 @@
+html
+  head
+    base(href="/")/
+    title() Angular 2 QuickStart
+    meta(charset="UTF-8")/
+    meta(name="viewport", content="width=device-width, initial-scale=1")/
+    link(rel="stylesheet", href="assets/styles.css")/
+  body
+    my-app() Loading...
+    // build:vendor
+    script(src="node_modules/systemjs/dist/system.src.js")
+    script(src="systemjs.config.js")
+    // endbuild
+
+    // build:app
+    script().
+      System.import('app/vendor').then(function() {
+          System.import('app').catch(function(err){ console.error(err); });
+      });
+    // endbuild

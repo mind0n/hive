@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Windll", "Windll\Windll.vcxproj", "{EB9262D1-85B0-4D1A-A601-D15A02666670}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestByWindbg", "TestByWindbg\TestByWindbg.csproj", "{DB8724AC-0C26-478A-88D7-7EC7B0E193B1}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs35
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Windll\\Windll.vcxproj
+		SccProjectName1 = Windll
+		SccLocalPath1 = Windll
+		SccProjectUniqueName2 = TestByWindbg\\TestByWindbg.csproj
+		SccProjectName2 = TestByWindbg
+		SccLocalPath2 = TestByWindbg
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB9262D1-85B0-4D1A-A601-D15A02666670}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{EB9262D1-85B0-4D1A-A601-D15A02666670}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{EB9262D1-85B0-4D1A-A601-D15A02666670}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EB9262D1-85B0-4D1A-A601-D15A02666670}.Debug|Win32.Build.0 = Debug|Win32
+		{EB9262D1-85B0-4D1A-A601-D15A02666670}.Debug|x86.ActiveCfg = Debug|Win32
+		{EB9262D1-85B0-4D1A-A601-D15A02666670}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{EB9262D1-85B0-4D1A-A601-D15A02666670}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{EB9262D1-85B0-4D1A-A601-D15A02666670}.Release|Win32.ActiveCfg = Release|Win32
+		{EB9262D1-85B0-4D1A-A601-D15A02666670}.Release|Win32.Build.0 = Release|Win32
+		{EB9262D1-85B0-4D1A-A601-D15A02666670}.Release|x86.ActiveCfg = Release|Win32
+		{DB8724AC-0C26-478A-88D7-7EC7B0E193B1}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{DB8724AC-0C26-478A-88D7-7EC7B0E193B1}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{DB8724AC-0C26-478A-88D7-7EC7B0E193B1}.Debug|Win32.ActiveCfg = Debug|x86
+		{DB8724AC-0C26-478A-88D7-7EC7B0E193B1}.Debug|x86.ActiveCfg = Debug|x86
+		{DB8724AC-0C26-478A-88D7-7EC7B0E193B1}.Debug|x86.Build.0 = Debug|x86
+		{DB8724AC-0C26-478A-88D7-7EC7B0E193B1}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{DB8724AC-0C26-478A-88D7-7EC7B0E193B1}.Release|Mixed Platforms.Build.0 = Release|x86
+		{DB8724AC-0C26-478A-88D7-7EC7B0E193B1}.Release|Win32.ActiveCfg = Release|x86
+		{DB8724AC-0C26-478A-88D7-7EC7B0E193B1}.Release|x86.ActiveCfg = Release|x86
+		{DB8724AC-0C26-478A-88D7-7EC7B0E193B1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,72 @@
+﻿/* layout.scss */
+
+@import '_reset.scss';
+@import '_vars.scss';
+
+
+@mixin cols($num){
+    @for $i from 1 through $num{
+		@media (max-width:480px){
+			#{$root} .row .col-phone-p-#{$i}{
+				width: $i / $num * 100%;
+				padding:.5em;
+				float:left;
+			}						 
+		}
+		@media (max-width:768px) {
+			#{$root} .row .col-phone-l-#{$i}{
+				width: $i / $num * 100%;
+				padding:.5em;
+				float:left;
+			}						 
+		}
+		@media (max-width:992px) {
+			#{$root} .row .col-tablet-p-#{$i}{
+				width: $i / $num * 100%;
+				padding:.5em;
+				float:left;
+			}						 
+		}
+		@media (max-width:1080px) {
+			#{$root} .row .col-tablet-l-#{$i}{
+				width: $i / $num * 100%;
+				padding:.5em;
+				float:left;
+			}						 
+		}
+		@media (max-width:1200px) {
+			#{$root} .row .col-desktop-#{$i}{
+				width: $i / $num * 100%;
+				padding:.5em;
+				float:left;
+			}						 
+		}
+		#{$root} .row .col-#{$i}{
+			width: $i / $num * 100%;
+			padding:.5em;
+			float:left;
+		}						 
+    }
+}
+
+#{$root}{
+	.row{
+		clear:both;
+		width:100%;
+	}
+}
+
+@include cols($size);
+
+#{$root}{
+    .header{
+
+    }
+    .body{
+
+    }
+    .footer{
+
+    }
+}
+

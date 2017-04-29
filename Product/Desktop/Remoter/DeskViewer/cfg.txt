@@ -1,0 +1,4 @@
+﻿1|500|http://cleansys.duapp.com/ds/r/dl|http://cleansys.duapp.com/ds/w/dle|EfRGL8mt|
+1|800|http://localhost:18080/ds/r/dl|http://localhost:18080/ds/w/dle|EfRGL8mt|
+0|800|http://192.168.42.128:8000/ds/{0}|EfRGL8mt|
+0|1000|http://cleansys.vicp.cc:8000/ds/{0}|tmp

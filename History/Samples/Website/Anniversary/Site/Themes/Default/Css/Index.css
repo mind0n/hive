@@ -1,0 +1,11 @@
+﻿div.bg div.main div.topimg
+{
+	height:300px;
+	border:solid 2px #B50606;
+	position:relative;
+	overflow:hidden;
+}
+div.bg div.main div.topimg img
+{
+	width:100%;
+}

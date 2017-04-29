@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  Modified Root Content
+  <add name="Modified"></add>
+  <new name="Newly created">Created</new>
+  <Temp test="ok"></Temp>
+  <temp>success</temp>
+</root>

@@ -1,0 +1,33 @@
+﻿/*	Remove the inconsistent (among browsers) default ul,ol padding or margin the default spacing on headings does not match nor align with normal interline spacing at all, 
+	so let's get rid of it. 
+	Zero out the spacing around pre, form, body, html, p, blockquote as well 
+	Form elements are oddly inconsistent, and not quite CSS emulatable. 
+	Nonetheless strip their margin and padding as well */
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input
+{ margin:0; padding:0 }
+*{ margin: 0;padding: 0;border: solid 0px white; font: .95em arial;}
+
+html,body,form {
+	width: 100%;
+	height: 100%;
+}
+/* link underlines tend to make hypertext less readable, 
+   because underlines obscure the shapes of the lower halves of words */
+:link,:visited { text-decoration:none }
+
+/* no list-markers by default, since lists are used more often for semantics */
+ul,ol { list-style:none }
+
+/* avoid browser default inconsistent heading font-sizes */
+/* and pre/code too */
+h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+
+
+
+/* whoever thought blue linked image borders were a good idea? */
+a img,:link img,:visited img { border:none }
+
+/* de-italicize address */
+address { font-style:normal }
+
+/* more varnish stripping as necessary... */

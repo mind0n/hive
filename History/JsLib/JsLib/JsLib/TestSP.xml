@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<invoke>
+	<method Name="TestSp">
+		<param>Managers</param>
+	</method>
+</invoke>

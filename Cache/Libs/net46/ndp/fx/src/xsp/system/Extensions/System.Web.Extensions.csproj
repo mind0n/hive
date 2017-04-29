@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
+    <ProjectGuid>{c37e5a1e-64ef-463e-b903-09af6c049d62}</ProjectGuid>
+    <OutputPath>.</OutputPath>
+    <OutputType>Library</OutputType>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <UseVSHostingProcess>False</UseVSHostingProcess>
+    <NoStdLib>True</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <DefineConstants>CODE_ANALYSIS_BASELINE;FEATURE_LEGACYSURFACEAREA;FEATURE_UTF32;FEATURE_UTF7;WEB_EXTENSIONS_CODE;TRACE;RETAIL;WIN32</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " >
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\clr\src\bcl\mscorlib.csproj">
+      <Project>{224f6f5b-c254-4b89-95cd-b690effa845e}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\System.csproj">
+      <Project>{41970311-a2a7-4957-b118-3e82738754bb}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAnnotations\System.ComponentModel.DataAnnotations.csproj">
+      <Project>{9b5e900a-4b44-4962-93a8-827a95fd1b55}</Project>
+      <Name>System.ComponentModel.DataAnnotations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Configuration\System.Configuration.csproj">
+      <Project>{c8acffc3-9a67-4b99-b153-3456d8d6a9e2}</Project>
+      <Name>System.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Core\System.Core.csproj">
+      <Project>{8237366e-c580-4edf-9fbc-6bc04dd169c7}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\data\System.Data.csproj">
+      <Project>{43a395d8-b07e-4166-a2ec-54449a6112aa}</Project>
+      <Name>System.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DataEntity\System.Data.Entity.csproj">
+      <Project>{9105a4b3-fdec-4e1b-bba5-ef590dff9680}</Project>
+      <Name>System.Data.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DLinq\Dlinq\System.Data.Linq.csproj">
+      <Project>{3d074b95-bc6f-466d-b245-8b26d2756ced}</Project>
+      <Name>System.Data.Linq</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DataWeb\Client\System.Data.Services.Client.csproj">
+      <Project>{4b1674a0-aacf-4314-bae2-87a5452bfbd6}</Project>
+      <Name>System.Data.Services.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DataWeb\Design\System.Data.Services.Design.csproj">
+      <Project>{b7504bb7-3b35-4273-bedd-ea8c06a93346}</Project>
+      <Name>System.Data.Services.Design</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\System.Drawing.csproj">
+      <Project>{25f1569b-f36d-466e-8854-89f1b79cd829}</Project>
+      <Name>System.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\cdf\src\WCF\Serialization\System.Runtime.Serialization.csproj">
+      <Project>{37eb1eeb-513b-4952-b776-fdb6cd704c5f}</Project>
+      <Name>System.Runtime.Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\cdf\src\WCF\ServiceModel\System.ServiceModel.csproj">
+      <Project>{19535c41-9d6d-4c1b-a0ea-8a7b9ca448cb}</Project>
+      <Name>System.ServiceModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\cdf\src\WCF\System.ServiceModel.Activation\System.ServiceModel.Activation.csproj">
+      <Project>{f582a38a-6f04-448d-93a2-9b12fb864cd8}</Project>
+      <Name>System.ServiceModel.Activation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Web\System.Web.csproj">
+      <Project>{6a36d565-8a5f-41fa-8245-4a49dfc23278}</Project>
+      <Name>System.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ApplicationServices\System.Web.ApplicationServices.csproj">
+      <Project>{7190cc4f-be3d-478b-9f1c-8f0f7666bff6}</Project>
+      <Name>System.Web.ApplicationServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\cdf\src\NetFx20\System.Web.Services\System.Web.Services.csproj">
+      <Project>{d475f02b-f7e2-467f-9553-e1ae2b0a7bab}</Project>
+      <Name>System.Web.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\System.Windows.Forms.csproj">
+      <Project>{09e79805-e450-4d79-96d0-f9e426c6652e}</Project>
+      <Name>System.Windows.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Xml\System.Xml.csproj">
+      <Project>{e8f114a4-6ee9-49ae-9129-c5d7579eb5e9}</Project>
+      <Name>System.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\XLinq\System.Xml.Linq.csproj">
+      <Project>{b2264e1e-916e-43cf-9880-7fbc48493ee4}</Project>
+      <Name>System.Xml.Linq</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationServices\ApplicationServiceHelper.cs" />
+    <Compile Include="ApplicationServices\ApplicationServicesHostFactory.cs" />
+    <Compile Include="ApplicationServices\AuthenticatingEventArgs.cs" />
+    <Compile Include="ApplicationServices\AuthenticationService.cs" />
+    <Compile Include="ApplicationServices\CreatingCookieEventArgs.cs" />
+    <Compile Include="ApplicationServices\KnownTypesProvider.cs" />
+    <Compile Include="ApplicationServices\ProfilePropertyMetadata.cs" />
+    <Compile Include="ApplicationServices\ProfileService.cs" />
+    <Compile Include="ApplicationServices\RoleService.cs" />
+    <Compile Include="ApplicationServices\SelectingProviderEventArgs.cs" />
+    <Compile Include="ApplicationServices\ValidatingPropertiesEventArgs.cs" />
+    <Compile Include="ClientServices\ClientFormsIdentity.cs" />
+    <Compile Include="ClientServices\ClientRolePrincipal.cs" />
+    <Compile Include="ClientServices\ConnectivityStatus.cs" />
+    <Compile Include="ClientServices\Providers\ClientData.cs" />
+    <Compile Include="ClientServices\Providers\ClientFormsAuthenticationCredentials.cs" />
+    <Compile Include="ClientServices\Providers\ClientFormsAuthenticationMembershipProvider.cs" />
+    <Compile Include="ClientServices\Providers\ClientRoleProvider.cs" />
+    <Compile Include="ClientServices\Providers\ClientSettingsProvider.cs" />
+    <Compile Include="ClientServices\Providers\ClientWindowsAuthenticationMembershipProvider.cs" />
+    <Compile Include="ClientServices\Providers\IClientFormsAuthenticationCredentialsProvider.cs" />
+    <Compile Include="ClientServices\Providers\ProxyHelper.cs" />
+    <Compile Include="ClientServices\Providers\SettingsSavedEventArgs.cs" />
+    <Compile Include="ClientServices\Providers\SqlHelper.cs" />
+    <Compile Include="ClientServices\Providers\UserValidatedEventArgs.cs" />
+    <Compile Include="Compilation\IWcfReferenceReceiveContextInformation.cs" />
+    <Compile Include="Compilation\WCFBuildProvider.cs" />
+    <Compile Include="Compilation\WCFModel\AsmxEndpointPickerExtension.cs" />
+    <Compile Include="Compilation\WCFModel\ClientOptions.cs" />
+    <Compile Include="Compilation\WCFModel\ContractMapping.cs" />
+    <Compile Include="Compilation\WCFModel\DataSvcMapFile.cs" />
+    <Compile Include="Compilation\WCFModel\DataSvcMapFileLoader.cs" />
+    <Compile Include="Compilation\WCFModel\ExtensionFile.cs" />
+    <Compile Include="Compilation\WCFModel\ExternalFile.cs" />
+    <Compile Include="Compilation\WCFModel\GeneratedContractType.cs" />
+    <Compile Include="Compilation\WCFModel\HttpBindingExtension.cs" />
+    <Compile Include="Compilation\WCFModel\IContractGeneratorReferenceTypeLoader.cs" />
+    <Compile Include="Compilation\WCFModel\MapFile.cs" />
+    <Compile Include="Compilation\WCFModel\MapFileLoader.cs" />
+    <Compile Include="Compilation\WCFModel\MetadataFile.cs" />
+    <Compile Include="Compilation\WCFModel\MetadataSource.cs" />
+    <Compile Include="Compilation\WCFModel\NamespaceMapping.cs" />
+    <Compile Include="Compilation\WCFModel\Parameter.cs" />
+    <Compile Include="Compilation\WCFModel\ProxyGenerationError.cs" />
+    <Compile Include="Compilation\WCFModel\ReferencedAssembly.cs" />
+    <Compile Include="Compilation\WCFModel\ReferencedCollectionType.cs" />
+    <Compile Include="Compilation\WCFModel\ReferencedType.cs" />
+    <Compile Include="Compilation\WCFModel\SchemaMerger.cs" />
+    <Compile Include="Compilation\WCFModel\SvcMapFile.cs" />
+    <Compile Include="Compilation\WCFModel\SvcMapFileLoader.cs" />
+    <Compile Include="Compilation\WCFModel\VSWCFServiceContractGenerator.cs" />
+    <Compile Include="Compilation\WCFModel\WsdlInspector.cs" />
+    <Compile Include="Compilation\WCFModel\XmlStrings.cs" />
+    <Compile Include="Compilation\XmlSerializer\DataSvcMapFileSerializer.cs" />
+    <Compile Include="Compilation\XmlSerializer\SvcMapFileSerializer.cs" />
+    <Compile Include="Configuration\Converter.cs" />
+    <Compile Include="Configuration\ConvertersCollection.cs" />
+    <Compile Include="Configuration\ScriptingAuthenticationServiceSection.cs" />
+    <Compile Include="Configuration\ScriptingJsonSerializationSection.cs" />
+    <Compile Include="Configuration\ScriptingProfileServiceSection.cs" />
+    <Compile Include="Configuration\ScriptingRoleServiceSection.cs" />
+    <Compile Include="Configuration\ScriptingScriptResourceHandlerSection.cs" />
+    <Compile Include="Configuration\ScriptingSectionGroup.cs" />
+    <Compile Include="Configuration\ScriptingWebServicesSectionGroup.cs" />
+    <Compile Include="Configuration\SystemWebExtensionsSectionGroup.cs" />
+    <Compile Include="DynamicData\DynamicDataSourceOperation.cs" />
+    <Compile Include="DynamicData\DynamicValidatorEventArgs.cs" />
+    <Compile Include="DynamicData\IDynamicDataSource.cs" />
+    <Compile Include="DynamicData\IDynamicValidatorException.cs" />
+    <Compile Include="Globalization\ClientCultureInfo.cs" />
+    <Compile Include="Handlers\IScriptResourceHandler.cs" />
+    <Compile Include="Handlers\ScriptModule.cs" />
+    <Compile Include="Handlers\ScriptResourceHandler.cs" />
+    <Compile Include="HttpResponseInternalBase.cs" />
+    <Compile Include="HttpResponseInternalWrapper.cs" />
+    <Compile Include="Management\WebServiceErrorEvent.cs" />
+    <Compile Include="Profile\ProfileService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AtlasWeb.Designer.cs" />
+    <Compile Include="Resources\WCFModelStrings.Designer.cs" />
+    <Compile Include="Script\AjaxFrameworkAssemblyAttribute.cs" />
+    <Compile Include="Script\Serialization\JavaScriptConverter.cs" />
+    <Compile Include="Script\Serialization\JavaScriptObjectDeserializer.cs" />
+    <Compile Include="Script\Serialization\JavaScriptSerializer.cs" />
+    <Compile Include="Script\Serialization\JavaScriptString.cs" />
+    <Compile Include="Script\Serialization\JavaScriptTypeResolver.cs" />
+    <Compile Include="Script\Serialization\ObjectConverter.cs" />
+    <Compile Include="Script\Serialization\ScriptIgnoreAttribute.cs" />
+    <Compile Include="Script\Serialization\SimpleTypeResolver.cs" />
+    <Compile Include="Script\Services\ClientProxyGenerator.cs" />
+    <Compile Include="Script\Services\GenerateScriptTypeAttribute.cs" />
+    <Compile Include="Script\Services\PageClientProxyGenerator.cs" />
+    <Compile Include="Script\Services\ProxyGenerator.cs" />
+    <Compile Include="Script\Services\ResponseFormat.cs" />
+    <Compile Include="Script\Services\RestClientProxyHandler.cs" />
+    <Compile Include="Script\Services\RestHandler.cs" />
+    <Compile Include="Script\Services\RestHandlerFactory.cs" />
+    <Compile Include="Script\Services\ScriptHandlerFactory.cs" />
+    <Compile Include="Script\Services\ScriptMethodAttribute.cs" />
+    <Compile Include="Script\Services\ScriptServiceAttribute.cs" />
+    <Compile Include="Script\Services\ServicesUtilities.cs" />
+    <Compile Include="Script\Services\WebServiceClientProxyGenerator.cs" />
+    <Compile Include="Script\Services\WebServiceData.cs" />
+    <Compile Include="Script\Services\WebServiceEnumData.cs" />
+    <Compile Include="Script\Services\WebServiceMethodData.cs" />
+    <Compile Include="Script\Services\WebServiceParameterData.cs" />
+    <Compile Include="Script\Services\WebServiceTypeData.cs" />
+    <Compile Include="Security\AuthenticationService.cs" />
+    <Compile Include="Security\RoleService.cs" />
+    <Compile Include="ui\AjaxFrameworkMode.cs" />
+    <Compile Include="UI\AppLevelCompilationSectionCache.cs" />
+    <Compile Include="UI\ApplicationServiceManager.cs" />
+    <Compile Include="UI\AssemblyCache.cs" />
+    <Compile Include="UI\AsyncPostBackErrorEventArgs.cs" />
+    <Compile Include="UI\AsyncPostBackTrigger.cs" />
+    <Compile Include="UI\AuthenticationServiceManager.cs" />
+    <Compile Include="UI\BundleReflectionHelper.cs" />
+    <Compile Include="UI\ClientScriptManagerWrapper.cs" />
+    <Compile Include="UI\ClientUrlResolverWrapper.cs" />
+    <Compile Include="UI\CompositeScriptReference.cs" />
+    <Compile Include="UI\CompositeScriptReferenceEventArgs.cs" />
+    <Compile Include="UI\ControlUtil.cs" />
+    <Compile Include="UI\CustomErrorsSectionWrapper.cs" />
+    <Compile Include="UI\DeploymentSectionCache.cs" />
+    <Compile Include="UI\EmbeddedResourceFinder.cs" />
+    <Compile Include="UI\EmptyStringExpandableObjectConverter.cs" />
+    <Compile Include="UI\ExtenderControl.cs" />
+    <Compile Include="UI\HistoryEventArgs.cs" />
+    <Compile Include="UI\HtmlFormWrapper.cs" />
+    <Compile Include="UI\IClientScriptManager.cs" />
+    <Compile Include="UI\IClientUrlResolver.cs" />
+    <Compile Include="UI\ICompilationSection.cs" />
+    <Compile Include="UI\IControl.cs" />
+    <Compile Include="UI\ICustomErrorsSection.cs" />
+    <Compile Include="UI\IDeploymentSection.cs" />
+    <Compile Include="UI\IExtenderControl.cs" />
+    <Compile Include="UI\IHtmlForm.cs" />
+    <Compile Include="UI\IPage.cs" />
+    <Compile Include="UI\IScriptControl.cs" />
+    <Compile Include="UI\IScriptManagerInternal.cs" />
+    <Compile Include="UI\PageRequestManager.cs" />
+    <Compile Include="UI\PageWrapper.cs" />
+    <Compile Include="UI\PostBackTrigger.cs" />
+    <Compile Include="UI\ProfileServiceManager.cs" />
+    <Compile Include="UI\RegisteredArrayDeclaration.cs" />
+    <Compile Include="UI\RegisteredDisposeScript.cs" />
+    <Compile Include="UI\RegisteredExpandoAttribute.cs" />
+    <Compile Include="UI\RegisteredHiddenField.cs" />
+    <Compile Include="UI\RegisteredScript.cs" />
+    <Compile Include="UI\RegisteredScriptType.cs" />
+    <Compile Include="UI\ResourceCategoryAttribute.cs" />
+    <Compile Include="UI\ResourceDefaultValueAttribute.cs" />
+    <Compile Include="UI\ResourceDescriptionAttribute.cs" />
+    <Compile Include="UI\ResourceDisplayNameAttribute.cs" />
+    <Compile Include="UI\RoleServiceManager.cs" />
+    <Compile Include="UI\ScriptBehaviorDescriptor.cs" />
+    <Compile Include="UI\ScriptComponentDescriptor.cs" />
+    <Compile Include="UI\ScriptControl.cs" />
+    <Compile Include="UI\ScriptControlDescriptor.cs" />
+    <Compile Include="UI\ScriptControlManager.cs" />
+    <Compile Include="UI\ScriptDescriptor.cs" />
+    <Compile Include="UI\ScriptManager.cs" />
+    <Compile Include="UI\ScriptManagerProxy.cs" />
+    <Compile Include="UI\ScriptMode.cs" />
+    <Compile Include="UI\ScriptReference.cs" />
+    <Compile Include="UI\ScriptReferenceBase.cs" />
+    <Compile Include="UI\ScriptReferenceCollection.cs" />
+    <Compile Include="UI\ScriptReferenceEventArgs.cs" />
+    <Compile Include="UI\ScriptRegistrationManager.cs" />
+    <Compile Include="UI\ScriptResourceAttribute.cs" />
+    <Compile Include="UI\ScriptResourceDefinition.cs" />
+    <Compile Include="UI\ScriptResourceInfo.cs" />
+    <Compile Include="UI\ScriptResourceMapping.cs" />
+    <Compile Include="UI\ServiceReference.cs" />
+    <Compile Include="UI\ServiceReferenceCollection.cs" />
+    <Compile Include="UI\TargetControlTypeAttribute.cs" />
+    <Compile Include="UI\TargetControlTypeCache.cs" />
+    <Compile Include="UI\Timer.cs" />
+    <Compile Include="UI\UpdatePanel.cs" />
+    <Compile Include="UI\UpdatePanelControlTrigger.cs" />
+    <Compile Include="UI\UpdatePanelRenderMode.cs" />
+    <Compile Include="UI\UpdatePanelTrigger.cs" />
+    <Compile Include="UI\UpdatePanelTriggerCollection.cs" />
+    <Compile Include="UI\UpdatePanelUpdateMode.cs" />
+    <Compile Include="UI\UpdateProgress.cs" />
+    <Compile Include="UI\WebControls\ContextDataSource.cs" />
+    <Compile Include="UI\WebControls\ContextDataSourceContextData.cs" />
+    <Compile Include="UI\WebControls\ContextDataSourceView.cs" />
+    <Compile Include="UI\WebControls\DataPager.cs" />
+    <Compile Include="UI\WebControls\DataPagerCommandEventArgs.cs" />
+    <Compile Include="UI\WebControls\DataPagerField.cs" />
+    <Compile Include="UI\WebControls\DataPagerFieldCollection.cs" />
+    <Compile Include="UI\WebControls\DataPagerFieldCommandEventArgs.cs" />
+    <Compile Include="UI\WebControls\DataPagerFieldItem.cs" />
+    <Compile Include="UI\WebControls\DataSourceHelper.cs" />
+    <Compile Include="UI\WebControls\Dynamic.cs" />
+    <Compile Include="UI\WebControls\DynamicQueryableWrapper.cs" />
+    <Compile Include="UI\WebControls\Expressions\CustomExpression.cs" />
+    <Compile Include="UI\WebControls\Expressions\CustomExpressionEventArgs.cs" />
+    <Compile Include="UI\WebControls\Expressions\DataSourceExpression.cs" />
+    <Compile Include="UI\WebControls\Expressions\DataSourceExpressionCollection.cs" />
+    <Compile Include="UI\WebControls\Expressions\ExpressionHelper.cs" />
+    <Compile Include="UI\WebControls\Expressions\MethodExpression.cs" />
+    <Compile Include="UI\WebControls\Expressions\OfTypeExpression.cs" />
+    <Compile Include="UI\WebControls\Expressions\OrderByExpression.cs" />
+    <Compile Include="UI\WebControls\Expressions\ParameterDataSourceExpression.cs" />
+    <Compile Include="UI\WebControls\Expressions\PropertyExpression.cs" />
+    <Compile Include="UI\WebControls\Expressions\QueryExpression.cs" />
+    <Compile Include="UI\WebControls\Expressions\RangeExpression.cs" />
+    <Compile Include="UI\WebControls\Expressions\RangeType.cs" />
+    <Compile Include="UI\WebControls\Expressions\SearchExpression.cs" />
+    <Compile Include="UI\WebControls\Expressions\SearchType.cs" />
+    <Compile Include="UI\WebControls\Expressions\ThenBy.cs" />
+    <Compile Include="UI\WebControls\IDynamicQueryable.cs" />
+    <Compile Include="UI\WebControls\ILinqToSql.cs" />
+    <Compile Include="UI\WebControls\InsertItemPosition.cs" />
+    <Compile Include="UI\WebControls\IPageableItemContainer.cs" />
+    <Compile Include="UI\WebControls\IQueryableDataSource.cs" />
+    <Compile Include="UI\WebControls\LinqDataSource.cs" />
+    <Compile Include="UI\WebControls\LinqDataSourceContextEventArgs.cs" />
+    <Compile Include="UI\WebControls\LinqDataSourceDeleteEventArgs.cs" />
+    <Compile Include="UI\WebControls\LinqDataSourceDisposeEventArgs.cs" />
+    <Compile Include="UI\WebControls\LinqDataSourceHelper.cs" />
+    <Compile Include="UI\WebControls\LinqDataSourceInsertEventArgs.cs" />
+    <Compile Include="UI\WebControls\LinqDataSourceSelectEventArgs.cs" />
+    <Compile Include="UI\WebControls\LinqDataSourceStatusEventArgs.cs" />
+    <Compile Include="UI\WebControls\LinqDataSourceUpdateEventArgs.cs" />
+    <Compile Include="UI\WebControls\LinqDataSourceValidationException.cs" />
+    <Compile Include="UI\WebControls\LinqDataSourceView.cs" />
+    <Compile Include="UI\WebControls\LinqToSqlWrapper.cs" />
+    <Compile Include="UI\WebControls\ListView.cs" />
+    <Compile Include="UI\WebControls\ListViewCancelEventArgs.cs" />
+    <Compile Include="UI\WebControls\ListViewCancelMode.cs" />
+    <Compile Include="UI\WebControls\ListViewCommandEventArgs.cs" />
+    <Compile Include="UI\WebControls\ListViewContainer.cs" />
+    <Compile Include="UI\WebControls\ListViewDataItem.cs" />
+    <Compile Include="UI\WebControls\ListViewDeletedEventArgs.cs" />
+    <Compile Include="UI\WebControls\ListViewDeleteEventArgs.cs" />
+    <Compile Include="UI\WebControls\ListViewEditEventArgs.cs" />
+    <Compile Include="UI\WebControls\ListViewInsertedEventArgs.cs" />
+    <Compile Include="UI\WebControls\ListViewInsertEventArgs.cs" />
+    <Compile Include="UI\WebControls\ListViewItem.cs" />
+    <Compile Include="UI\WebControls\ListViewItemEventArgs.cs" />
+    <Compile Include="UI\WebControls\ListViewItemType.cs" />
+    <Compile Include="UI\WebControls\ListViewPagedDataSource.cs" />
+    <Compile Include="UI\WebControls\ListViewSelectEventArgs.cs" />
+    <Compile Include="UI\WebControls\ListViewSortEventArgs.cs" />
+    <Compile Include="UI\WebControls\ListViewTableCell.cs" />
+    <Compile Include="UI\WebControls\ListViewTableRow.cs" />
+    <Compile Include="UI\WebControls\ListViewUpdatedEventArgs.cs" />
+    <Compile Include="UI\WebControls\ListViewUpdateEventArgs.cs" />
+    <Compile Include="UI\WebControls\NextPreviousPagerField.cs" />
+    <Compile Include="UI\WebControls\NumericPagerField.cs" />
+    <Compile Include="UI\WebControls\PageEventArgs.cs" />
+    <Compile Include="UI\WebControls\PagePropertiesChangingEventArgs.cs" />
+    <Compile Include="UI\WebControls\PermaLink.cs" />
+    <Compile Include="UI\WebControls\QueryableDataSource.cs" />
+    <Compile Include="UI\WebControls\QueryableDataSourceEditData.cs" />
+    <Compile Include="UI\WebControls\QueryableDataSourceHelper.cs" />
+    <Compile Include="UI\WebControls\QueryableDataSourceView.cs" />
+    <Compile Include="UI\WebControls\QueryContext.cs" />
+    <Compile Include="UI\WebControls\QueryCreatedEventArgs.cs" />
+    <Compile Include="UI\WebControls\QueryExtender.cs" />
+    <Compile Include="UI\WebControls\TemplatePagerField.cs" />
+    <Compile Include="UI\WebResourceUtil.cs" />
+    <Compile Include="Util\HeaderUtility.cs" />
+    <Compile Include="Util\HexParser.cs" />
+    <Compile Include="Util\ListEqualityComparer.cs" />
+    <Compile Include="Util\OrderedDictionary.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

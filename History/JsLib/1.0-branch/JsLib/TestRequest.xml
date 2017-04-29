@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<invoke>
+	<method Name="GetAnswer">
+		<param Name="content">This is the content</param>
+		<param Name="year">2011</param>
+	</method>
+	<method Name="GetAnswers">
+		<param Name="content">This is the content</param>
+		<param Name="year">2011</param>
+	</method>
+</invoke>

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="/Joy/Theme/Default/Cover.css" />
+	<link href="/Theme/Site.css" rel="stylesheet" type="text/css" />
+	<script src="/Joy/Joy.js" type="text/javascript"></script>
+	<script src="/Joy/Joy.js" type="text/javascript"></script>
+	<script src="/Joy/Controls/Coverer.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var config = {
+			defaultEditor: 'editbox'
+			, ColumnCollection:
+			[
+				{ field: 'uname', caption: 'Username', type: 'string' }
+				, { field: 'upwd', caption: 'Password', type: 'string' }
+				, { field: 'type', caption: 'User Type', type: 'int', editor: 'dropdown',
+            		setData: function (editor, data) {
+            			editor.setData({ items: Items, value: 1 });
+            		}
+				}
+				, { field: 'unote', caption: 'Description', type: 'string' }
+			]
+        };
+        var JsRequest =
+		{
+			"xmlns:xsi":"http://www.w3.org/2001/XMLSchema-instance",
+			"xmlns:xsd":"http://www.w3.org/2001/XMLSchema",
+			Methods:
+			[
+				{ name: 'GetData', params:
+					[
+						{ name: 'Arg1', $: 'val1' },
+						{ name: 'Arg2', $: 'val2' }
+					]
+				}
+			]
+		};
+		Joy.ready(function () {
+			var cover;
+			var xbox = document.getElementById('xbox');
+			xbox.value = Joy.obj2xml(config, 'config');
+
+			var jbox = document.getElementById('jbox');
+			jbox.value = Joy.obj2xml(JsRequest, 'JsRequest');
+			jbox.onmouseup = function (evt) {
+				cover = Joy.cover(jbox);
+			}
+			xbox.onmouseup = function (evt) {
+				cover.dispose();
+			};
+			var sbox = document.getElementById('sbox');
+			var j = Joy.json(Joy.json(config));
+			sbox.value = Joy.json(j);
+		});
+	</script>
+</head>
+<body>
+
+<textarea id='xbox' style="height: 234px; width: 100%"></textarea>
+<textarea id='jbox' style="height: 234px; width: 100%"></textarea>
+<textarea id='sbox' style="height: 234px; width: 100%"></textarea>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<%--******************************************************* Ä¬ÈÏÑùÊ½ ************************************************************************** --%>
+<asp:GridView  runat="server"
+    AutoGenerateColumns="false" 
+    HeaderStyle-CssClass="table_title"
+    CssClass = "table-box"
+    HeaderStyle-HorizontalAlign="Center"     
+    ShowFooter="false"    
+    cellspacing="1"
+    BorderWidth="0"
+    BackColor="#FFFFFF"
+    GridLines="none"
+    AllowSorting="True"
+    RowStyle-HorizontalAlign="Center"     
+    RowStyle-Height="28px"
+    RowStyle-CssClass="row" 
+    AlternatingRowStyle-CssClass="row1"
+    >
+</asp:GridView> 
+
+<asp:GridView skinid="GridViewAuto"  runat="server"
+    AutoGenerateColumns="true" 
+    HeaderStyle-CssClass="table_title"
+    HeaderStyle-HorizontalAlign="Center"    
+    ShowFooter="false"	
+    cellspacing="1" 
+    cellpadding="0" 
+    BorderWidth="0" 
+    Width="100%" 
+    AllowSorting="True"
+    >    
+<RowStyle CssClass="row" /> 
+</asp:GridView>

@@ -1,0 +1,41 @@
+.style_0_menu_button { 	
+	border-style:outset; border-width:1pt; 
+	position:relative; width:115;
+	letter-spacing:1; FONT-FAMILY: "Arial"; 
+	FONT-SIZE: 9pt; COLOR: #000000; 
+	LINE-HEIGHT: 10px; PADDING-TOP: 4px; 
+	PADDING-BOTTOM: 2px; PADDDING-LEFT: 2px; 
+	PADDING-RIGHT: 2px; }
+
+.style_0_nowmenu_button { 	
+	border-style:outset; border-width:1pt; 
+	position:relative; width:115;
+	letter-spacing:1; FONT-FAMILY: "Arial"; 
+	FONT-SIZE: 9pt; COLOR: blue; 
+	LINE-HEIGHT: 10px; PADDING-TOP: 4px; 
+	PADDING-BOTTOM: 2px; PADDDING-LEFT: 2px; 
+	PADDING-RIGHT: 2px; }
+
+.style_0_menu_ctable_on {
+	border-style: ridge; border-width: 1;
+	background-color:#EBEBEB; cursor:pointer}
+
+.style_0_menu_ctable_click { 
+	border-style: groove; border-width: 1; 
+	background-color:#E0DEDA; cursor:pointer}
+
+.style_0_menu_ctable_off {
+	border:1px solid #CECECE; font-size:9tp; 
+	background-color:#CECECE; cursor:pointer }
+
+.style_0_menu_ctext {
+	filter:dropshadow(color=#CCCCCC,offx=1,offy=1,positive=1);
+	color:#000000;font-size: 9pt; text-decoration: none; 
+	FONT-FAMILY: "Arial";}
+
+.style_0_menu_body {
+	scrollbar-face-color:#FFFFFF;
+	scrollbar-shadow-color:#FFFFFF;
+	scrollbar-highlight-color:#FFFFFF;
+	scrollbar-track-color:#FFFFFF;
+	background-color:#CECECE;}

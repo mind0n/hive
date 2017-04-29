@@ -1,0 +1,15 @@
+﻿div.cover
+{
+	border:solid 1px orange;
+	text-align:center;
+	font:12px arial;
+}
+
+div.cover .background
+{
+	width:100%;
+	height:100%;
+	background:#f3f3f3;
+	filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=75)";
+	opacity:0.75;
+}

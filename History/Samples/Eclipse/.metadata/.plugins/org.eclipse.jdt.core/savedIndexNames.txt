@@ -1,0 +1,14 @@
+INDEX VERSION 1.126+C:\__Codeplex\DEV\Platform\Samples\Eclipse\.metadata\.plugins\org.eclipse.jdt.core
+1345617098.index
+3328314506.index
+2793267240.index
+1609445237.index
+352446498.index
+51610724.index
+2039191121.index
+1128114483.index
+1787174850.index
+4032786600.index
+2665312357.index
+2481464791.index
+4082537798.index

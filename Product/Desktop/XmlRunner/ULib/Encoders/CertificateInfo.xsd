@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema targetNamespace="http://www.mot.com/system/service/common" 
+           xmlns:mstns="http://www.mot.com/system/service/common" 
+           xmlns="http://www.mot.com/system/service/common" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" 
+           elementFormDefault="qualified">
+
+	<xs:element name ="CertificateInfo">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="StoreLocation">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="LocalMachine|CurrentUser"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="StoreName">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="AddressBook|AuthRoot|CertificateAuthority|DisAllowed|My|Root|TrustedPeople|TrustedPublisher"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="FindType">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:pattern value="FindBySubjectName|FindBySubjectDistinguishedName|FindByIssuerName|FindByIssuerDistinguishedName"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="FindValue" type="xs:string"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

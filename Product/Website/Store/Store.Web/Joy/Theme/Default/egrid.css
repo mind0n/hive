@@ -1,0 +1,118 @@
+﻿.grid
+{
+	min-height:24px;
+	overflow:hidden;
+	font:12px arial;
+	border:solid 1px red;
+	position:relative;
+	width:400px;
+}
+.grid, .grid table
+{
+	border-collapse:collapse;
+}
+.grid .caption,.grid .body,.grid .foot
+{
+	border-bottom:solid 1px silver;
+}
+.grid table td div.header_cell_content
+{
+	border:0px;
+	padding:1px 4px 1px 4px;
+}
+.grid .header_cell_content
+{	  
+	white-space:nowrap;
+	overflow:hidden;
+	line-height:20px;	
+}
+.grid .header_table, .grid .body_table
+{
+	table-layout:fixed;
+	width:2px;
+}
+.grid .header_container
+{
+	width:100%;
+}
+.grid .header_cell
+{
+	width:70px;
+	border-left:solid 1px silver;
+	border-right:solid 1px silver;
+	background:#EBEADB;
+}
+.grid .header_cell_dragger
+{
+	border-right: solid 1px white;
+	line-height:20px;
+}
+.grid .body
+{
+	width:100%;
+	height:300px;
+	overflow:auto;
+	position:relative;
+}
+.grid .caption
+{
+	
+}
+.grid .body td
+{
+    border-bottom:solid 1px #E0DEDE;
+    width:80px;
+}
+.grid .body table td
+{
+	padding:0px;
+	margin:0px;
+	border:solid 1px white;
+}
+/* Editable Rect */
+.grid div.editablerect
+{
+	height:20px;
+}
+.grid div.editablerect div.label, div.editablerect div.dropdown_box
+{
+    line-height:18px;
+	text-align:left;
+	padding:0px 4px 0px 4px;
+}
+.grid .editablerect input, .editablerect .editbox
+{
+	border:0px;
+	background:white;
+	font:12px arial;
+	line-height:18px;
+	height:18px;
+	height:100%;
+	width:100%;
+	padding:0px 4px 0px 4px;
+}
+.grid .simple_menu_item
+{
+	line-height:18px;
+}
+.grid .simple_menu
+{
+    background:white;
+}
+.grid .editablerect .checkbox
+{
+}
+
+.grid .editablerect a, .grid .editablerect a:hover
+{
+	text-decoration:none;
+	line-height:18px;
+}
+.grid .editablerect a
+{
+	color:Black;
+}
+.grid .editablerect a:hover
+{
+	color:#B16767;
+}

@@ -1,0 +1,57 @@
+﻿{
+	"serve": {
+		"basedir": "./",
+		"pattern": "Act.Entry.dll",
+		"domain": "wo-module",
+		"enabled": true,
+		"entry": ".actentry",
+		"settings": {
+			"port": 80,
+			"threads": 12,
+			"protocol": "http",
+			"dispatcher": {
+				"type": "Act.Infrastructure.ThreadPoolDispatcher,Act.Infrastructure",
+				"backup": "Act.Infrastructure.QueueDispatcher,Act.Infrastructure",
+				"timeout": 90
+			},
+			"loaders": {
+				"/": {
+					"type": "Act.Infrastructure.Loader,Act.Infrastructure",
+					"processor": "Act.Processors.SeparateDomainProcessor,Act.Processors",
+					"processdomain": "instance-domain",
+					"handlers": [
+						{
+							"type": "Act.Processors.Handlers.InstanceHandler,Act.Processors.Handlers",
+							"basedir": "./",
+							"pattern": "Act.Processors.Handlers.dll",
+							"entry": "Instance"
+						}
+					],
+					"logger": "Act.Core.ConsoleLogManager,Act.Core"
+				},
+				"/test": {
+					"type": "Act.Infrastructure.Loader,Act.Infrastructure",
+					"processor": "Act.Processors.SeparateDomainProcessor,Act.Processors",
+					"processdomain": "wo-test-module",
+					"handlers": [
+						{
+							"type": "Act.Processors.Handlers.TestingHandler,Act.Processors.Handlers",
+							"basedir": "../../../../github/wo/dist",
+							"def": "index.html"
+						}
+					],
+					"logger": "Act.Core.ConsoleLogManager,Act.Core"
+				}
+			},
+			"message": "Success~"
+		}
+	},
+	"servemgmt": {
+		"basedir": "./",
+		"pattern": "Act.Entry.dll",
+		"domain": "wo-module",
+		"enabled": true,
+		"entry": ".actmgmtentry",
+		"settings": { }
+	}
+}

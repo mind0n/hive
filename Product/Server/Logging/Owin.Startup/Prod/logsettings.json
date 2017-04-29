@@ -1,0 +1,5 @@
+{ "logger":{ 
+"file":{ "name":"Logger.FileLogger, Logger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "args":{"folder":"logs"} } 
+,"console":{ "name":"Logger.ConsoleLogger, Logger, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "args":{} } 
+} 
+}

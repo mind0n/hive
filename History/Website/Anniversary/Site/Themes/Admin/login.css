@@ -1,0 +1,94 @@
+﻿*
+{
+	margin:0px;
+	padding:0px;
+	font:12px arial;
+	line-height:14px;
+	font-weight:normal;
+}
+
+body.login
+{
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	background-image:url(Images/loginbg.jpg);
+	background-repeat:no-repeat;
+	background-position:center middle;
+	height:100%;
+}
+.loginform
+{
+	background-repeat:no-repeat;
+	background-image:url(Images/loginbox.jpg);
+	width:390px;
+	height:200px;
+	padding:150px 24px 24px 250px;
+	position:relative;
+	margin:150px auto;
+	border:solid 3px silver;
+}
+.loginform table
+{
+	width:400px;
+}
+.loginform td
+{
+	height:24px;
+	line-height:24px;
+}
+.loginform td
+{
+	border:0px;
+	padding:4px 12px 4px 12px;
+	vertical-align:middle;
+}
+.loginform td.label
+{
+	width:70px;
+	text-align:right;
+}
+.loginform .editor
+{
+	text-align:left;
+	width:150px;
+}
+.loginform .editor input[type="text"], .loginform .editor input[type="password"]
+{
+	width:100%;	
+	line-height:14px;
+}
+.loginform a
+{
+	margin-top:5px;
+}
+.loginform .editor.short input
+{
+	width:50%;
+}
+.loginform .editor .btnlogin
+{
+	line-height:24px;
+	height:24px;
+	width:70px;
+	padding:0px;
+	border:solid 1px silver;
+}
+.loginform .homelink
+{
+	position:absolute;
+	right:12px;
+	top:64px;
+	width:70px;
+}
+.loginform .homelink a
+{
+	color:white;
+}
+input.btnlogout
+{
+	border:0px;
+	background:none;
+	padding:0px;
+	
+}

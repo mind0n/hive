@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<begin>
+	<Descriptions>
+		<item Size="10" FontStyle="Bold">Note: Sample file</item>
+		<item Color="red">
+		</item>
+	</Descriptions>	
+	<set Id="VaIsTrue" />
+	<set Id="VbIsTrue" />
+	
+	<set Id="BdTrue" />
+	<set Id="IsValue1True" />
+	<set Id="IsTrueValue" Content="false" />
+	<set Id="IsTrue" />
+	<set Id="Daf" Content="C:\Data\DBA.bak" />
+	<set Id="Dbf" Content="C:\Data\DBB.bak" />
+	<set Id="JobsA" Content="a;b;c" />
+	<set Id="JobsB" Content="d" />
+
+	<sqlconnect Id="ca" Server="." IsTrusted="true" User="" Pwd="" />
+	<sqlconnect Id="cb" Server="." IsTrusted="true" User="" Pwd="" />
+	<sqlconnect Id="dbc1" Server="." IsTrusted="true" User="" Pwd="" />
+	<set Id="agentName" Content="SQLAgent$." />
+	<connect Id="c1" Domain="" Server="" User="" Pwd="" />
+
+	<validatepath Path="$path1" />
+	<validatepath Path="$path2" />
+	<validatepath Path="$path3" />
+
+	<if IsTrue="!IsValue1True">
+		<set TargetId="default" ContentId="cb" />
+	</if>
+	<if IsTrue="IsValue1True">
+		<set TargetId="default" ContentId="ca" />
+	</if>
+
+	<if IsTrue="VaIsTrue" >
+		<validatedb IsPartitioned="false" ConnectionId="default" Database="DBA" />
+	</if>
+	<if IsTrue="VbIsTrue" >
+		<validatedb IsPartitioned="false" ConnectionId="default" Database="DBB" />
+	</if>
+
+
+	<if IsTrue="BdTrue">
+		<if IsTrue="VaIsTrue" >
+			<backupdb ConnectionId="default" Database="DBA" File="$Daf" />
+		</if>
+		<if IsTrue="VbIsTrue">
+			<backupdb ConnectionId="default" Database="DBB" File="$Dbf" />
+		</if>
+	</if>
+
+
+	<if IsTrue="IsTrueValue">
+		<if IsTrue="VaIsTrue">
+			<executesql ConnectionId="default" Database="DBA" Sql="sql cmd" />
+		</if>
+		<if IsTrue="VbIsTrue">
+			<executesql ConnectionId="default" Database="DBB" Sql="sql cmd" />
+		</if>
+	</if>
+
+	<if IsTrue="!IsTrueValue">
+		<if IsTrue="VaIsTrue">
+			<executesql ConnectionId="default" Database="DBA" SqlFile="s" />
+		</if>
+		<if IsTrue="VbIsTrue">
+			<executesql ConnectionId="default" Database="DBB" SqlFile="ss" />
+		</if>
+	</if>
+
+	<if IsTrue="VaIsTrue">
+		<executesql ConnectionId="default" Database="DBA" SqlFile="sql\Sql1Data_aa.sql" />
+		<executesql ConnectionId="default" Database="DBA" SqlFile="sql\sqlb" />
+	</if>
+	<if IsTrue="VbIsTrue">
+		<executesql ConnectionId="default" Database="DBB" SqlFile="sql\Sql1Data_bb.sql" />
+		<executesql ConnectionId="default" Database="DBB" SqlFile="sql\dpsp.sql" />
+	</if>
+
+	<service Start="false" ServiceId="agentName" ConnectionId="c1" />
+
+	<executesql ConnectionId="dbc1" Database="ReportingDW" Sql="update sql" />
+
+	<if IsTrue="VaIsTrue">
+		<executesql ConnectionId="default" Database="DBA" SqlFile="sql\x.sql" OutputId="ct" />
+        <parsedataset TargetId="ct" IsText="True" OutputId="cto" ColumnName="col1" Filename="x.xml" />
+		<executesql ConnectionId="default" Database="DBA" Sql="$cto" />
+		<executesql ConnectionId="ca" Database="DBA" SqlFile="sql\v.sql" />
+		<executesql ConnectionId="ca" Database="DBA" SqlFile="v.sql" />
+        <executesql ConnectionId="cb" Database="DBA" SqlFile="v" />
+		<executesql ConnectionId="cb" Database="DBA" SqlFile="v" />
+	</if>
+
+	<if IsTrue="VbIsTrue">
+		<executesql ConnectionId="ca" Database="DBB" SqlFile="sqlfile" />
+		<executesql ConnectionId="cb" Database="DBB" SqlFile="sqlfile" />
+	</if>
+
+	<if IsTrue="VaIsTrue">
+		<runjob ConnectionId="default" JobName="$aaJobs" />
+	</if>
+	<if IsTrue="VbIsTrue">
+		<runjob ConnectionId="default" JobName="$bbJobs" />
+	</if>
+
+
+	<if IsTrue="VaIsTrue">
+        <parsedataset TargetId="ct" IsText="True" OutputId="cta" ColumnName="col2" Filename="output.dat" IsReadMode="true" />
+		<executesql ConnectionId="default" Database="DBA" Sql="$cta" />
+	</if>
+	<service Start="true" ServiceId="agentName" ConnectionId="c1" />
+
+	<invoke Object="PlanSettingsForm" Method="LoadParametersFromBackup" Arguments="aabb.xml" IsRunOnLoad="true" />
+	<invoke Object="PlanSettingsForm" Method="ConfigPartitionsData" Arguments="aabb" IsRunOnConfig="true" />
+</begin>

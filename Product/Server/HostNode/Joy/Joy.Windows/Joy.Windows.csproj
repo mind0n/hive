@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82B81603-8D92-4CA7-8B30-F7087527777A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Joy.Windows</RootNamespace>
+    <AssemblyName>Joy.Windows</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationLoader.cs" />
+    <Compile Include="Controls\ConfirmBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ConfirmBox.Designer.cs">
+      <DependentUpon>ConfirmBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Deskform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Deskform.Designer.cs">
+      <DependentUpon>Deskform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\JoyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\JoyForm.Designer.cs">
+      <DependentUpon>JoyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktops.cs" />
+    <Compile Include="Events\EvtFactory.cs" />
+    <Compile Include="Events\KbEvt.cs" />
+    <Compile Include="LoaderService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LoaderService.Designer.cs">
+      <DependentUpon>LoaderService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events\MsEvt.cs" />
+    <Compile Include="Services\AgentService.cs" />
+    <Compile Include="Services\Client.cs" />
+    <Compile Include="Services\DesktopService.cs" />
+    <Compile Include="Taskbar.cs" />
+    <Compile Include="Wall.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Joy.Core\Joy.Core.csproj">
+      <Project>{f30168b3-23a7-47be-a674-5374a9ca7d9f}</Project>
+      <Name>Joy.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WindowsInput\WindowsInput.csproj">
+      <Project>{3549cd6f-80f8-450f-b99e-cf0a736b1f2a}</Project>
+      <Name>WindowsInput</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ConfirmBox.resx">
+      <DependentUpon>ConfirmBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Deskform.resx">
+      <DependentUpon>Deskform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\JoyForm.resx">
+      <DependentUpon>JoyForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="f.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

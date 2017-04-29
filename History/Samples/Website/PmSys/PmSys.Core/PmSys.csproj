@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3D89A80-19B8-4F6A-9381-8E15D41179AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PmSys</RootNamespace>
+    <AssemblyName>PmSys</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\PmSys.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\PmSys.xml</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessFacade.cs" />
+    <Compile Include="CacheOnline.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="Components\FileTxtLogsTable.cs" />
+    <Compile Include="Components\MessageBox.cs" />
+    <Compile Include="Components\Permission.cs" />
+    <Compile Include="Components\PM_ProjectsTable.cs" />
+    <Compile Include="Components\QueryParam.cs" />
+    <Compile Include="Components\sys_ApplicationsTable.cs" />
+    <Compile Include="Components\sys_ConfigDataTable.cs" />
+    <Compile Include="Components\sys_EventTable.cs" />
+    <Compile Include="Components\sys_FieldTable.cs" />
+    <Compile Include="Components\sys_FieldValueTable.cs" />
+    <Compile Include="Components\sys_FrameWorkInfoTable.cs" />
+    <Compile Include="Components\sys_GroupTable.cs" />
+    <Compile Include="Components\sys_ModuleExtPermissionTable.cs" />
+    <Compile Include="Components\sys_ModuleTable.cs" />
+    <Compile Include="Components\sys_NavigationUrl.cs" />
+    <Compile Include="Components\sys_OnlineTable.cs" />
+    <Compile Include="Components\sys_PermissionItem.cs" />
+    <Compile Include="Components\sys_RoleApplicationTable.cs" />
+    <Compile Include="Components\sys_RolePermissionTable.cs" />
+    <Compile Include="Components\sys_RolesTable.cs" />
+    <Compile Include="Components\sys_SystemInfoTable.cs" />
+    <Compile Include="Components\sys_UserTable.cs" />
+    <Compile Include="Components\sys_UserRolesTable.cs" />
+    <Compile Include="Data\DataProvider.cs" />
+    <Compile Include="Data\SqlDataProvider.cs" />
+    <Compile Include="EventMessage.cs" />
+    <Compile Include="FileTxtLogs.cs" />
+    <Compile Include="FileUpLoadCommon.cs" />
+    <Compile Include="FrameSystemInfo.cs" />
+    <Compile Include="FrameWorkCache.cs" />
+    <Compile Include="FrameWorkLogin.cs" />
+    <Compile Include="FrameWorkOnline.cs" />
+    <Compile Include="FrameWorkOnlineCache.cs" />
+    <Compile Include="FrameWorkOnlineDataBase.cs" />
+    <Compile Include="FrameWorkPermission.cs" />
+    <Compile Include="HttpWebCache.cs" />
+    <Compile Include="IFrameWorkCache.cs" />
+    <Compile Include="IFrameWorkOnline.cs" />
+    <Compile Include="PermissionPrincipal.cs" />
+    <Compile Include="WebControls\AspNetPager.cs" />
+    <Compile Include="WebControls\FieldWebControls.cs" />
+    <Compile Include="WebControls\HeadMenuButtonItem.cs" />
+    <Compile Include="WebControls\HeadMenuWebControls.cs" />
+    <Compile Include="PermissionConfigLoad.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserData.cs" />
+    <Compile Include="WebControls\MultiListBox.cs" />
+    <Compile Include="WebControls\SubContainerControlDesigner.cs" />
+    <Compile Include="WebControls\TabOptionItem.cs" />
+    <Compile Include="WebControls\TaboptionItemCollection.cs" />
+    <Compile Include="WebControls\TabOptionWebControls.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebControls\AspNetPagerDocs.xml" />
+    <EmbeddedResource Include="WebControls\Resource\moveAllLeft.gif" />
+    <EmbeddedResource Include="WebControls\Resource\moveAllLeft2.gif" />
+    <EmbeddedResource Include="WebControls\Resource\moveAllRight.gif" />
+    <EmbeddedResource Include="WebControls\Resource\moveAllRight2.gif" />
+    <EmbeddedResource Include="WebControls\Resource\moveLeft.gif" />
+    <EmbeddedResource Include="WebControls\Resource\moveLeft2.gif" />
+    <EmbeddedResource Include="WebControls\Resource\moveRight.gif" />
+    <EmbeddedResource Include="WebControls\Resource\moveRight2.gif" />
+    <EmbeddedResource Include="WebControls\Resource\MultiListBox.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WebControls\AspNetPager.resx">
+      <DependentUpon>AspNetPager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

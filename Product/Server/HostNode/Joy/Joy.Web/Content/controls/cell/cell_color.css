@@ -1,0 +1,9 @@
+﻿.debug .cell {
+    background:blue;
+}
+.debug .cell .body {
+    background: white;
+}
+.debug .cell .sort {
+    background:lightblue;
+}

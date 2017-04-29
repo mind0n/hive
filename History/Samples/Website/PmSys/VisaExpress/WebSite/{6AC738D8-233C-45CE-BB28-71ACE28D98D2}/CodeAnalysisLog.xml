@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Targets>
+  <Target Name="C:\Users\XL\AppData\Local\Temp\tmp323B.tmp.cadir\bin\App_Web_1vvzak2c.dll">
+   <Modules>
+    <Module Name="app_web_1vvzak2c.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="loginIn" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="丢失范围之前释放对象" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2012-09-06 00:38:06Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Documents\Knowledge\SkyDrive\ProjectRD\WebSite" File="loginIn.aspx.cs" Line="40">在方法 'loginIn.Button1_Click(object, EventArgs)' 中，请在对 'cmd' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Documents\Knowledge\SkyDrive\ProjectRD\WebSite" File="loginIn.aspx.cs" Line="38">在方法 'loginIn.Button1_Click(object, EventArgs)' 中，请在对 'cnn' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="丢失范围之前释放对象" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2012-09-06 00:38:06Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="d:\Documents\Knowledge\SkyDrive\ProjectRD\WebSite" File="loginIn.aspx.cs" Line="15">在方法 'loginIn.Page_Load(object, EventArgs)' 中，'cnn2' 对象未按所有异常路径释放。请在对 'cnn2' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Documents\Knowledge\SkyDrive\ProjectRD\WebSite" File="loginIn.aspx.cs" Line="18">在方法 'loginIn.Page_Load(object, EventArgs)' 中，请在对 'cmd2' 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="丢失范围之前释放对象" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>丢失范围之前释放对象</Name>
+   <Description>如果在对某个可释放对象的所有引用超出范围之前未显式释放该对象，则当垃圾回收器运行该对象的终结器时，会在某个不确定时间释放该对象。由于可能会发生阻止该对象的终结器运行的意外事件，因此应改为显式释放该对象。</Description>
+   <Resolution Name="ExceptionEdge">在方法 {0} 中，{1} 对象未按所有异常路径释放。请在对 {1} 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Resolution>
+   <Resolution Name="NonExceptionEdge">在方法 {0} 中，请在对 {1} 对象的所有引用超出范围之前，对该对象调用 System.IDisposable.Dispose。</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+</FxCopReport>

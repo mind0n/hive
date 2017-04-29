@@ -1,0 +1,9 @@
+﻿<Window x:Class="TwoDSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" xmlns:my="clr-namespace:SharpGL.WPF;assembly=SharpGL.WPF">
+    <Grid>
+        <my:OpenGLControl Name="openGLControl1" OpenGLDraw="openGLControl1_OpenGLDraw" OpenGLInitialized="openGLControl1_OpenGLInitialized"
+                          Resized="openGLControl1_Resized"/>
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+﻿{
+  "Modules": {
+    "CmdModule": {
+      "IsDisabled": false,
+      "Assembly": "Commands",
+      "Entry": "Commands.CmdModule"
+    }
+  }
+}

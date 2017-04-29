@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{896371A0-378D-4BF8-98F4-EDF653D20F9C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Joy.Server</RootNamespace>
+    <AssemblyName>Joy.Server</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Authentication\AuthCode.cs" />
+    <Compile Include="Authentication\AuthCodePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authentication\AuthManager.cs" />
+    <Compile Include="Authentication\HashManager.cs" />
+    <Compile Include="Authentication\Passport.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ServicePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Widgets\FormWidget.cs" />
+    <Compile Include="Widgets\Widgets.cs" />
+    <Compile Include="Data\BulkOperation.cs" />
+    <Compile Include="Data\DataTableController.cs" />
+    <Compile Include="Data\Db.cs" />
+    <Compile Include="Data\DbAccess.cs" />
+    <Compile Include="Data\Dbs.cs" />
+    <Compile Include="Data\DbSqlServer.cs" />
+    <Compile Include="Data\ExecuteResult.cs" />
+    <Compile Include="Widgets\GridWidget.cs" />
+    <Compile Include="Data\SqlHelper.cs" />
+    <Compile Include="Data\Storage.cs" />
+    <Compile Include="Data\StrongTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Date\DateHelper.cs" />
+    <Compile Include="Drawing\OffsetImage.cs" />
+    <Compile Include="Drawing\RenderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drawing\RenderHelper.cs" />
+    <Compile Include="Drawing\RotateMatrix.cs" />
+    <Compile Include="Entities\BasicNode.cs" />
+    <Compile Include="Entities\DataObjectAttribute.cs" />
+    <Compile Include="Entities\DictParams.cs" />
+    <Compile Include="Entities\MessageObject.cs" />
+    <Compile Include="Entities\MessageQueue.cs" />
+    <Compile Include="Entities\Node.cs" />
+    <Compile Include="Entities\TableEntity.cs" />
+    <Compile Include="WebExtensions.cs" />
+    <Compile Include="IO\StorageHelper.cs" />
+    <Compile Include="Native\Windows\API\WinAPI.Const.cs" />
+    <Compile Include="Native\Windows\API\WinAPI.Import.cs" />
+    <Compile Include="Native\Windows\API\WinAPI.InnerClass.cs" />
+    <Compile Include="Native\Windows\API\WinAPI.Wrapper.cs" />
+    <Compile Include="Native\Windows\Desktop\Reminder.cs" />
+    <Compile Include="Native\Windows\Desktop\Screensaver.cs" />
+    <Compile Include="Native\Windows\Desktop\Taskbar.cs" />
+    <Compile Include="Native\Windows\Monitor\HookManager.cs" />
+    <Compile Include="Native\Windows\Monitor\Keyboard.cs" />
+    <Compile Include="Native\Windows\Monitor\MsgFilter.cs" />
+    <Compile Include="Native\Windows\ParamTimer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Native\Windows\RegistryReader.cs" />
+    <Compile Include="Native\Windows\Timer.cs" />
+    <Compile Include="Net\NetHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\Credential.cs" />
+    <Compile Include="Security\JoyPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reflection\ClassHelper.cs" />
+    <Compile Include="Reflection\Invoker.cs" />
+    <Compile Include="Text\Base64.cs" />
+    <Compile Include="Security\Validator.cs" />
+    <Compile Include="Web\WebPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Authentication\Authenticate.cs" />
+    <Compile Include="Web\Client\HeaderControl.cs" />
+    <Compile Include="Web\Services\Attributes.cs" />
+    <Compile Include="Web\Services\ClauseBuilder.cs" />
+    <Compile Include="Web\Services\HttpExecute.cs" />
+    <Compile Include="Web\Services\HttpQuery.cs" />
+    <Compile Include="Web\Services\HttpService.cs" />
+    <Compile Include="Web\WebHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\DB.Config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Collections\" />
+    <Folder Include="UI\" />
+    <Folder Include="Xml\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Drawing\RenderForm.resx">
+      <DependentUpon>RenderForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Joy.Common\Joy.Common.csproj">
+      <Project>{654499d1-61b5-4a81-a5fc-8a733dd2b4d7}</Project>
+      <Name>Joy.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Joy.Core\Joy.Core.csproj">
+      <Project>{8500f4f5-8ab0-46e2-8ea1-1a88a43b20d9}</Project>
+      <Name>Joy.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

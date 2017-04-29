@@ -1,0 +1,12 @@
+﻿#{$root} .cover{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:99999;
+	opacity:0.4;
+}
+#{$root} .cover.fixed{
+	position:fixed;
+}

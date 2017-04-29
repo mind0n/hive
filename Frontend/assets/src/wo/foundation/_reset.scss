@@ -1,0 +1,11 @@
+/* _reset.scss */
+*, *:before, *:after{
+    padding:0;
+    margin:0;
+    font:1em sans-serif;
+	box-sizing: border-box;
+	border: none;
+	background-color: transparent;
+	background: none;
+	outline-width: 0;
+}

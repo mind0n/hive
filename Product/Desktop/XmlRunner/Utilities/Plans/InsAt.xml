@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<begin>
+	<Descriptions>
+		<item Size="9" Color="Red" >1.0</item>
+	</Descriptions>
+
+  <set Id="Input" IsCondition="false" Content="c:\input"  />
+  <set Id="Output" IsCondition="false" Content="c:\input"  />
+  <set Id="ExtName" IsCondition="false" Content="*.xls"  />
+  <set Id="IsCheckRelationship" Content="True"  />
+  <set Id="IsSplitSqlFiles" Content="True"  />
+
+  <sqlconnect Id="DBA" Server="." IsTrusted="true" User="" Pwd="" />
+	<importItem Folder="$Input" OutFolder="$Output" Connection="DBA" OutputFile="output.sql" Ext="$ExtName" IsCheckRel="$IsCheckRelationship" IsSplitSqlFiles="$IsSplitSqlFiles" />
+    
+</begin>

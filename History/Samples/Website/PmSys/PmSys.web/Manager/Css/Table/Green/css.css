@@ -1,0 +1,80 @@
+/* CSS Document */
+
+.table-box {	
+WIDTH: 100%;
+BORDER-RIGHT: #387D39 1px solid;	
+PADDING-RIGHT: 1px;	
+BORDER-TOP: #387D39 1px solid;	
+PADDING-LEFT: 1px;	
+BACKGROUND: #ffffff;	
+MARGIN-BOTTOM: 10px;	
+PADDING-BOTTOM: 5px;	
+BORDER-LEFT: #387D39 1px solid;	
+PADDING-TOP: 1px;	
+BORDER-BOTTOM: #387D39 1px solid;
+}
+
+.table_title {
+FONT: bold 14px Tahoma, Verdana;	
+COLOR: #ffffff;	
+BACKGROUND-COLOR: #65AB31;
+HEIGHT: 30px;
+PADDING-LEFT: 5px;
+PADDING-RIGHT:5px;
+
+}
+
+.table_title A {COLOR: #ffffff;}
+
+.table_body {	
+FONT-SIZE: 9pt;
+BACKGROUND-COLOR: #C6E3B5;
+height:30px;
+PADDING-LEFT: 5px;
+PADDING-RIGHT:5px;
+width:25%;
+font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; 
+}
+.table_none {	
+FONT-SIZE: 9pt;
+BACKGROUND-COLOR: #F1F8ED;
+height:30px;
+PADDING-LEFT: 5px;
+PADDING-RIGHT:5px;
+width:75%;
+font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; 
+}
+
+.table_body_NoWidth{  width:20%;}
+.table_none_NoWidth{  width:30%;}
+
+.table_body_List {	
+FONT-SIZE: 9pt;
+BACKGROUND-COLOR: #C6E3B5;
+height:30px;
+PADDING-LEFT: 5px;
+PADDING-RIGHT:5px;
+font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; 
+}
+.table_none_List {	
+FONT-SIZE: 9pt;
+BACKGROUND-COLOR: #F1F8ED;
+height:30px;
+PADDING-LEFT: 5px;
+PADDING-RIGHT:5px;
+font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; 
+}
+    
+.row 
+{
+    PADDING-LEFT: 5px;PADDING-RIGHT:5px; HEIGHT:28px; 
+    BACKGROUND-COLOR: #C6E3B5;
+    font-size:12px;
+}
+
+.row1
+{
+    PADDING-LEFT: 5px;PADDING-RIGHT:5px; HEIGHT:28px; 
+    BACKGROUND-COLOR:#F1F8ED;
+    font-size:12px;
+}

@@ -1,0 +1,78 @@
+﻿
+#{$root} .popup{
+	position:absolute;
+	top:50%;
+	left:50%;
+	z-index:999999;
+	padding:8px;
+	border-radius:8px;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+
+#{$root} .popup img{
+	width:72px;
+}
+
+#{$root} .popup.form{
+	min-width:400px;
+	min-height:300px;
+}
+
+@media (max-width:#{$sz-phone-p}){
+	#{$root} .popup.form{
+		min-width:200px;
+		min-height:150px;
+	}
+}
+
+#{$root} .popup.form .caption{
+	font:16px arial;
+	line-height:24px;
+	padding:6px 24px 6px 6px;
+	margin-right:32px;
+	font-weight:bolder;
+}
+
+#{$root} .popup.form .btns{
+	position:absolute;
+	top:12px;
+	right:12px;
+}
+
+#{$root} .popup.form .btns .btn{
+	width:24px;
+	height:24px;
+	line-height:24px;
+	padding:0;
+	margin:0;
+	font:21px arial;
+	border-radius:24px;
+	text-align:center;
+	cursor:pointer;
+	float:right;
+}
+#{$root} .popup.form .btns .btn.bmax{
+	line-height:20px;
+}
+#{$root} .popup.form .btns .btn:hover{
+}
+
+#{$root} .textbox-editor .tarea{
+	position:absolute;
+	top:48px;
+	left:16px;
+	right:12px;
+	bottom:54px;
+}
+
+#{$root} .textbox-editor .tarea textarea{
+	width:100%;
+	height:100%;
+}
+
+#{$root} .textbox-editor .barea, #{$root} .cell-editor .barea{
+	position:absolute;
+	right:12px;
+	bottom:12px;
+}

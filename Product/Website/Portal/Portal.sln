@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal", "Portal\Portal.csproj", "{51496076-CFD5-4AD8-BACA-4EA78D5F2900}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joy.Core", "Joy.Core\Joy.Core.csproj", "{F30168B3-23A7-47BE-A674-5374A9CA7D9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{067E2DCF-9A91-4125-BC18-0D19D4C5AF9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joy.Server", "Joy.Server\Joy.Server.csproj", "{9FF84DE5-2DC3-4D2D-8013-6D1B971CA07C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joy.Data", "Joy.Data\Joy.Data.csproj", "{D771AA84-FBC9-4CF2-98F1-FA85055CD3C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joy.Storage", "Joy.Storage\Joy.Storage.csproj", "{CBD09D08-D383-47FF-AFB2-8584BAD18B52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.Winform", "Portal.Winform\Portal.Winform.csproj", "{1168C7F0-D0DE-4AFE-84EF-8E27F20BD402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joy.Users", "Joy.Users\Joy.Users.csproj", "{10BEEEA0-36DA-4BF7-A55F-3B9A76A25C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.UnitTest", "Portal.UnitTest\Portal.UnitTest.csproj", "{208A18D8-23AC-44CE-ACDE-0F056BD8D0CD}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://platform.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Portal\\Portal.csproj
+		SccProjectName1 = Portal
+		SccLocalPath1 = Portal
+		SccProjectUniqueName2 = Joy.Core\\Joy.Core.csproj
+		SccProjectName2 = Joy.Core
+		SccLocalPath2 = Joy.Core
+		SccProjectUniqueName3 = DAL\\DAL.csproj
+		SccProjectName3 = DAL
+		SccLocalPath3 = DAL
+		SccProjectUniqueName4 = Joy.Server\\Joy.Server.csproj
+		SccProjectName4 = Joy.Server
+		SccLocalPath4 = Joy.Server
+		SccProjectUniqueName5 = Joy.Data\\Joy.Data.csproj
+		SccProjectName5 = Joy.Data
+		SccLocalPath5 = Joy.Data
+		SccProjectUniqueName6 = Joy.Storage\\Joy.Storage.csproj
+		SccProjectName6 = Joy.Storage
+		SccLocalPath6 = Joy.Storage
+		SccProjectUniqueName7 = Portal.Winform\\Portal.Winform.csproj
+		SccProjectName7 = Portal.Winform
+		SccLocalPath7 = Portal.Winform
+		SccProjectUniqueName8 = Joy.Users\\Joy.Users.csproj
+		SccProjectName8 = Joy.Users
+		SccLocalPath8 = Joy.Users
+		SccProjectUniqueName9 = Portal.UnitTest\\Portal.UnitTest.csproj
+		SccProjectName9 = Portal.UnitTest
+		SccLocalPath9 = Portal.UnitTest
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51496076-CFD5-4AD8-BACA-4EA78D5F2900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51496076-CFD5-4AD8-BACA-4EA78D5F2900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51496076-CFD5-4AD8-BACA-4EA78D5F2900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51496076-CFD5-4AD8-BACA-4EA78D5F2900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F30168B3-23A7-47BE-A674-5374A9CA7D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F30168B3-23A7-47BE-A674-5374A9CA7D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F30168B3-23A7-47BE-A674-5374A9CA7D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F30168B3-23A7-47BE-A674-5374A9CA7D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{067E2DCF-9A91-4125-BC18-0D19D4C5AF9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{067E2DCF-9A91-4125-BC18-0D19D4C5AF9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{067E2DCF-9A91-4125-BC18-0D19D4C5AF9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{067E2DCF-9A91-4125-BC18-0D19D4C5AF9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FF84DE5-2DC3-4D2D-8013-6D1B971CA07C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FF84DE5-2DC3-4D2D-8013-6D1B971CA07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FF84DE5-2DC3-4D2D-8013-6D1B971CA07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FF84DE5-2DC3-4D2D-8013-6D1B971CA07C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D771AA84-FBC9-4CF2-98F1-FA85055CD3C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D771AA84-FBC9-4CF2-98F1-FA85055CD3C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D771AA84-FBC9-4CF2-98F1-FA85055CD3C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D771AA84-FBC9-4CF2-98F1-FA85055CD3C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBD09D08-D383-47FF-AFB2-8584BAD18B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBD09D08-D383-47FF-AFB2-8584BAD18B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBD09D08-D383-47FF-AFB2-8584BAD18B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBD09D08-D383-47FF-AFB2-8584BAD18B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1168C7F0-D0DE-4AFE-84EF-8E27F20BD402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1168C7F0-D0DE-4AFE-84EF-8E27F20BD402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1168C7F0-D0DE-4AFE-84EF-8E27F20BD402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1168C7F0-D0DE-4AFE-84EF-8E27F20BD402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BEEEA0-36DA-4BF7-A55F-3B9A76A25C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BEEEA0-36DA-4BF7-A55F-3B9A76A25C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BEEEA0-36DA-4BF7-A55F-3B9A76A25C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BEEEA0-36DA-4BF7-A55F-3B9A76A25C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{208A18D8-23AC-44CE-ACDE-0F056BD8D0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{208A18D8-23AC-44CE-ACDE-0F056BD8D0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{208A18D8-23AC-44CE-ACDE-0F056BD8D0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{208A18D8-23AC-44CE-ACDE-0F056BD8D0CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

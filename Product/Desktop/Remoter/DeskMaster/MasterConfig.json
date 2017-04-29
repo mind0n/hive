@@ -1,0 +1,7 @@
+﻿{
+	IsPassive: true,
+	UseEx: true,
+	Interval: 0,
+	InUrl: 'http://192.168.9.27:18080/ds/w/a=dle|ac=1|$={0}',
+	ExUrl: 'http://cleansys.duapp.com/ds/w/a=dle|ac=1|$={0}'
+}

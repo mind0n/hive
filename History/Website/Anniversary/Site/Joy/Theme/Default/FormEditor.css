@@ -1,0 +1,91 @@
+﻿.formeditor
+{
+	background:white;
+	border:solid 2px silver;
+	display:block;
+	padding:12px;
+	position:relative;
+}
+.formeditor .form_title
+{
+	font:14px arial;
+	font-weight:bolder;
+	line-height:24px;
+}
+.formeditor .closebtn, .formeditor .closebtn:hover
+{
+	position:absolute;
+	right:0px;
+	top:0px;
+	cursor:pointer;
+	padding:6px;
+	font:12px arial;
+	font-weight:bolder;
+}
+.formeditor .form_container
+{
+	margin-bottom:24px;
+}
+.formeditor .btnbar
+{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	padding:2px 12px 12px 12px;
+	width:100%;
+	text-align:center;
+}
+.formeditor .btnbar input
+{
+	border:solid 1px silver;
+	width:70px;
+	height:24px;
+}
+.formeditor .closebtn:hover
+{
+	color:darkred;
+}							
+.formeditor .form_editor_row
+{
+	clear:both;
+	background:white;
+	padding:6px 0px 0px 0px;
+}
+.formeditor .form_editor_row, .formeditor .form_editor_row *
+{
+	line-height:24px;
+}
+.formeditor .form_editor_row .labelctrl, .formeditor .form_editor_row .labelctrl div
+{
+	float:left;
+	padding:0px 6px 0px 0px;
+}
+.formeditor .form_editor_row>div input, .formeditor .form_editor_row>div textarea
+{
+	border:solid 1px silver;
+}
+/* page specific */
+.formeditor
+{
+	width:330px;
+	height:350px;
+}
+.formeditor .form_editor_row
+{
+}
+.formeditor .form_editor_row, .formeditor .form_editor_row *
+{
+}
+.formeditor .form_editor_row div.labelctrl input
+{
+	width:70px;
+	height:18px;
+}
+.formeditor .form_editor_row div.labelctrl textarea
+{
+	width:270px;
+	height:200px;
+}
+.formeditor .form_editor_row>div input, .formeditor .form_editor_row>div textarea
+{
+}

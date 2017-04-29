@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        div.box {
+            position:absolute;
+            left:100px;
+            top:100px;
+            width:200px;
+            height:100px;
+            border:solid 1px blue;
+        }
+    </style>
+
+    <!-- Js References -->
+    <script type="text/javascript" src="/joy/js/jquery-1.10.2"></script>
+    <script type="text/javascript" src="/joy/js/jquery.json"></script>
+    <script type="text/javascript" src="/joy/js/jquery.dom"></script>
+    <script type="text/javascript" src="/joy/js/jquery.request"></script>
+    <script type="text/javascript" src="/joy/js/jquery.form"></script>
+    <script type="text/javascript" src="/joy/js/jquery.upload"></script>
+    <script type="text/javascript" src="/joy/js/controls.cell.Cell"></script>
+    <!-- End of Js Reference -->
+
+    <script type="text/javascript">
+        var d = {
+            cn: 'Cell',
+            $:[{cn:'Cell', alias:'test'}]
+        };
+        var c = {
+            cn: 'Cell'
+        };
+        $(function () {
+            var c1 = $.use(d);
+            var c2 = $.use(c);
+            c1.appendTo('div.box', true);
+            c1.$test.val({ ins: 'ts', act: 'testresult', arg: 'Posted argument' });
+            c2.appendTo('div.box');
+            c2.$test.val({ url: '/ts/testresult/This is argument.' });
+        });
+    </script>
+</head>
+<body>
+<div class="box">This is a test</div>
+</body>
+</html>

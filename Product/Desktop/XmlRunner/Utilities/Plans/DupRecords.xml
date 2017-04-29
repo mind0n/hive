@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<begin>
+	<Descriptions>
+		<item> </item>
+	</Descriptions>	
+
+	<set Id="Repeat" IsCondition="false" Content="20000"  />
+	<set Id="Start" IsCondition="false" Content="50000"  />
+	<set Id="Txt" IsCondition="false" Content=""  />
+	<duptext Template="$Txt" Startup="$Start" Repeat="$Repeat" Length="6" Filename="C:\output.txt" />
+</begin>

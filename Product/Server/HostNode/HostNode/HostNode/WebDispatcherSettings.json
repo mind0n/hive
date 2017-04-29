@@ -1,0 +1,10 @@
+﻿{
+	Mapping:{
+		"ts":"Joy.Service.TestInstance,Joy.Service",
+		"joy":"Joy.Service.JoyInstance,Joy.Service",
+		"ds":"HostNode.Instances.DataInstance,HostNode"
+	}
+	, Domain:'dell2012dev'
+	, Uname:'administrator'
+	, IsAddUrlAcl: false
+}

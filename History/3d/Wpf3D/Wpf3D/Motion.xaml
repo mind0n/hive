@@ -1,0 +1,22 @@
+﻿<z:FullScreenWindow 
+	x:Class="Wpf3D.MotionWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:z="clr-namespace:FsDelta.UI.WPF;assembly=FsDelta"
+	xmlns:m="clr-namespace:FsDelta.UI.WPF.Media3D;assembly=FsDelta"
+	mc:Ignorable="d" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+	WindowStartupLocation="CenterScreen" 
+	>
+	<DockPanel>
+		<Canvas Name="pnMain"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" DockPanel.Dock="Top">
+			<m:ThreadViewport3D Name="vpMain" MinWidth="640" MinHeight="480" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+				<m:LightVisual3D x:Name="AbsoluteVisual">
+					
+				</m:LightVisual3D>
+			</m:ThreadViewport3D>
+			<Button Name="btnTest">Locator</Button>
+		</Canvas>
+	</DockPanel>
+</z:FullScreenWindow>

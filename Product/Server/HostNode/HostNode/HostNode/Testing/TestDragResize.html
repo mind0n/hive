@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!-- Js References -->
+    <script type="text/javascript" src="/joy/js/jquery-1.10.2"></script>
+    <script type="text/javascript" src="/joy/js/jquery.json"></script>
+    <script type="text/javascript" src="/joy/js/jquery.dom"></script>
+    <script type="text/javascript" src="/joy/js/jquery.request"></script>
+    <script type="text/javascript" src="/joy/js/jquery.form"></script>
+    <script type="text/javascript" src="/joy/js/jquery.mouse"></script>
+    <script type="text/javascript" src="/joy/js/jquery.upload"></script>
+    <script type="text/javascript" src="/joy/js/controls.cell.Cell"></script>
+    <!-- End of Js Reference -->
+    <title></title>
+    <script type="text/javascript">
+        $(function () {
+            $.ms.move.push(function (s) {
+                $('#log').html(s.px + ',' + s.py);
+            });
+            var box = $('#box').dom();
+            $.ms.regist({
+                el: box, dc: function (item, el) {
+                    
+                }});
+        });
+    </script>
+
+    <style type="text/css">
+        div#box {
+            position:relative;
+            width:100px;
+            height:100px;
+            border:solid 1px blue;
+            background:silver;
+        }
+    </style>
+</head>
+<body>
+<div id="log"></div>
+<div id="box">
+
+</div>
+</body>
+</html>

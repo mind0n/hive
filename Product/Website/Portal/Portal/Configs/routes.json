@@ -1,0 +1,15 @@
+{
+	"Mappings":
+	{
+		"access":{Url:"/Testing/View/AuthorizedAccess.aspx", IsRestful:false, Roles:["admins"]},
+		"login":{Url:"/Testing/TestLogin.aspx", IsRestful:false, Roles:["anonymous"]},
+		"test":{TypeName:"Portal.Testing.TestService,Portal", IsRestful:false},
+		"rest":{TypeName:"Portal.Testing.TestService,Portal", IsRestful:true},
+		"page":{Url:"/Testing/View/TestPage.aspx", IsRestful:false, Roles:["anonymous"]},
+		"bookmark":{TypeName:"Portal.Modules.Bookmarks.Bookmark,Portal", IsRestful:false, IsNoSplit:true},
+		"sm":{TypeName:"Portal.Modules.Storage.StorageService,Portal"}
+	},
+	"EnableAnonymousAccess":true,
+	"EnableAutoAddRole":true,
+	"EnableAuthService":true
+}

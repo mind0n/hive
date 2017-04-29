@@ -1,0 +1,110 @@
+﻿
+/*   登录   */
+.login
+{
+	width:651px;
+	height:351px;
+	margin:50px auto;
+}
+.login tr.top { height:43px; font-size:1px; }
+.login tr.top td.l { width:15px; background:url(../images/ileft.gif) no-repeat; }
+.login tr.top td.m { width:620px; background:url(../images/i_topbg2.gif); text-align:left; }
+.login tr.top td.r { width:16px; background:url(../images/iright.gif) no-repeat; }
+.login tr.middle { height:279px; }
+.login tr.middle td.l { background:url(../images/ileftbg.gif); }
+.login tr.middle td.m { background:url(../images/bg.gif); }
+.login tr.middle td.r { background:url(../images/irightbg.gif); }
+.login tr.bottom { height:29px; font-size:1px; }
+.login tr.bottom td.l { background:url(../images/i_bottom_left.gif) no-repeat; }
+.login tr.bottom td.m { background:url(../images/i_bottom_bg.gif); }
+.login tr.bottom td.r { background:url(../images/i_bottom_right.gif) no-repeat; }
+
+.logbox { height:140px; width:369px; margin:auto; }
+.logbox tr {}
+.logbox tr td.ll { width:155px; }
+.logbox tr td.ll img { height:140px; max-width:155px; }
+.logbox tr td.lr { width:214px; text-align:center; }
+
+.txtbox { margin:auto; width:100%; height:100%; text-align:left; }
+.txtbox tr.top { height:40px; }
+.txtbox tr.middle { height:25px; }
+.txtbox tr.bottom { height:50px;  }
+
+.input_txt {
+	border:#999999 1px solid; 
+	padding:2px 2px 2px 2px; 
+	color: #333333;
+	height:16px; 
+	background-color:#dadedf;
+	width:140px;
+	font-size:13px;
+}
+
+
+/*   主页   */
+.head { background:url(../images/head-bg.jpg) repeat-x; height:56px; width:100%; overflow:hidden; }
+.head div.time { float:left; width:158px; height:25px; margin-top:29px; }
+.head div.hmenu { float:left; margin:29px 0 2px 0; height:25px; }
+.head div.hmenu div.hm { float:left; height:25px; background:url(../images/menu-bg.jpg) repeat-x; width:120px; line-height:25px; border:1px #06597D solid; }
+.head div.hmenu div.hm a { color:White; text-decoration:none; }
+.head div.hmenu div.hm a:hover { color:#99FFCC; text-decoration:none; }
+
+.head div.hmenu div.hms { float:left; height:25px; background:url(../images/menu-bg.jpg) repeat-x; width:80px; line-height:25px; border:1px #06597D solid; }
+.head div.hmenu div.hms a { color:White; text-decoration:none; }
+.head div.hmenu div.hms a:hover { color:#99FFCC; text-decoration:none; }
+
+.leftmenu { width:158px; height:100%; background:url(../images/slide.jpg) repeat-y; margin-top:2px; float:left; }
+.leftmenu div.lhead
+{
+	background:url(../images/left-head.jpg) left top no-repeat;
+	height:25px;
+	font-size:14px;
+	color:#FF9933;
+    text-align:center;
+	line-height:25px;
+}
+.leftmenu ul
+{
+	list-style:none;
+	font-size:12px;
+	*margin:0 0 0 0 !important;/*IE7*/
+	margin:0 0 0 -34px;/*其他版本和其他浏览器*/
+	_margin:0 0 0 0;/*IE6*/
+}
+.leftmenu ul li a.ma
+{
+	display:block;
+	width:143px;
+	height:25px;
+	line-height:25px;
+	background:url(../images/menu-bg.jpg) repeat-x;
+	color:#FFFFFF;
+	direction:none;
+	text-align:center;
+	border-bottom:1px #000066 solid;
+	border:1px #06597D solid;
+	text-decoration:none;
+}
+.leftmenu ul li a.ma:hover
+{
+	background:url(../images/menu-bg.jpg) 0px 25px;
+	color:#99FFCC;
+	direction:none;
+	text-align:center;
+	border-bottom:1px #000066 solid;
+}
+.leftmenu ul div { width:143px; border:1px solid #06597D; margin:0 0 5px 0; line-height:26px; }
+.leftmenu ul div a { text-decoration:none; color:black; width:auto; }
+.leftmenu ul div a:hover { text-decoration:underline; }
+
+.rightfrm
+{
+	float:left;
+	background:#ffffff;
+	overflow:hidden;
+	border:1px #003366 solid;
+	margin-top:2px;
+}
+
+.floor { background:url(../images/bottom.jpg) repeat-x; overflow:hidden; width:100%; height:20px; margin-top:2px; text-align:center; line-height:20px; }
+.floor span { color:White; font-size:12px; }

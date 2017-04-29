@@ -1,0 +1,79 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DShowNET", "DShowNET\DShowNET.csproj", "{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectX.Capture", "DirectX.Capture\DirectX.Capture.csproj", "{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cam.Startup", "Cam.Startup\Cam.Startup.csproj", "{49FE20D6-7F04-42B2-A3E0-C5B7A2283EFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{0FC2E84A-78A7-4FC8-8BC0-613D0B0E9987}"
+	ProjectSection(SolutionItems) = preProject
+		External\cv210.dll = External\cv210.dll
+		External\cvaux210.dll = External\cvaux210.dll
+		External\cxcore210.dll = External\cxcore210.dll
+		External\haarcascade_eye.xml = External\haarcascade_eye.xml
+		External\highgui210.dll = External\highgui210.dll
+		External\ml210.dll = External\ml210.dll
+		External\opencv_ffmpeg210.dll = External\opencv_ffmpeg210.dll
+		External\OpenCvSharp.Blob.dll = External\OpenCvSharp.Blob.dll
+		External\OpenCvSharp.CPlusPlus.dll = External\OpenCvSharp.CPlusPlus.dll
+		External\OpenCvSharp.dll = External\OpenCvSharp.dll
+		External\OpenCvSharpExtern.dll = External\OpenCvSharpExtern.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eye.Startup", "Eye.Startup\Eye.Startup.csproj", "{9A595F9A-E348-4F26-B5BF-818AC5FFF600}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eyes", "Native\Eyes.csproj", "{92961A69-DC50-48AF-A133-C4DDC0D2E08B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://platform.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DShowNET\\DShowNET.csproj
+		SccProjectName1 = DShowNET
+		SccLocalPath1 = DShowNET
+		SccProjectUniqueName2 = DirectX.Capture\\DirectX.Capture.csproj
+		SccProjectName2 = DirectX.Capture
+		SccLocalPath2 = DirectX.Capture
+		SccProjectUniqueName3 = Cam.Startup\\Cam.Startup.csproj
+		SccProjectName3 = Cam.Startup
+		SccLocalPath3 = Cam.Startup
+		SccProjectUniqueName4 = Eye.Startup\\Eye.Startup.csproj
+		SccProjectName4 = Eye.Startup
+		SccLocalPath4 = Eye.Startup
+		SccProjectUniqueName5 = Native\\Eyes.csproj
+		SccProjectName5 = Native
+		SccLocalPath5 = Native
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C0015DB-69E1-46E7-8705-3A4F8BE2E5E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49FE20D6-7F04-42B2-A3E0-C5B7A2283EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49FE20D6-7F04-42B2-A3E0-C5B7A2283EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49FE20D6-7F04-42B2-A3E0-C5B7A2283EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49FE20D6-7F04-42B2-A3E0-C5B7A2283EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A595F9A-E348-4F26-B5BF-818AC5FFF600}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A595F9A-E348-4F26-B5BF-818AC5FFF600}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A595F9A-E348-4F26-B5BF-818AC5FFF600}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A595F9A-E348-4F26-B5BF-818AC5FFF600}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92961A69-DC50-48AF-A133-C4DDC0D2E08B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92961A69-DC50-48AF-A133-C4DDC0D2E08B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92961A69-DC50-48AF-A133-C4DDC0D2E08B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92961A69-DC50-48AF-A133-C4DDC0D2E08B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

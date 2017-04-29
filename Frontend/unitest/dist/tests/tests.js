@@ -1,0 +1,11 @@
+import ajax from "../src/src.ts";
+describe("Unit test demo", function () {
+    it("jQuery should exist", function () {
+        expect($).toBeTruthy();
+    });
+    it("ajax util should exist", function () {
+        expect(ajax).toBeTruthy();
+    });
+});
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3QudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ik9BQ08sSUFBSSxNQUFNLGVBQWU7QUFFaEMsUUFBUSxDQUFDLGdCQUFnQixFQUFFO0lBQ3ZCLEVBQUUsQ0FBQyxxQkFBcUIsRUFBRTtRQUN0QixNQUFNLENBQUMsQ0FBQyxDQUFDLENBQUMsVUFBVSxFQUFFLENBQUM7SUFDM0IsQ0FBQyxDQUFDLENBQUM7SUFDSCxFQUFFLENBQUMsd0JBQXdCLEVBQUU7UUFDekIsTUFBTSxDQUFDLElBQUksQ0FBQyxDQUFDLFVBQVUsRUFBRSxDQUFDO0lBQzlCLENBQUMsQ0FBQyxDQUFDO0FBQ1AsQ0FBQyxDQUFDLENBQUMiLCJmaWxlIjoidGVzdHMuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLy8gPHJlZmVyZW5jZSBwYXRoPVwiLi4vdHlwaW5ncy9pbmRleC5kLnRzXCIgLz5cclxuaW1wb3J0IGFqYXggZnJvbSBcIi4uL3NyYy9zcmMudHNcIjtcclxuXHJcbmRlc2NyaWJlKFwiVW5pdCB0ZXN0IGRlbW9cIiwgZnVuY3Rpb24oKXtcclxuICAgIGl0KFwialF1ZXJ5IHNob3VsZCBleGlzdFwiLCBmdW5jdGlvbigpe1xyXG4gICAgICAgIGV4cGVjdCgkKS50b0JlVHJ1dGh5KCk7XHJcbiAgICB9KTtcclxuICAgIGl0KFwiYWpheCB1dGlsIHNob3VsZCBleGlzdFwiLCBmdW5jdGlvbigpe1xyXG4gICAgICAgIGV4cGVjdChhamF4KS50b0JlVHJ1dGh5KCk7XHJcbiAgICB9KTsgICAgXHJcbn0pOyJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==

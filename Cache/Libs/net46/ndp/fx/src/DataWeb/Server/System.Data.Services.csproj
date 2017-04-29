@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
+    <ProjectGuid>{53c02303-e4c8-4f64-9496-d6ad63a81580}</ProjectGuid>
+    <OutputPath>.</OutputPath>
+    <OutputType>Library</OutputType>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <UseVSHostingProcess>False</UseVSHostingProcess>
+    <NoStdLib>True</NoStdLib>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <DefineConstants>CODE_ANALYSIS_BASELINE;FEATURE_LEGACYSURFACEAREA;FEATURE_UTF32;FEATURE_UTF7;ASTORIA_SERVER;ASTORIA_OPEN_OBJECT;TRACE;RETAIL;WIN32</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " >
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\clr\src\bcl\mscorlib.csproj">
+      <Project>{224f6f5b-c254-4b89-95cd-b690effa845e}</Project>
+      <Name>mscorlib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\System.csproj">
+      <Project>{41970311-a2a7-4957-b118-3e82738754bb}</Project>
+      <Name>System</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Configuration\System.Configuration.csproj">
+      <Project>{c8acffc3-9a67-4b99-b153-3456d8d6a9e2}</Project>
+      <Name>System.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\System.Core.csproj">
+      <Project>{8237366e-c580-4edf-9fbc-6bc04dd169c7}</Project>
+      <Name>System.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\data\System.Data.csproj">
+      <Project>{43a395d8-b07e-4166-a2ec-54449a6112aa}</Project>
+      <Name>System.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataEntity\System.Data.Entity.csproj">
+      <Project>{9105a4b3-fdec-4e1b-bba5-ef590dff9680}</Project>
+      <Name>System.Data.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DLinq\Dlinq\System.Data.Linq.csproj">
+      <Project>{3d074b95-bc6f-466d-b245-8b26d2756ced}</Project>
+      <Name>System.Data.Linq</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Client\System.Data.Services.Client.csproj">
+      <Project>{4b1674a0-aacf-4314-bae2-87a5452bfbd6}</Project>
+      <Name>System.Data.Services.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\cdf\src\WCF\Serialization\System.Runtime.Serialization.csproj">
+      <Project>{37eb1eeb-513b-4952-b776-fdb6cd704c5f}</Project>
+      <Name>System.Runtime.Serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\cdf\src\WCF\ServiceModel\System.ServiceModel.csproj">
+      <Project>{19535c41-9d6d-4c1b-a0ea-8a7b9ca448cb}</Project>
+      <Name>System.ServiceModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\cdf\src\WCF\System.ServiceModel.Activation\System.ServiceModel.Activation.csproj">
+      <Project>{f582a38a-6f04-448d-93a2-9b12fb864cd8}</Project>
+      <Name>System.ServiceModel.Activation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\cdf\src\NetFx35\System.ServiceModel.Web\System.ServiceModel.Web.csproj">
+      <Project>{3c57de76-5eba-49d0-b82c-ac2e11c03821}</Project>
+      <Name>System.ServiceModel.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\cdf\src\NetFx20\System.Transactions\System.Transactions.csproj">
+      <Project>{3b5bed98-862f-47aa-b3c7-f3b8879a3d07}</Project>
+      <Name>System.Transactions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\xsp\system\Web\System.Web.csproj">
+      <Project>{6a36d565-8a5f-41fa-8245-4a49dfc23278}</Project>
+      <Name>System.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Xml\System.Xml.csproj">
+      <Project>{e8f114a4-6ee9-49ae-9129-c5d7579eb5e9}</Project>
+      <Name>System.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\XLinq\System.Xml.Linq.csproj">
+      <Project>{b2264e1e-916e-43cf-9880-7fbc48493ee4}</Project>
+      <Name>System.Xml.Linq</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Client\System\Data\Services\Client\ALinq\ALinqExpressionVisitor.cs" />
+    <Compile Include="..\Client\System\Data\Services\Client\ALinq\ParameterReplacerVisitor.cs" />
+    <Compile Include="..\Client\System\Data\Services\Client\BatchStream.cs" />
+    <Compile Include="..\Client\System\Data\Services\Client\BatchStreamState.cs" />
+    <Compile Include="..\Client\System\Data\Services\Client\Common.cs" />
+    <Compile Include="..\Client\System\Data\Services\Client\ReferenceEqualityComparer.cs" />
+    <Compile Include="..\Client\System\Data\Services\Client\XmlUtil.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="ShippingAssemblyAttributes.cs" />
+    <Compile Include="System\Data\Services\BatchServiceHost.cs" />
+    <Compile Include="System\Data\Services\Caching\MetadataCache.cs" />
+    <Compile Include="System\Data\Services\Caching\MetadataCacheItem.cs" />
+    <Compile Include="System\Data\Services\ChangeInterceptorAttribute.cs" />
+    <Compile Include="System\Data\Services\Configuration\DataServicesConfigurationConstants.cs" />
+    <Compile Include="System\Data\Services\Configuration\DataServicesFeaturesSection.cs" />
+    <Compile Include="System\Data\Services\Configuration\DataServicesReplaceFeature.cs" />
+    <Compile Include="System\Data\Services\Configuration\DataServicesSectionGroup.cs" />
+    <Compile Include="System\Data\Services\ContentFormat.cs" />
+    <Compile Include="System\Data\Services\DataService.cs" />
+    <Compile Include="System\Data\Services\DataServiceBehavior.cs" />
+    <Compile Include="System\Data\Services\DataServiceConfiguration.cs" />
+    <Compile Include="System\Data\Services\DataServiceException.cs" />
+    <Compile Include="System\Data\Services\DataServiceHost.cs" />
+    <Compile Include="System\Data\Services\DataServiceHostFactory.cs" />
+    <Compile Include="System\Data\Services\DataServiceHostWrapper.cs" />
+    <Compile Include="System\Data\Services\DataServiceOperationContext.cs" />
+    <Compile Include="System\Data\Services\DataServiceProcessingPipeline.cs" />
+    <Compile Include="System\Data\Services\DataServiceProcessingPipelineEventArgs.cs" />
+    <Compile Include="System\Data\Services\DelegateBodyWriter.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmAttributeNameBuilder.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmContentDeSerializer.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmContentDeSerializerBase.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmContentSerializer.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmContentSerializerBase.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmCustomContentDeSerializer.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmCustomContentSerializer.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmCustomContentWriterNodeData.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmHelper.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmSourcePathSegment.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmSourceTree.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmSyndicationContentDeSerializer.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmSyndicationContentSerializer.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmTargetPathSegment.cs" />
+    <Compile Include="System\Data\Services\Epm\EpmTargetTree.cs" />
+    <Compile Include="System\Data\Services\Error.cs" />
+    <Compile Include="System\Data\Services\ErrorHandler.cs" />
+    <Compile Include="System\Data\Services\ETagAttribute.cs" />
+    <Compile Include="System\Data\Services\ExpandSegment.cs" />
+    <Compile Include="System\Data\Services\ExpandSegmentCollection.cs" />
+    <Compile Include="System\Data\Services\HandleExceptionArgs.cs" />
+    <Compile Include="System\Data\Services\HttpContextServiceHost.cs" />
+    <Compile Include="System\Data\Services\HttpProcessUtility.cs" />
+    <Compile Include="System\Data\Services\IDataService.cs" />
+    <Compile Include="System\Data\Services\IDataServiceConfiguration.cs" />
+    <Compile Include="System\Data\Services\IDataServiceHost.cs" />
+    <Compile Include="System\Data\Services\IExpandedResult.cs" />
+    <Compile Include="System\Data\Services\IExpandProvider.cs" />
+    <Compile Include="System\Data\Services\IgnorePropertiesAttribute.cs" />
+    <Compile Include="System\Data\Services\Int32EqualityComparer.cs" />
+    <Compile Include="System\Data\Services\Internal\ExpandedWrapper.cs" />
+    <Compile Include="System\Data\Services\Internal\NeedSkipTokenVisitor.cs" />
+    <Compile Include="System\Data\Services\Internal\ProjectedWrapper.cs" />
+    <Compile Include="System\Data\Services\Internal\PropertyAccessVisitor.cs" />
+    <Compile Include="System\Data\Services\IProjectedResult.cs" />
+    <Compile Include="System\Data\Services\IRequestHandler.cs" />
+    <Compile Include="System\Data\Services\IUpdatable.cs" />
+    <Compile Include="System\Data\Services\KeyInstance.cs" />
+    <Compile Include="System\Data\Services\MimeTypeAttribute.cs" />
+    <Compile Include="System\Data\Services\OpenTypes\OpenTypeMethods.cs" />
+    <Compile Include="System\Data\Services\Parsing\ExpressionConstants.cs" />
+    <Compile Include="System\Data\Services\Parsing\ExpressionLexer.cs" />
+    <Compile Include="System\Data\Services\Parsing\FunctionDescription.cs" />
+    <Compile Include="System\Data\Services\Parsing\OperationSignatures.cs" />
+    <Compile Include="System\Data\Services\Parsing\RequestQueryParser.cs" />
+    <Compile Include="System\Data\Services\Parsing\Token.cs" />
+    <Compile Include="System\Data\Services\Parsing\TokenId.cs" />
+    <Compile Include="System\Data\Services\Parsing\WebConvert.cs" />
+    <Compile Include="System\Data\Services\ProcessRequestArgs.cs" />
+    <Compile Include="System\Data\Services\Providers\BaseServiceProvider.cs" />
+    <Compile Include="System\Data\Services\Providers\BasicExpandProvider.cs" />
+    <Compile Include="System\Data\Services\Providers\DataServicePagingProviderWrapper.cs" />
+    <Compile Include="System\Data\Services\Providers\DataServiceProviderMethods.cs" />
+    <Compile Include="System\Data\Services\Providers\DataServiceProviderWrapper.cs" />
+    <Compile Include="System\Data\Services\Providers\DataServiceStreamProviderWrapper.cs" />
+    <Compile Include="System\Data\Services\Providers\EntityPropertyMappingInfo.cs" />
+    <Compile Include="System\Data\Services\Providers\ExpandedProjectionNode.cs" />
+    <Compile Include="System\Data\Services\Providers\IDataServiceMetadataProvider.cs" />
+    <Compile Include="System\Data\Services\Providers\IDataServicePagingProvider.cs" />
+    <Compile Include="System\Data\Services\Providers\IDataServiceQueryProvider.cs" />
+    <Compile Include="System\Data\Services\Providers\IDataServiceStreamProvider.cs" />
+    <Compile Include="System\Data\Services\Providers\IDataServiceUpdateProvider.cs" />
+    <Compile Include="System\Data\Services\Providers\IProjectionProvider.cs" />
+    <Compile Include="System\Data\Services\Providers\ObjectContextServiceProvider.cs" />
+    <Compile Include="System\Data\Services\Providers\OrderingExpression.cs" />
+    <Compile Include="System\Data\Services\Providers\OrderingInfo.cs" />
+    <Compile Include="System\Data\Services\Providers\ProjectionNode.cs" />
+    <Compile Include="System\Data\Services\Providers\ReflectionServiceProvider.cs" />
+    <Compile Include="System\Data\Services\Providers\ResourceAssociationSet.cs" />
+    <Compile Include="System\Data\Services\Providers\ResourceAssociationSetEnd.cs" />
+    <Compile Include="System\Data\Services\Providers\ResourceAssociationType.cs" />
+    <Compile Include="System\Data\Services\Providers\ResourceAssociationTypeEnd.cs" />
+    <Compile Include="System\Data\Services\Providers\ResourceContainer.cs" />
+    <Compile Include="System\Data\Services\Providers\ResourceContainerWrapper.cs" />
+    <Compile Include="System\Data\Services\Providers\ResourceProperty.cs" />
+    <Compile Include="System\Data\Services\Providers\ResourcePropertyKind.cs" />
+    <Compile Include="System\Data\Services\Providers\ResourceType.cs" />
+    <Compile Include="System\Data\Services\Providers\ResourceTypeKeyKind.cs" />
+    <Compile Include="System\Data\Services\Providers\ResourceTypeKind.cs" />
+    <Compile Include="System\Data\Services\Providers\RootProjectionNode.cs" />
+    <Compile Include="System\Data\Services\Providers\ServiceOperation.cs" />
+    <Compile Include="System\Data\Services\Providers\ServiceOperationParameter.cs" />
+    <Compile Include="System\Data\Services\Providers\ServiceOperationResultKind.cs" />
+    <Compile Include="System\Data\Services\Providers\ServiceOperationWrapper.cs" />
+    <Compile Include="System\Data\Services\QueryInterceptorAttribute.cs" />
+    <Compile Include="System\Data\Services\RequestDescription.cs" />
+    <Compile Include="System\Data\Services\RequestQueryProcessor.cs" />
+    <Compile Include="System\Data\Services\RequestTargetKind.cs" />
+    <Compile Include="System\Data\Services\RequestTargetSource.cs" />
+    <Compile Include="System\Data\Services\RequestUriProcessor.cs" />
+    <Compile Include="System\Data\Services\ResourceActions.cs" />
+    <Compile Include="System\Data\Services\ResourceContainerRights.cs" />
+    <Compile Include="System\Data\Services\ResponseBodyWriter.cs" />
+    <Compile Include="System\Data\Services\SegmentInfo.cs" />
+    <Compile Include="System\Data\Services\Serializers\Atom10FormatterFactory.cs" />
+    <Compile Include="System\Data\Services\Serializers\AtomServiceDocumentSerializer.cs" />
+    <Compile Include="System\Data\Services\Serializers\BatchWriter.cs" />
+    <Compile Include="System\Data\Services\Serializers\BinarySerializer.cs" />
+    <Compile Include="System\Data\Services\Serializers\DataStringEscapeBuilder.cs" />
+    <Compile Include="System\Data\Services\Serializers\Deserializer.cs" />
+    <Compile Include="System\Data\Services\Serializers\DictionaryContent.cs" />
+    <Compile Include="System\Data\Services\Serializers\IExceptionWriter.cs" />
+    <Compile Include="System\Data\Services\Serializers\IndentedTextWriter.cs" />
+    <Compile Include="System\Data\Services\Serializers\JsonDeserializer.cs" />
+    <Compile Include="System\Data\Services\Serializers\JsonReader.cs" />
+    <Compile Include="System\Data\Services\Serializers\JsonSerializer.cs" />
+    <Compile Include="System\Data\Services\Serializers\JsonServiceDocumentSerializer.cs" />
+    <Compile Include="System\Data\Services\Serializers\JsonWriter.cs" />
+    <Compile Include="System\Data\Services\Serializers\MetadataSerializer.cs" />
+    <Compile Include="System\Data\Services\Serializers\PlainXmlDeserializer.cs" />
+    <Compile Include="System\Data\Services\Serializers\PlainXmlSerializer.cs" />
+    <Compile Include="System\Data\Services\Serializers\Serializer.cs" />
+    <Compile Include="System\Data\Services\Serializers\SyndicationDeserializer.cs" />
+    <Compile Include="System\Data\Services\Serializers\SyndicationFormatterFactory.cs" />
+    <Compile Include="System\Data\Services\Serializers\SyndicationSerializer.cs" />
+    <Compile Include="System\Data\Services\Serializers\TextSerializer.cs" />
+    <Compile Include="System\Data\Services\Serializers\XmlDocumentSerializer.cs" />
+    <Compile Include="System\Data\Services\ServiceOperationRights.cs" />
+    <Compile Include="System\Data\Services\SingleResultAttribute.cs" />
+    <Compile Include="System\Data\Services\UpdatableWrapper.cs" />
+    <Compile Include="System\Data\Services\UpdateTracker.cs" />
+    <Compile Include="System\Data\Services\WebUtil.cs" />
+    <Compile Include="System\Data\Services\XmlConstants.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

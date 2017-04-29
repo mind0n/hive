@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66D5DC58-7207-4917-839D-A1C4DC0D59E2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JsLib</RootNamespace>
+    <AssemblyName>JsLib</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Respond.aspx" />
+    <Content Include="TestGridView.aspx" />
+    <Content Include="Temp.xml" />
+    <Content Include="TestHtml.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Codgen\GenTableEntity.aspx.cs">
+      <DependentUpon>GenTableEntity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Codgen\GenTableEntity.aspx.designer.cs">
+      <DependentUpon>GenTableEntity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Codgen\TableEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Respond.aspx.cs">
+      <DependentUpon>Respond.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Respond.aspx.designer.cs">
+      <DependentUpon>Respond.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestGridView.aspx.cs">
+      <DependentUpon>TestGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestGridView.aspx.designer.cs">
+      <DependentUpon>TestGridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestHtml.aspx.cs">
+      <DependentUpon>TestHtml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestHtml.aspx.designer.cs">
+      <DependentUpon>TestHtml.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientScript.Config" />
+    <Content Include="TestRequest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodgenXML\CodgenXML.csproj">
+      <Project>{1478836E-CCDE-42BB-A5E8-932EA9AC64BA}</Project>
+      <Name>CodgenXML</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FsWeb\FsWeb.csproj">
+      <Project>{A637FFEF-00A4-4762-84D5-78B585733466}</Project>
+      <Name>FsWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fs\Fs.csproj">
+      <Project>{F65FE846-12A6-4CB3-A321-89540E2BCFDD}</Project>
+      <Name>Fs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Codgen\CodgenTemplates\CSharp\ClassBuilder\ClassBuilder.xml" />
+    <Content Include="Codgen\CodgenTemplates\CSharp\ClassBuilder\MethodBuilder.xml" />
+    <Content Include="Codgen\CodgenTemplates\CSharp\TableEntityBuilder\ClassBuilder.xml" />
+    <Content Include="Codgen\CodgenTemplates\CSharp\TableEntityBuilder\Main.xml" />
+    <Content Include="Codgen\CodgenTemplates\CSharp\TableEntityBuilder\MethodBuilder.xml" />
+    <Content Include="Codgen\GenTableEntity.aspx" />
+    <Content Include="DB.Config" />
+    <Content Include="Normal.xml" />
+    <Content Include="TestDataHandler.xml" />
+    <Content Include="TestGetDatatable.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TestSP.xml" />
+    <Content Include="XML.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="FsWeb\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4560</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

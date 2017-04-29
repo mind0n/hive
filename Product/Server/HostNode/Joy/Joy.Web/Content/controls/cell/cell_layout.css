@@ -1,0 +1,32 @@
+﻿.debug .cell{
+    border: solid 1px silver;
+    display: block;
+    width: 100px;
+    height:20px;
+    overflow:hidden;
+    position:relative;
+}
+
+.debug .cell div {
+    font-size:100%;
+}
+
+.debug .cell .body {
+    position:absolute;
+    top:1px;
+    right:1px;
+    bottom:1px;
+    left:1px;
+    display: block;
+    padding:0 4px 0 4px;
+    font: 10px verdana;
+    line-height: 18px;
+}
+
+.debug .cell .sort {
+    position:absolute;
+    right:0;
+    top:0;
+    bottom:0;
+    width:12px;
+}

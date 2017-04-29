@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<result successful="true">
+	<method name="TestDataHandler" successful="False">
+		<return></return>
+		<error>
+			<![CDATA[
+			System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.InvalidOperationException: WriteToServer requires an open and available Connection. The connection's current state is closed.
+			at System.Data.SqlClient.SqlConnection.GetOpenConnection(String method)
+			at System.Data.SqlClient.SqlConnection.ValidateConnectionForExecute(String method, SqlCommand command)
+			at System.Data.SqlClient.SqlBulkCopy.CreateOrValidateConnection(String method)
+			at System.Data.SqlClient.SqlBulkCopy.WriteRowSourceToServer(Int32 columnCount)
+			at System.Data.SqlClient.SqlBulkCopy.WriteToServer(DataTable table, DataRowState rowState)
+			at System.Data.SqlClient.SqlBulkCopy.WriteToServer(DataTable table)
+			at TestWebApp.Respond.TestDataHandler(IEnumerable`1 pars) in D:\Temp\__Projects\CSharp\JsLib\JsLib\Respond.aspx.cs:line 81
+			--- End of inner exception stack trace ---
+			at System.RuntimeMethodHandle._InvokeMethodFast(Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+			at System.RuntimeMethodHandle.InvokeMethodFast(Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeTypeHandle typeOwner)
+			at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+			at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+			at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+			at Fs.Reflection.Invoker.Invoke(Object vtarget, String method, Object[] param) in D:\Temp\__Projects\CSharp\JsLib\Fs\Reflection\Invoker.cs:line 73
+			]]>
+		</error>
+	</method>
+</result>

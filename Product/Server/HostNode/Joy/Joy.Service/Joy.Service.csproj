@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6FA5BA0D-9DDB-4714-8814-D80C58B488CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Joy.Service</RootNamespace>
+    <AssemblyName>Joy.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Instance.cs" />
+    <Compile Include="JoyInstance.cs" />
+    <Compile Include="QueueRequest.cs" />
+    <Compile Include="ResourceProviders.cs" />
+    <Compile Include="TestInstance.cs" />
+    <Compile Include="WebDispatcher.cs" />
+    <Compile Include="IDispatcher.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Joy.Core\Joy.Core.csproj">
+      <Project>{f30168b3-23a7-47be-a674-5374a9ca7d9f}</Project>
+      <Name>Joy.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\jquery-1.10.2.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\jquery.dom.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\Common.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\jquery.cookies.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\jquery.form.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\jquery.json.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\jquery.request.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\jquery.upload.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\Security\AES.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\Security\Auth.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\Security\Hex.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\Security\MD5.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\Security\SHA1.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\controls\cell\Cell.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\3d\ColladaLoader.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\3d\three.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\jquery.mouse.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\joy.js" />
+    <EmbeddedResource Include="Js\joy.units.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JoyInstanceSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Js\joy.debug.css" />
+    <EmbeddedResource Include="Js\controls\form\Form.js" />
+    <EmbeddedResource Include="Js\controls\menu\menu.js" />
+    <EmbeddedResource Include="Js\jQueryUI\external\jquery\jquery.js" />
+    <EmbeddedResource Include="Js\jQueryUI\images\animated-overlay.gif" />
+    <EmbeddedResource Include="Js\jQueryUI\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <EmbeddedResource Include="Js\jQueryUI\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <EmbeddedResource Include="Js\jQueryUI\images\ui-bg_flat_10_000000_40x100.png" />
+    <EmbeddedResource Include="Js\jQueryUI\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <EmbeddedResource Include="Js\jQueryUI\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <EmbeddedResource Include="Js\jQueryUI\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <EmbeddedResource Include="Js\jQueryUI\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <EmbeddedResource Include="Js\jQueryUI\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <EmbeddedResource Include="Js\jQueryUI\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <EmbeddedResource Include="Js\jQueryUI\images\ui-icons_222222_256x240.png" />
+    <EmbeddedResource Include="Js\jQueryUI\images\ui-icons_228ef1_256x240.png" />
+    <EmbeddedResource Include="Js\jQueryUI\images\ui-icons_ef8c08_256x240.png" />
+    <EmbeddedResource Include="Js\jQueryUI\images\ui-icons_ffd27a_256x240.png" />
+    <EmbeddedResource Include="Js\jQueryUI\images\ui-icons_ffffff_256x240.png" />
+    <EmbeddedResource Include="Js\jQueryUI\index.html" />
+    <EmbeddedResource Include="Js\jQueryUI\jquery-ui.css" />
+    <EmbeddedResource Include="Js\jQueryUI\jquery-ui.js" />
+    <EmbeddedResource Include="Js\jQueryUI\jquery-ui.min.css" />
+    <EmbeddedResource Include="Js\jQueryUI\jquery-ui.min.js" />
+    <EmbeddedResource Include="Js\jQueryUI\jquery-ui.structure.css" />
+    <EmbeddedResource Include="Js\jQueryUI\jquery-ui.structure.min.css" />
+    <EmbeddedResource Include="Js\jQueryUI\jquery-ui.theme.css" />
+    <EmbeddedResource Include="Js\jQueryUI\jquery-ui.theme.min.css" />
+    <EmbeddedResource Include="Js\themes\lds-black.gif" />
+    <EmbeddedResource Include="Js\themes\lds-gray.gif" />
+    <EmbeddedResource Include="Js\themes\lds-small.gif" />
+    <EmbeddedResource Include="Js\3d\j3d.js" />
+    <EmbeddedResource Include="Js\3d\g3d.js" />
+    <Content Include="Js\joy.datesilver.css" />
+    <Content Include="TestInstanceSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

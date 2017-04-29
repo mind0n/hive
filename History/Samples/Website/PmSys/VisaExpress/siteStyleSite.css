@@ -1,0 +1,95 @@
+﻿body 
+{
+    text-align:center;
+    
+}
+.wrapper
+{
+    width:920px;
+    margin:0 auto;
+    text-align:left;
+    }
+    
+
+.header .companyLogo
+{
+ display:inline;
+ padding-left:20px;
+ float:left;
+ width:650px; 
+}
+.header .loginStatus
+{
+    display:inline;
+    width:200px;
+    text-align:right;
+    float:right;
+    
+ }
+ .content .secondary
+ {
+     display:inline;
+     width:200px;
+     float:left;
+     
+     padding-right:5px;
+     background-color:Red;
+    
+     }
+ .content .primary
+ {
+     display:inline;
+     width:700px;
+     float:right;
+     
+     padding-left:5px;
+     background-color:Orange;
+     }
+ .bottom
+ {
+     display:block;
+     width:910px;
+     text-align:center;
+     background-color:Gray;
+  }
+   .navigation
+   {
+       display:block;
+      width:910px;
+     text-align:left; 
+   }
+   
+   /*
+CSS 高度相等列布局
+*/
+.tripProject
+{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    }
+ .firstProject
+ {
+     width:15%;
+     margin-left:10px;
+     float:left;
+     display:inline;
+     padding:5px;
+     padding-left:10px;
+     padding-right:10px;
+     padding-bottom:12px;
+     margin-bottom:10px;
+     background-color:Gray;
+     height:120px;
+     
+     }   
+   .projectBottom
+   {
+       position:absolute;
+       bottom:0;
+       height:20px;
+       width:100%;
+       background-color:Blue;
+       margin-left:20px;
+       display:block;
+       }

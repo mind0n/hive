@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Test AngularJs</title>
+		<script src="js/ag.js"></script>
+		<script>
+			angular.module('app', [])
+				.controller('ctl', ['$scope', function ($scope) {
+					$scope.test = 'World';
+				}]);
+      		angular.element(document).ready(function() {
+		    	angular.bootstrap(document, ['app']);
+			});
+		</script>
+	</head>
+	<body>
+		<div ng-controller="ctl">{{test}}</div>
+	</body>
+</html>

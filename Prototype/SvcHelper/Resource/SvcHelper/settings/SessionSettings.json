@@ -1,0 +1,4 @@
+﻿{
+    "StateManager": "Joy.Infrastructure.Contexts.ProcStateManager,Joy.Infrastructure",
+    "SessionManager": "Joy.Infrastructure.Contexts.TcpSessionManager,Joy.Infrastructure"
+}

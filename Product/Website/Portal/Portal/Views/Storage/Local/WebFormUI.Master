@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WebFormUI.master.cs" Inherits="Portal.Views.Storage.Local.WebFormUI" %>
+
+<%@ Register Src="~/Modules/Include.ascx" TagPrefix="uc1" TagName="Include" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" >
+    <title><asp:ContentPlaceHolder ID="Title" runat="server"></asp:ContentPlaceHolder></title>
+    <uc1:Include runat="server" ID="Include" />
+    <style type="text/css"> 
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background: white;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .captionarea {
+            background: white;
+            border-bottom: solid 1px #F3F3F3;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            height: 24px;
+        }
+        .captionarea * {
+            line-height: 24px;
+            cursor: default;
+        }
+        .captionarea .caption {
+            position: absolute;
+            top: 0;
+            left: 12px;
+            font: 14px Segoe UI;
+            font-weight: bold;
+            line-height: 24px;
+        }
+        .captionarea .controls {
+            position: absolute;
+            right: 4px;
+            top: 0;
+        }
+        .captionarea .controls, .captionarea .controls * {
+            line-height: 24px;
+            font-weight: bold;
+        }
+        #closeBtn,#maxBtn,#minBtn,#closeBtn:hover,#maxBtn:hover,#minBtn:hover {
+            float: left;
+            width: 18px;
+            text-align: center;
+        }
+        #closeBtn:hover,#maxBtn:hover,#minBtn:hover {
+            background: #f3f3f3;
+        }
+        #closeBtn {
+            
+        }
+        #maxBtn {
+            
+        }
+        #minBtn {
+            
+        }
+        .resizer {
+            width: 24px;
+            height: 24px;
+            background: none;
+            cursor:se-resize;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            z-index: 99999;
+	        border-right: solid 2px silver;
+	        border-bottom: solid 2px silver;
+        }
+    </style>                  
+    <script type="text/javascript">
+        joy(function() {
+            joy('closeBtn').onclick = function(e) {
+                external.closeForm();
+            };
+            joy('minBtn').onclick = function(e) {
+                external.MinForm();
+            };
+            joy('maxBtn').onclick = function(e) {
+                external.maxForm();
+            };
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+          
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="mainform" runat="server">
+    <div class="captionarea" onmousemove="window.external.CaptionMouseDown();" onmouseup="window.external.CaptionMouseUp();" ondblclick="window.external.MaxForm();">
+        <div class="caption"><asp:ContentPlaceHolder ID="caption" runat="server"></asp:ContentPlaceHolder></div>
+        <div class="controls"><div id="minBtn">_</div><div id="maxBtn">O</div><div id="closeBtn">X</div></div>
+        
+    </div>
+    <asp:ContentPlaceHolder ID="content" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <div class="resizer" onmousedown="window.external.ResizerMouseDown();"></div>
+    </form>
+</body>
+</html>

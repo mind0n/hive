@@ -1,0 +1,15 @@
+﻿    <div class="fixed" style="left:0;bottom:0;right:0;height:24px;background:white;">
+        <input id="ic" type="button" value="Inner Cover" />
+        <input id="bc" type="button" value="Body Cover" />
+    </div>
+<script type="text/javascript">
+    $(function () {
+        var img = { tag: 'img', src: '/joy/img/themes/lds-gray.gif', style: { width: '32px', height: '32px' } };
+        $('#ic').click(function (e) {
+            $.mask({ el: $('#frm').dom().$content, data: { img: img }});
+        });
+        $('#bc').click(function (e) {
+            $.mask({ data: { img: img } });
+        });
+    })
+</script>

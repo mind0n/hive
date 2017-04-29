@@ -1,0 +1,142 @@
+﻿/* ContentViewer */
+
+.ascx_content_viewer
+{
+	margin:12px 24px 12px 24px;
+}
+.hcate .ascx_content_viewer .item
+{
+	width:250px;
+	float:left;
+	margin:12px 24px 12px 24px;
+}
+.leftpanel .catefooter
+{
+	clear:both;
+	margin-top:24px;
+}
+/* content viewer */
+.ascx_content_viewer
+{
+	position:relative;
+}
+.ascx_content_viewer div
+{
+}
+.ascx_content_viewer .toolbtn
+{
+	position:absolute;
+	right:24px;
+	top:14px;
+	background:white;
+}
+.ascx_content_viewer .toolbtn span
+{
+	padding:6px;
+}
+.ascx_content_viewer .title
+{
+	font:18px arial;
+	line-height:30px;
+	text-align:center;
+	border-bottom:dashed 1px silver;
+}
+.ascx_content_viewer .subtitle
+{
+	line-height:24px;
+	font:12px arial;
+	text-align:center;
+	padding:6px;
+	padding-bottom:12px;
+}
+.ascx_content_viewer div.details
+{
+	font:14px arial;
+	line-height:24px;
+}
+.ascx_content_viewer div.mediacontainer
+{
+	width:600px;
+	max-height:400px;
+	text-align:center;
+	padding:24px;
+}
+.ascx_content_viewer div.mediacontainer img
+{
+	width:100%;
+	max-height:400px;
+}
+.ascx_content_viewer table
+{
+	width:100%;
+}
+.ascx_content_viewer .icon
+{
+	width:12px;
+}
+
+.ascx_content_viewer a
+{	
+	text-decoration:none;
+	color:Black;
+	line-height:24px;
+}
+
+.ascx_content_viewer .date
+{
+	width:100px;
+	text-align:right;
+}
+
+.ascx_content_viewer .itemtitle
+{
+	line-height:24px;
+	font-weight:bolder;
+	font:16px arial;
+}
+.ascx_content_viewer .itembrief
+{
+	padding:6px 12px 6px 12px;
+	color:#707070;
+}
+.ascx_content_viewer .itemfooter
+{
+	color:#B6B6B6;
+	padding-bottom:6px;
+	text-align:right;
+}
+.ascx_content_viewer .itemfooter .itemauthor,.ascx_content_viewer .itemfooter .itemdate{
+	color:#B16767;
+}
+
+/* history */
+.history, .history *
+{
+	line-height:24px;
+	padding:4px;
+	font:12px arial;
+}
+.history a
+{
+	text-decoration:none;
+	color:#B16767;
+}
+
+/* pager */
+.catefooter
+{
+	padding:4px 24px 4px 24px;
+}
+.catefooter a, .catefooter a:hover
+{
+	text-decoration:none;
+	color:Black;
+	padding:2px 4px 2px 4px;
+	font:12px arial;
+	font-weight:normal;
+}
+.catefooter a:hover
+{
+	color:darkred;
+	text-decoration:underline overline;
+}

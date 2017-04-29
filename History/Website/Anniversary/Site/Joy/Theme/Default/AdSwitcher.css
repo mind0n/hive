@@ -1,0 +1,136 @@
+﻿.topimg .adswitcher
+{
+	width:100%;
+	height:300px;
+}
+
+.topimg .adswitcher .imgarea
+{
+	width:100%;
+	height:100%;
+	position:relative;
+	background:darkred;
+}
+.topimg .adswitcher .btnarea
+{
+	position:absolute;
+	z-index:100;
+	right:0px;
+	bottom:0px;
+	padding:0px 6px 6px 0px;
+}
+.topimg .adswitcher .btnarea div
+{
+	width:12px;
+	height:12px;
+	border:0px;
+	background:darkblue;
+	color:White;
+	font:8px arial;
+	cursor:pointer;
+	float:left;
+	text-align:center;
+	margin-right:2px;
+}
+.topimg .adswitcher .btnarea div:hover, .topimg .adswitcher .btnarea .button.activated>div
+{
+	background:darkred;
+	cursor:pointer;
+	margin-right:2px;
+}
+
+.leftpanel .adswitcher
+{
+	float:none;
+	clear:both;
+	width:614px;
+	height:340px;
+	margin: 20px;
+	border-bottom:solid 1px silver;
+}
+.leftpanel .adswitcher .container
+{
+	width:100%;
+	height:100%;
+	position:relative;
+    word-wrap:normal;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.leftpanel .adswitcher .title
+{
+	padding:4px 6px 4px 6px;
+	line-height:16px;
+	border-bottom:solid 2px #ff0000;
+    margin-bottom:2px;
+}
+.leftpanel .adswitcher .imgarea
+{
+	height:100%;
+	position:relative;
+	margin-left:90px;
+    padding-left:4px;
+}
+.leftpanel .adswitcher .imgarea .title {
+    border:0px;
+    margin:0px;    
+}
+.leftpanel .adswitcher .imgarea .videoplayer
+{
+	width:520px;
+	padding:0px;
+	margin:0px;
+	height:290px;
+}
+.leftpanel .adswitcher .imgarea .videoplayer .title
+{
+	line-height:12px;
+	padding:4px 6px 4px 6px;
+	background:darkred;
+	color:White;
+	font:arial 12px;
+}
+.leftpanel .adswitcher .imgarea .videoplayer .player {
+    height:100%;
+}
+@-moz-document url-prefix() {
+	.leftpanel .adswitcher .imgarea
+	{
+		margin-left:83px;
+		padding-left:3px;
+	}
+	.leftpanel .adswitcher .imgarea .videoplayer .title
+	{
+	}
+    .leftpanel .adswitcher .imgarea .videoplayer embed{
+		width:520px;
+		height:290px;
+	}
+	.leftpanel .adswitcher .btnarea
+	{
+		width:83px;
+	}
+}
+.leftpanel .adswitcher .btnarea
+{
+	float:left;
+	position:relative;
+	z-index:100;
+	padding:0px 6px 6px 0px;
+	width:80px;
+}
+.leftpanel .adswitcher .btnarea .button
+{
+	width:100%;
+	border:solid white 3px;
+}
+.leftpanel .adswitcher .btnarea .button.activated
+{
+	width:100%;
+	border:solid silver 3px;
+}
+
+.leftpanel .adswitcher .btnarea .button img
+{
+	width:100%;
+}

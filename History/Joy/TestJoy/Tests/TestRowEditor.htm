@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="/theme/Site.css" />
+<style type="text/css">
+	select
+	{
+		height:24px;
+	}
+    td
+    {
+        border:solid 1px gray;
+        width:80px;
+        max-width:80px;
+    }
+    div.editablerect
+    {
+		height:20px;
+    }
+    div.editablerect div.label, div.editablerect div.dropdown_box
+    {
+    	line-height:18px;
+		text-align:left;
+		padding:0px 4px 0px 4px;
+    }
+	.editablerect input, .editablerect .editbox
+	{
+		border:0px;
+		background:white;
+		font:12px arial;
+		line-height:18px;
+		height:18px;
+		height:100%;
+		width:100%;
+		padding:0px 4px 0px 4px;
+	}
+	.simple_menu_item
+	{
+		line-height:18px;
+	}
+    .simple_menu
+    {
+        background:white;
+    }
+	.editablerect .checkbox
+	{
+	}
+</style>
+<script src="/Joy/Joy.js" type="text/javascript"></script>
+<script src="/Joy/Controls/SimpleMenu.js" type="text/javascript"></script>
+<script src="/Joy/Controls/DropDown.js" type="text/javascript"></script>
+<script src="/Joy/Controls/EditableRect.js" type="text/javascript"></script>
+<script src="/Joy/Controls/RowEditor.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var rowdata = {
+        uname: 'admin',
+        upwd: 'nothing',
+        utype: 0,
+        unote: 'Administrator'
+    };
+    var Items =
+    [
+        { text: 'Administrator', value: 0 },
+        { text: 'User', value: 1 },
+        { text: 'Guest', value: 9 }
+    ]
+    var config = {
+        defaultEditor: 'editbox'
+        , cols:
+        [
+            { field: 'uname', caption: 'Username', type: 'string' }
+            , { field: 'upwd', caption: 'Password', type: 'string' }
+            , { field: 'type', caption: 'User Type', type: 'int', editor: 'dropdown',
+                setData: function (editor, data) {
+                    editor.setData({ items: Items, value: 1 });
+                }
+            }
+            , { field: 'unote', caption: 'Description', type: 'string' }
+        ]
+    };
+    Joy.ready(function () {
+    	var el = document.getElementById('grid');
+    	var r1 = Joy.make('RowEditor');
+    	var r2 = Joy.make('RowEditor');
+    	var r3 = Joy.make('RowEditor');
+    	r1.init(config);
+    	r2.init(config);
+    	r3.init(config);
+    	r1.setRowData(rowdata);
+    	r2.setRowData(rowdata);
+    	r3.setRowData(rowdata);
+    	el.appendChild(r1);
+    	el.appendChild(r2);
+    	el.appendChild(r3);
+    	var toolbox = {
+    		tagName: 'div'
+            , $:
+            [
+                { tagName: 'input', type: 'button', value: 'Edit', onclick: function () { r1.edit(); r2.edit(); r3.edit(); } }
+                , { tagName: 'input', type: 'button', value: 'Accept', onclick: function () { r1.accept(); r2.accept(); r3.accept(); } }
+                , { tagName: 'input', type: 'button', value: 'Reject', onclick: function () { r1.reject(); r2.reject(); r3.reject(); } }
+            ]
+    	};
+    	
+    	document.getElementById('c').appendChild(Joy.make(toolbox));
+    });
+</script>
+</head>
+<body>
+<div id='c' style="width:2048px; height:2048px;">
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div>&nbsp</div>
+<div style="width:150px; overflow:auto; height:200px; border:solid 1px blue; position:relative;">
+    <table class="grid">
+        <tbody id="grid"></tbody>
+    </table>
+</div>
+
+</div>
+</body>
+</html>

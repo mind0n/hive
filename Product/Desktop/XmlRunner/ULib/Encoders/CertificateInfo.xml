@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CertificateInfo xmlns="http://www.mot.com/system/service/common">
+	<StoreLocation>LocalMachine</StoreLocation>
+	<StoreName>My</StoreName>
+	<FindType>FindBySubjectDistinguishedName</FindType>
+	<FindValue>CN=Motorola NextGen Test</FindValue>
+</CertificateInfo>

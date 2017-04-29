@@ -1,0 +1,26 @@
+﻿.formeditor
+{
+	font:12px arial;
+	border-collapse:collapse;
+	width:100%;
+	margin:2px 4px 2px 4px;
+}
+.formeditor .label
+{
+	width:70px;
+	line-height:24px;
+}
+.formeditor .container
+{
+	line-height:24px;
+}
+.formeditor .container input
+{
+	font:12px arial;
+	width:97%;
+	border:solid 1px silver;
+}
+.formeditor.cmdarea
+{
+	text-align:center;
+}

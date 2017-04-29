@@ -1,0 +1,29 @@
+[2015/12/21 22:45:05 385](-1):	Logger>	Hosted on port: 443
+[2015/12/21 22:45:12 716](-1):	Logger>	[::1-https://localhost/log/info?msg=Test&source=Source&category=Category&session=Session&level=Info
+		Upgrade-Insecure-Requests=1
+		Cache-Control=max-age=0
+		Connection=keep-alive
+		Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+		Accept-Encoding=gzip, deflate, sdch
+		Accept-Language=en-US,en;q=0.8
+		Host=localhost
+		User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36]
+[2015/12/21 22:45:37 999]Session(299)Category:	Logger>	Test
+[2015/12/21 22:45:53 410](386):	Logger>	[::1-https://localhost/log/info?msg=TestMessage&source=Source&category=Category&session=Session&level=Info
+		Upgrade-Insecure-Requests=1
+		Connection=keep-alive
+		Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+		Accept-Encoding=gzip, deflate, sdch
+		Accept-Language=en-US,en;q=0.8
+		Host=localhost
+		User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36]
+[2015/12/21 22:45:53 411]Session(1)Category:	Logger>	TestMessage
+[2015/12/21 22:46:11 925](513):	Logger>	[::1-https://localhost/log/error?msg=TestErrorMessage&source=Source&category=Category&session=Session&level=Info
+		Upgrade-Insecure-Requests=1
+		Connection=keep-alive
+		Accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+		Accept-Encoding=gzip, deflate, sdch
+		Accept-Language=en-US,en;q=0.8
+		Host=localhost
+		User-Agent=Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36]
+[2015/12/21 22:46:11 926]Session(1)Category:	Logger>	TestErrorMessage

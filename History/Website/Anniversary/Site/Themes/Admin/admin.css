@@ -1,0 +1,384 @@
+﻿*
+{
+	margin:0px;
+	padding:0px;
+	font:12px arial;
+	line-height:14px;
+	font-weight:normal;
+}
+input[type="button"],input[type="submit"], input[type="reset"]
+{
+	border:0px;
+	padding:0px 2px 0px 20px;
+	background:#EDF1FA;
+	line-height:24px;
+}
+input.btndel,input.btncancel,input.btnadd,input.btnsave
+{
+	background-color:#EDF1FA;
+	background-position:3px 5px;
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+input.btndel
+{
+	background-image:url(../Default/Images/DeleteRed.png);
+}
+input.btncancel
+{
+	background-image:url(../Default/Images/cancel.png);
+}
+input.btnadd
+{
+	background-image:url(../Default/Images/add.png);
+}
+input.btnsave
+{
+	background-image:url(../Default/Images/check.png);
+}
+body
+{
+    font-size: 12px;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    width:100%;
+    height:100%;
+	background:white;
+}
+table
+{
+	border:0px;
+	border-collapse:collapse;
+}
+table.grid
+{
+    table-layout:fixed;
+}
+th,td
+{
+	border-top:solid 1px white;
+	border-left:solid 1px white;
+	border-right:solid 1px silver;
+	border-bottom:solid 1px silver;
+	text-align:center;
+}
+td
+{
+	line-height:24px;
+	padding:0px 12px 0px 12px;
+	border-left:0px;
+	border-right:0px;
+}
+td input[type="text"]
+{
+	width:90%;
+
+}
+th
+{
+	background:#E7F1FA;
+	color:Black;
+}
+a, a:hover
+{
+	text-decoration:none;
+	color:Black;
+}
+a:hover
+{
+	color:darkred;
+}
+
+.form
+{
+	height:100%;
+}
+
+div
+{
+	border:0px;
+	margin:0px;
+}
+
+div.total
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0px;
+	top:0px;
+	border:solid 0px green;
+	overflow:hidden;
+}
+div.header, div.header *
+{
+	line-height:24px;	
+	color:White;
+	border:0px;
+}
+div.header
+{
+	padding:4px 12px 0px 12px;
+	background:#5B9ACF;
+}
+div.header div.userarea
+{
+	width:200px;
+}
+div.header div.userarea div.username
+{
+	float:left;
+}
+div.header div.userarea input
+{
+	width:50px;
+	background: #5B9ACF;
+}
+div.header td
+{
+	border:0px;
+	padding:0px;
+}
+div.header td.tabarea
+{
+	width:200px;
+	text-align:center;
+}
+td.msgarea
+{
+	line-height:14px;
+	text-align:left;
+	color:Yellow;
+	padding:0px;
+}
+div.header td.tabarea span
+{
+	display:block;
+	width:100px;
+	height:24px;
+	background:#EDF1FA;
+	margin-left:30px;
+	color:Black;
+	font-weight:bolder;
+	float:left;
+}
+	
+div.menuarea, div.targetarea, div.middle
+{
+	height:100%;
+}
+div.menuarea
+{
+	width:200px;
+	float:left;
+	padding:0px;
+	border-right:solid 1px silver;
+}
+div.menuarea a, div.menuarea a:hover
+{
+	text-decoration:none;
+	color:Black;
+}
+div.menuarea a:hover
+{
+	color:darkred;
+}
+div.menuarea div.category
+{
+	min-height:70px;
+}
+div.menuarea div.category div.caption
+{
+	background:#E7F1FA;
+	border-top:solid 1px #D3E3F0;
+	border-bottom:solid 1px #D3E3F0;
+}
+div.menuarea div.category *
+{
+	line-height:18px;
+	padding:4px;
+	text-align:center;
+}
+div.targetarea
+{
+	position:absolute;
+	left:202px;
+	top:55px;
+	right: 0px;
+	bottom: 0px;
+	padding:0px;
+	background:#E7F1FA;
+}
+div.targetarea div.toolbar_area
+{
+	height:32px;
+	border-bottom:solid 1px #D3E3F0;
+	background:#EDF1FA;
+	margin-bottom:0px;
+}
+div.targetarea div.toolbar_area table
+{
+	width:100%;
+	height:100%;
+}
+div.targetarea div.toolbar_area table td
+{
+	border:0px;
+}
+div.targetarea div.toolbar_area table td.toolbar_pwa
+{
+	text-align:left;
+	padding:2px 12px 4px 12px;
+}
+div.targetarea div.toolbar_area table td.toolbar_waa
+{
+	text-align:right;
+	padding:2px 12px 4px 12px;
+}
+div.targetarea div.toolbar_area table td.toolbar_waa
+{
+	width:40%;
+}
+
+div.targetarea div.contentarea
+{
+	height:90%;
+	overflow:auto;
+}
+div.targetarea div
+{
+	border:0px;
+}
+div.targetarea div.contentcontainer
+{
+	width:100%;
+	height:100%;
+}
+div.targetarea table.content
+{
+	width:100%;
+	height:100%;
+}
+div.targetarea table.content td
+{
+	vertical-align:top;
+	text-align:center;
+	padding:0px;
+}
+div.targetarea table.content td.pwa,div.targetarea table.content td.waa
+{
+	border:0px;
+}
+div.targetarea table.content td.pwa
+{
+	width:60%;
+}
+div.pwa {
+	text-align: left;
+}
+div.targetarea tr.evenrow:hover td,div.targetarea tr.oddrow:hover td
+{
+	background:#BBE4F8;
+}
+div.targetarea tr.evenrow td
+{
+	background:#F6F6F6;
+}
+div.targetarea tr.oddrow td
+{
+	background:white;
+}
+div.targetarea tr.header th
+{
+	line-height:24px;
+}
+div.targetarea table.content td.pwa td span, div.targetarea table.content td.pwa th
+{
+	line-height:24px;
+}
+ div.targetarea table.content td.pwa td input
+ {
+ 	margin-top:5px;
+ }
+
+div.targetarea table.content td.waa
+{
+	width:40%;
+	border-left:solid 1px silver;
+}
+div.targetarea table.formeditor
+{
+	width:100%;
+	table-layout:fixed;
+}
+div.targetarea table.formeditor td
+{
+	line-height:24px;
+	border:0px;
+	padding:6px 12px 0px 12px;
+	overflow:hidden;
+}
+div.targetarea table.formeditor td.label
+{
+	text-align:right;
+	vertical-align:top;
+	width:80px;
+}
+div.targetarea table.formeditor td.editor
+{
+	text-align:left;
+	padding-left:0px;
+	padding-right:24px;
+}
+div.targetarea table.formeditor td.editor select
+{
+	margin-top:4px;
+}
+div.targetarea table.formeditor td.editor input[type="text"]
+{
+	width:80%;
+	margin-top:4px;
+}
+div.targetarea table.formeditor.wide td.editor input[type="text"]
+{
+	width:80%;
+	margin-top:4px;
+}
+div.targetarea table.formeditor td.editor input[type="checkbox"]
+{
+	margin-top:6px;
+}
+div.targetarea .pager td
+{
+	width:24px;
+	padding:2px;
+	border:solid 0px red;
+}
+div.targetarea .pager td, div.targetarea .pager td *
+{
+	line-height:24px;
+}
+div.targetarea .pager:hover
+{
+	background:white;
+}
+div.targetarea .pager span
+{
+	color:Blue;
+}
+div.targetarea .pager a
+{
+	color:gray;
+}
+.briefbox
+{
+	position:absolute;
+	width:174px;
+	min-height:60px;
+	left:0px;
+	bottom:0px;
+	background:#EEEEEE;
+	border:solid 1px silver;
+	padding:12px;
+	line-height:18px;
+}

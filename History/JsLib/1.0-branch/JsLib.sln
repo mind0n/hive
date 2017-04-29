@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsLib", "JsLib\JsLib.csproj", "{66D5DC58-7207-4917-839D-A1C4DC0D59E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fs", "Fs\Fs.csproj", "{F65FE846-12A6-4CB3-A321-89540E2BCFDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FsWeb", "FsWeb\FsWeb.csproj", "{A637FFEF-00A4-4762-84D5-78B585733466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodgenXML", "CodgenXML\CodgenXML.csproj", "{1478836E-CCDE-42BB-A5E8-932EA9AC64BA}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://family-138603d:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Fs\\Fs.csproj
+		SccProjectName1 = Fs
+		SccLocalPath1 = Fs
+		SccProjectUniqueName2 = FsWeb\\FsWeb.csproj
+		SccProjectName2 = FsWeb
+		SccLocalPath2 = FsWeb
+		SccProjectUniqueName3 = CodgenXML\\CodgenXML.csproj
+		SccProjectName3 = CodgenXML
+		SccLocalPath3 = CodgenXML
+		SccProjectUniqueName4 = JsLib\\JsLib.csproj
+		SccProjectName4 = JsLib
+		SccLocalPath4 = JsLib
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66D5DC58-7207-4917-839D-A1C4DC0D59E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66D5DC58-7207-4917-839D-A1C4DC0D59E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66D5DC58-7207-4917-839D-A1C4DC0D59E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66D5DC58-7207-4917-839D-A1C4DC0D59E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65FE846-12A6-4CB3-A321-89540E2BCFDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65FE846-12A6-4CB3-A321-89540E2BCFDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65FE846-12A6-4CB3-A321-89540E2BCFDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65FE846-12A6-4CB3-A321-89540E2BCFDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A637FFEF-00A4-4762-84D5-78B585733466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A637FFEF-00A4-4762-84D5-78B585733466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A637FFEF-00A4-4762-84D5-78B585733466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A637FFEF-00A4-4762-84D5-78B585733466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1478836E-CCDE-42BB-A5E8-932EA9AC64BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1478836E-CCDE-42BB-A5E8-932EA9AC64BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1478836E-CCDE-42BB-A5E8-932EA9AC64BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1478836E-CCDE-42BB-A5E8-932EA9AC64BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

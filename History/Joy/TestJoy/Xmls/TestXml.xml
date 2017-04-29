@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<results>
+	<action name="additem">Success</action>
+	<action name="getitem">
+		<book>
+			<name>BookName1</name>
+			<descriptions>The first book.</descriptions>
+		</book>
+		<book>
+			<name>BookName2</name>
+			<descriptions>The second book.</descriptions>
+		</book>
+	</action>
+	<action name="viewitem">
+		<row>
+			<item field="uname" type="string">admin</item>
+			<item field="upwd" type="string">empty</item>
+			<item field="utype" type="string">Administrator</item>
+		</row>
+	</action>
+</results>

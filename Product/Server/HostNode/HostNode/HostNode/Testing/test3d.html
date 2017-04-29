@@ -1,0 +1,98 @@
+﻿<script type="text/javascript">
+    j3d.creators.testCube = function(c, parent, root){
+        var model = { $: { bottom: { mn: 'cube', alias:'box', gbox: [2, 2, 2], loc: [0, 0, 0], mat: 'MeshBasicMaterial', material: j3d.materials.def, texture: { url: '/ts/img/crate.gif' } } } };
+        joy.extend(model, c);
+        model.mn = null;
+        var r = j3d.build(model, root, parent);
+        return r;
+    }
+    var scene, camera, renderer, cube;
+    var WIDTH = window.innerWidth;
+    var HEIGHT = window.innerHeight;
+    var SPEED = 0.01;
+    window.init = function(arg) {
+        scene = j3d.newScene();
+        initCube(arg);
+
+        initCamera();
+        initLight();
+        initRenderer();
+        $(Test3dArgs()).dom().val(renderer.domElement);
+    }
+    window.initLight = function () {
+        var directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+        directionalLight.position.set(-1, 2, 1);
+
+        var directionalLight2 = new THREE.DirectionalLight(0xffffff, 0.5);
+        directionalLight2.position.set(-1, -2, 1);
+
+        var ambientLight = new THREE.AmbientLight(0x222222);
+        scene.add(ambientLight);
+        scene.add(directionalLight);
+        scene.add(directionalLight2);
+    }
+    window.initCamera = function () {
+        camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.001, 999999999);
+        camera.position.set(6, 8, 10);
+        camera.lookAt(scene.position);
+    }
+    window.initRenderer = function () {
+        renderer = j3d.newRenderer(WIDTH, HEIGHT);
+        //renderer = new THREE.WebGLRenderer({ antialias: true });
+        //renderer.setSize(WIDTH, HEIGHT);
+    }
+    window.initCube = function(model) {
+        cube = j3d.use({ mn: model });
+        scene.add(cube);
+        //var radius = 1,
+        //    segments = 64,
+        //    material = new THREE.LineBasicMaterial({ color: 0x0000ff }),
+        //    geometry = new THREE.CircleGeometry(radius, segments);
+
+        //// Remove center vertex
+        //geometry.vertices.shift();
+        //var ln = new THREE.Line(geometry, material);
+        //ln.position.set(2, 0, 0);
+        //cube.add(ln);
+
+        j3d.createAxisArrows(scene);
+    }
+    var o = [0.05, 0.05];
+    window.rotateCube = function () {
+        var r = mm;
+        if (r == 1) {
+            var md = cube.$tower.$cannons;
+            md.rotation.x -= SPEED * 2;
+            md.rotation.y -= SPEED;
+            md.rotation.z -= SPEED * 3;
+        } else if (r == 2) {
+            j3d.turn({ rot: [SPEED * 3, SPEED, SPEED * 2], mds: [cube, cube.$tower, cube.$tower.$cannons] });
+        } else if (r == 3) {
+            j3d.turn({ rot: [SPEED * 3, SPEED, SPEED * 2], mds: [cube, cube.$tower, cube.$tower.$cannons] });
+        } else if (r == 4) {
+            var md = cube.$box;
+            o[0] += 0.01;
+            o[1] += 0.01;
+            md.material.map.offset.set(o[0], o[1]);
+            md.material.map.needsUpdate = true;
+        }
+    }
+    window.render = function () {
+        if (isrunning) {
+            requestAnimationFrame(render);
+            rotateCube();
+            renderer.render(scene, camera);
+        }
+    }
+    var mm = 0;
+    var isrunning = true;
+    window.drawcube = function (sender, status, arg) {
+        sender.onunval = function (sender) {
+            isrunning = false;
+        }
+        var args = arg.split(';');
+        init(args[0]);
+        mm = args[1];
+        render();
+    }
+</script>

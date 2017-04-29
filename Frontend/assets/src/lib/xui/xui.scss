@@ -1,0 +1,13 @@
+﻿$root:".xui";
+$sz-phone-p:"480px";
+$sz-phone-l:"768px";
+
+#{$root} button{
+	padding:8px;
+	border-radius:4px;	
+}			  
+
+@import '_cover.scss';
+@import '_popup.scss';
+@import '_dropdown.scss';
+@import '_theme-basic.scss';

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Template Generator="TestWeb.Codgen.TableEntityGenerator" Method="Generate">
+		<![CDATA[
+		public class >TableName<Entity : TableEntity{
+			public >TableName<Entity()
+			: base(">TableName<", Dbs.Use< DbSqlServer >(">NodeName<")){
+				//Custom constructor codes here
+			}
+		]]>
+				<Import Url="MethodBuilder.xml" />
+		<![CDATA[
+		}
+		]]>
+</Template>

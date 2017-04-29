@@ -1,0 +1,55 @@
+﻿/* aboutus */
+.rightpanel .aboutus
+{
+	margin:12px 24px 12px 24px;
+}
+
+.rightpanel .aboutus .categorytitle
+{
+	line-height:24px;
+	border-bottom:solid 2px #ff0000;
+	margin-bottom:6px;
+	padding-left:6px;
+}
+
+.rightpanel .aboutus .aboutdetails
+{
+	line-height:24px;
+	padding-left:6px;
+	padding-right:6px;
+}
+
+/* flink */
+#rightpanel
+{
+	position:relative;
+	
+}
+#rightpanel .imglist
+{
+	margin:12px 24px 12px 24px;
+}
+
+#rightpanel .imglist .title
+{
+	padding:4px 6px 4px 6px;
+	line-height:16px;
+	border-bottom:solid 2px #ff0000;
+}
+#rightpanel .imglist .list
+{
+	text-align:center;
+}
+
+#rightpanel .imglist .list a
+{
+	border:0px;
+	text-decoration:none;
+}
+
+#rightpanel .imglist .list a img
+{
+	width:100px;
+	margin:12px auto;
+	border:0px;
+}

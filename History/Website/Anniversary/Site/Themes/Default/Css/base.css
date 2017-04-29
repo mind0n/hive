@@ -1,0 +1,113 @@
+﻿div.bg
+{
+	position:relative;
+	min-height:500px;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+div.bg div.sixty img
+{
+	width:100%;
+	height:100%;
+    border:0px;
+}
+div.bg div.main, div.bg div.sixtyarea
+{
+	position:relative;
+	width:901px;
+    height:100px;
+	border:solid 0px white;
+	margin:0px auto;
+}
+div.bg div.sixtyarea div.sixty
+{
+    position:absolute;
+    width:100px;
+	height:100px;
+    left:0px;
+    top:0px;
+}
+div.bg div.sixtyarea div.caption, div.bg div.sixtyarea div.shade 
+{
+    width:400px;
+	height:100px;
+    position:absolute;
+    font:32px 黑体;
+    font-weight:bold;
+}
+div.bg div.sixtyarea div.caption a {
+    text-decoration:none;
+    font:32px 黑体;
+    font-weight:bold;
+}
+div.bg div.sixtyarea div.caption, div.bg div.sixtyarea div.caption a
+{
+    left:124px;
+    top:30px;
+    color:#FF5D00;
+}
+div.bg div.sixtyarea div.shade {
+    left:126px;
+    top:32px;
+    color:silver;
+}
+div.bg div.main div.news
+{
+	border:solid 1px white;
+	background:white;	
+	min-height:600px;
+	clear:both;
+	margin:0px;
+	padding:0px;
+    background-image:url(../../Default/Images/split.jpg);
+    background-repeat:repeat-y;
+    background-position:670px;
+}
+div.bg div.main div.leftpanel,div.bg div.main div.rightpanel
+{
+	padding-top:1px;
+}
+div.bg div.main div.leftpanel
+{
+	float:left;
+	width:680px;
+	height:100%;
+}
+div.bg div.main div.rightpanel
+{
+	margin-left:680px;
+	margin-top:0px;
+	height:100%;
+	position:relative;
+}
+div.bg div.bottom
+{
+	clear:both;
+	border-top: solid 1px #B50606;
+	border-left:solid 1px  white;
+	border-right:solid 1px white;
+	background:#9C2C2F;
+	color:White;
+	text-align:center;
+	line-height:24px;
+	padding:6px 12px 6px 12px;
+	margin:0px;
+	height:24px;
+}
+	/*div.bg div.bottom
+	{
+		position:absolute;
+		bottom:0px;
+		left:0px;
+		right:0px;
+	}*/
+	div.bg div.bclear
+	{
+		clear:both;
+		height:64px;
+	}
+div.bg div.main div.bottom, div.bg div.main div.bottom *
+{
+	line-height:24px;
+}

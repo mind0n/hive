@@ -1,0 +1,83 @@
+﻿/*css reset*/
+@CHARSET "UTF-8";
+/*
+KISSY CSS Reset
+*/
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置默认字体 */
+body,button, input, select, textarea { /* for ie */
+    /*font: 12px/1 Arial, Tahoma, Helvetica, "宋体", sans-serif;*/
+    font: 14px/1.5 Arial, Tahoma, Helvetica, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+    color: #555555;
+}
+
+/* 统一等宽字体 */
+code, kbd, pre, samp, tt { 
+	font-family: "Courier New", Courier, monospace;
+}
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+small { 
+	font-size: 12px; 
+} 
+
+/* 重置列表元素 */
+ul, ol { 
+	list-style: none; 
+}
+
+/* 重置文本格式元素 */
+a { 
+	text-decoration: none; 
+}
+
+/* for ie6 */
+legend { 
+	color: #000; 
+} 
+
+/* img 搭车：让链接里的 img 无边框 */
+fieldset, img { 
+	border: none; 
+} 
+
+/* 使得表单元素在 ie 下能继承字体大小 */
+button, input, select, textarea {
+    font-size: 100%; 
+}
+
+/* 去除chorme的 聚焦事件 边框 */
+input:focus, button:focus, select:focus, textarea:focus{
+	outline: none;
+}
+
+/* 去除chrome的 textarea 可拉伸大小 */
+textarea{
+	resize:none;
+}
+
+/* 重置表格元素 */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 重置 hr */
+hr {
+    border: none;
+    height: 1px;
+}
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html { 
+	overflow-y: scroll; 
+}

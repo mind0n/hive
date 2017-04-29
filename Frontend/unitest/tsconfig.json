@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "outDir": "./dist",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "rootDir": "./src",
+        "module": "es2015",
+        "target": "es5",
+        "experimentalDecorators": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+
+}

@@ -1,0 +1,152 @@
+﻿{
+  "Containers": {
+    "SocketModule": {
+      "AsmName": "Joy.Infrastructure",
+      "Module": "Joy.Infrastructure.Network.SocketModule",
+      "IsDisabled": false,
+      "Settings": [
+        {
+          "Name": "TestNode",
+          "Unit": "Joy.Infrastructure.Mvc.MvcWebUnit,Joy.Infrastructure.Mvc",
+          "HandlerName": "Joy.Infrastructure.Network.SocketWebAnalyzer,Joy.Infrastructure",
+          "UnitSettings": {
+            "Mime": {
+              "js": "text/javascript",
+              "html": "text/html",
+              "css": "text/css",
+              "txt": "text/plain",
+              "gif": "image/gif",
+              "png": "image/png",
+              "jpg": "image/jpeg",
+              "ico": "image/x-icon",
+              "bmp": "image/bmp",
+              "pdf": "application/pdf",
+              "*": "application/octet-stream"
+            },
+            "DefaultController": "Joy.Infrastructure.Mvc.TestInstance,Joy.Infrastructure.Mvc",
+            "StaticBaseDir": "/res",
+            "Asmapping": {
+              "joy": "Joy.Service"
+            }
+          },
+          "Port": 80,
+          "Threads": 1,
+          "IsEnableSsl": false,
+          "IsDisable": false
+        },{
+          "Name": "SslNode",
+          "Unit": "Joy.Infrastructure.Mvc.MvcWebUnit,Joy.Infrastructure.Mvc",
+          "HandlerName": "Joy.Infrastructure.Network.SocketWebAnalyzer,Joy.Infrastructure",
+          "UnitSettings": {
+            "Mime": {
+              "js": "text/javascript",
+              "html": "text/html",
+              "css": "text/css",
+              "txt": "text/plain",
+              "gif": "image/gif",
+              "png": "image/png",
+              "jpg": "image/jpeg",
+              "ico": "image/x-icon",
+              "bmp": "image/bmp",
+              "pdf": "application/pdf",
+              "*": "application/octet-stream"
+            },
+            "DefaultController": "Joy.Infrastructure.Mvc.TestInstance,Joy.Infrastructure.Mvc",
+            "StaticBaseDir": "/res",
+            "Asmapping": {
+              "joy": "Joy.Service"
+            }
+          },
+          "Port": 443,
+          "Threads": 1,
+          "IsEnableSsl": true,
+          "Cert": "Joylocalhost.pfx",
+          "CertKey": "1w1w!W!W",
+          "IsDisable": false
+        }
+
+      ]
+    },
+    "TcpModule": {
+      "AsmName": "Joy.Infrastructure",
+      "Module": "Joy.Infrastructure.TcpModule",
+      "IsDisabled": true,
+      "Settings": [
+        {
+          "HandlerName": "Joy.Infrastructure.WebRequestHandler,Joy.Infrastructure",
+          "Port": 80,
+          "Threads": 1,
+          "IsDisable": false,
+          "StaticBaseDir": "/res",
+          "ResAssembly": "Joy.Infrastructure.Mvc.dll",
+          "Asmapping": {
+            "joy": "Joy.Service.dll"
+          },
+          "DefaultController": "Joy.Infrastructure.Mvc.TestInstance,Joy.Infrastructure.Mvc",
+          "Mime": {
+            "js": "text/javascript",
+            "html": "text/html",
+            "css": "text/css",
+            "txt": "text/plain",
+            "gif": "image/gif",
+            "png": "image/png",
+            "jpg": "image/jpeg",
+            "ico": "image/x-icon",
+            "bmp": "image/bmp",
+            "pdf": "application/pdf",
+            "*": "application/octet-stream"
+          },
+          "Settings": {
+            "IsEnableSsl": false,
+            "Cert": "JoyCA.cer",
+            "Test": "Dynamic configuration content here."
+          }
+        }
+      ]
+    },
+    "SslModule": {
+      "AsmName": "Joy.Infrastructure",
+      "Module": "Joy.Infrastructure.TcpModule",
+      "IsDisabled": true,
+      "Settings": [
+        {
+          "HandlerName": "Joy.Infrastructure.Mvc.MvcRequestHandler,Joy.Infrastructure.Mvc",
+          "Port": 443,
+          "Threads": 1,
+          "IsDisable": false,
+          "StaticBaseDir": "/res",
+          "ResAssembly": "Joy.Infrastructure.Mvc.dll",
+          "Asmapping": {
+            "joy": "Joy.Service.dll"
+          },
+          "DefaultController": "Joy.Infrastructure.Mvc.TestInstance,Joy.Infrastructure.Mvc",
+          "Mime": {
+            "js": "text/javascript",
+            "html": "text/html",
+            "css": "text/css",
+            "txt": "text/plain",
+            "gif": "image/gif",
+            "png": "image/png",
+            "jpg": "image/jpeg",
+            "ico": "image/x-icon",
+            "bmp": "image/bmp",
+            "pdf": "application/pdf",
+            "*": "application/octet-stream"
+          },
+          "Settings": {
+            "IsEnableSsl": true,
+            "Cert": "Joylocalhost.pfx",
+            "CertKey": "1w1w!W!W",
+            "Test": "Dynamic configuration content here."
+          }
+
+        }
+      ]
+    },
+    "HttpModule": {
+      "AsmName": "Joy.Infrastructure",
+      "Module": "Joy.Infrastructure.HttpModule",
+      "IsDisabled": true
+    }
+  }
+}

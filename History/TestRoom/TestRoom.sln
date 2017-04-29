@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormTestRoom", "FormTestRoom\FormTestRoom.csproj", "{BCCC9365-2848-4F1C-8D18-B08149D69F69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTestRoom", "WebTestRoom\WebTestRoom.csproj", "{F97B662B-6BB8-48FE-99AC-10804097193B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://family-138603d:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FormTestRoom\\FormTestRoom.csproj
+		SccProjectName1 = FormTestRoom
+		SccLocalPath1 = FormTestRoom
+		SccProjectUniqueName2 = WebTestRoom\\WebTestRoom.csproj
+		SccProjectName2 = WebTestRoom
+		SccLocalPath2 = WebTestRoom
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCCC9365-2848-4F1C-8D18-B08149D69F69}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{BCCC9365-2848-4F1C-8D18-B08149D69F69}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{BCCC9365-2848-4F1C-8D18-B08149D69F69}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{BCCC9365-2848-4F1C-8D18-B08149D69F69}.Debug|x86.ActiveCfg = Debug|x86
+		{BCCC9365-2848-4F1C-8D18-B08149D69F69}.Debug|x86.Build.0 = Debug|x86
+		{BCCC9365-2848-4F1C-8D18-B08149D69F69}.Release|Any CPU.ActiveCfg = Release|x86
+		{BCCC9365-2848-4F1C-8D18-B08149D69F69}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{BCCC9365-2848-4F1C-8D18-B08149D69F69}.Release|Mixed Platforms.Build.0 = Release|x86
+		{BCCC9365-2848-4F1C-8D18-B08149D69F69}.Release|x86.ActiveCfg = Release|x86
+		{BCCC9365-2848-4F1C-8D18-B08149D69F69}.Release|x86.Build.0 = Release|x86
+		{F97B662B-6BB8-48FE-99AC-10804097193B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F97B662B-6BB8-48FE-99AC-10804097193B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F97B662B-6BB8-48FE-99AC-10804097193B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F97B662B-6BB8-48FE-99AC-10804097193B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F97B662B-6BB8-48FE-99AC-10804097193B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F97B662B-6BB8-48FE-99AC-10804097193B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F97B662B-6BB8-48FE-99AC-10804097193B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F97B662B-6BB8-48FE-99AC-10804097193B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F97B662B-6BB8-48FE-99AC-10804097193B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F97B662B-6BB8-48FE-99AC-10804097193B}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

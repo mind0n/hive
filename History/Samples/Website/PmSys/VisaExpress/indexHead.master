@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="indexHead.master.cs" Inherits="indexHead" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link href="siteStyleSite.css" rel="stylesheet" type="text/css" />
+<head runat="server">
+    <title>首页</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="wrapper">
+    <div class="header">
+         <div class="companyLogo">
+        <asp:Image ID="companyLogoImage" runat="server" ImageUrl="~/Image/logo.jpg" />
+     </div>
+         <div class="loginStatus">
+        <%
+            bool isLoginIn = false;
+            string userName="TestUser1";
+            
+            if (isLoginIn == true)
+            {
+                %>
+                【用户名】<%=userName%>【查看签证申请进度】【其他】
+                <%
+}
+            else
+            {
+                %>
+               <a href="loginIn.aspx">【登录】</a>/<a href="register.aspx">【注册】</a>
+                <%
+            }
+             %>
+        </div>
+    </div>
+    <div class="navigation">
+    【网页导航】【首页】【联系我们】
+    </div>    
+    <div class="content">
+    <div class="secondary">
+        <asp:ContentPlaceHolder ID="secondaryContentPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="primary">
+        <asp:ContentPlaceHolder id="ContentPlaceHolderMain" runat="server">        
+        </asp:ContentPlaceHolder>
+    </div>
+    </div>
+    <div class="bottom">
+    Copyright @ 2012 版权所有
+    </div>
+    </div>
+    </form>
+</body>
+</html>

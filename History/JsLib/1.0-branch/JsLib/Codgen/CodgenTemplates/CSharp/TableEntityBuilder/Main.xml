@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Template NoEmptyLine="true">
+	<Output Path="D:\Temp\__Projects\CSharp\JsLib\JsLib\Codgen\TableEntity.cs" />
+	
+	<Replace Namespace="TestWeb.Entity" />
+	<![CDATA[
+	using System;
+	using System.Collections.Generic;
+	using System.Web;
+	using Fs.Entities;
+	using Fs.Data;
+	using System.Collections;
+
+	namespace >Namespace<
+	{
+	]]>			
+	<Import Url="ClassBuilder.xml" />
+	<![CDATA[
+	}
+	]]>
+</Template>

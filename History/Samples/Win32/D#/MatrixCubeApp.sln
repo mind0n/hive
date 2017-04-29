@@ -1,0 +1,55 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MatrixCubeApp", "MatrixCubeApp.vcxproj", "{3298BDBB-0EC6-4209-90D8-187F4492C30D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLoader", "CSharpLoader\CSharpLoader.csproj", "{CECBB766-BFCE-418E-A16A-20629BB6C6F2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3298BDBB-0EC6-4209-90D8-187F4492C30D} = {3298BDBB-0EC6-4209-90D8-187F4492C30D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs35
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MatrixCubeApp.vcxproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = CSharpLoader\\CSharpLoader.csproj
+		SccProjectName2 = CSharpLoader
+		SccLocalPath2 = CSharpLoader
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3298BDBB-0EC6-4209-90D8-187F4492C30D}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{3298BDBB-0EC6-4209-90D8-187F4492C30D}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{3298BDBB-0EC6-4209-90D8-187F4492C30D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3298BDBB-0EC6-4209-90D8-187F4492C30D}.Debug|Win32.Build.0 = Debug|Win32
+		{3298BDBB-0EC6-4209-90D8-187F4492C30D}.Debug|x86.ActiveCfg = Debug|Win32
+		{3298BDBB-0EC6-4209-90D8-187F4492C30D}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{3298BDBB-0EC6-4209-90D8-187F4492C30D}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{3298BDBB-0EC6-4209-90D8-187F4492C30D}.Release|Win32.ActiveCfg = Release|Win32
+		{3298BDBB-0EC6-4209-90D8-187F4492C30D}.Release|Win32.Build.0 = Release|Win32
+		{3298BDBB-0EC6-4209-90D8-187F4492C30D}.Release|x86.ActiveCfg = Release|Win32
+		{CECBB766-BFCE-418E-A16A-20629BB6C6F2}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{CECBB766-BFCE-418E-A16A-20629BB6C6F2}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{CECBB766-BFCE-418E-A16A-20629BB6C6F2}.Debug|Win32.ActiveCfg = Debug|x86
+		{CECBB766-BFCE-418E-A16A-20629BB6C6F2}.Debug|x86.ActiveCfg = Debug|x86
+		{CECBB766-BFCE-418E-A16A-20629BB6C6F2}.Debug|x86.Build.0 = Debug|x86
+		{CECBB766-BFCE-418E-A16A-20629BB6C6F2}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{CECBB766-BFCE-418E-A16A-20629BB6C6F2}.Release|Mixed Platforms.Build.0 = Release|x86
+		{CECBB766-BFCE-418E-A16A-20629BB6C6F2}.Release|Win32.ActiveCfg = Release|x86
+		{CECBB766-BFCE-418E-A16A-20629BB6C6F2}.Release|x86.ActiveCfg = Release|x86
+		{CECBB766-BFCE-418E-A16A-20629BB6C6F2}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

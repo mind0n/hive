@@ -1,0 +1,9 @@
+{
+    "Counters": [
+        { "Counter": "Processor", "Category": "% Processor Time", "Instance": "_Total", "Key": "CpuPercent" }
+        , { "Counter": "Memory", "Category": "Available MBytes", "Instance": "", "Key": "MemAvailable" }
+        , { "Counter": "PhysicalDisk", "Category": "Disk Reads/sec", "Instance": "_Total", "Key": "DiskReadsPerSecond" }
+        , { "Counter": "PhysicalDisk", "Category": "Disk Writes/sec", "Instance": "_Total", "Key": "DiskWritesPerSecond" }
+        , { "Counter": "Web Service", "Category": "Current Connections", "Instance": "_Total", "Key": "CurtConn", "Disable": true }
+    ]
+}

@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfHostConsole", "WcfHostConsole\WcfHostConsole.csproj", "{28CA799D-397C-4701-8FF0-79F1A03350F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfClientWinform", "WcfClientWinform\WcfClientWinform.csproj", "{0A0C1008-FAEB-462F-B627-854F72A7AA87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService", "WcfService\WcfService.csproj", "{D11C8291-6D45-4F83-97AB-F22500572198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfHostWinform", "WcfHostWinform\WcfHostWinform.csproj", "{896ABCF3-6CF8-478A-959B-645C2999FDDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfClientConsole", "WcfClientConsole\WcfClientConsole.csproj", "{5E602F4E-6E96-4A43-B17F-5EC3F86E17A8}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://platform.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WcfHostConsole\\WcfHostConsole.csproj
+		SccProjectName1 = WcfHostConsole
+		SccLocalPath1 = WcfHostConsole
+		SccProjectUniqueName2 = WcfClientWinform\\WcfClientWinform.csproj
+		SccProjectName2 = WcfClientWinform
+		SccLocalPath2 = WcfClientWinform
+		SccProjectUniqueName3 = WcfService\\WcfService.csproj
+		SccProjectName3 = WcfService
+		SccLocalPath3 = WcfService
+		SccProjectUniqueName4 = WcfHostWinform\\WcfHostWinform.csproj
+		SccProjectName4 = WcfHostWinform
+		SccLocalPath4 = WcfHostWinform
+		SccProjectUniqueName5 = WcfClientConsole\\WcfClientConsole.csproj
+		SccProjectName5 = WcfClientConsole
+		SccLocalPath5 = WcfClientConsole
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28CA799D-397C-4701-8FF0-79F1A03350F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28CA799D-397C-4701-8FF0-79F1A03350F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28CA799D-397C-4701-8FF0-79F1A03350F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28CA799D-397C-4701-8FF0-79F1A03350F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A0C1008-FAEB-462F-B627-854F72A7AA87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A0C1008-FAEB-462F-B627-854F72A7AA87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A0C1008-FAEB-462F-B627-854F72A7AA87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A0C1008-FAEB-462F-B627-854F72A7AA87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11C8291-6D45-4F83-97AB-F22500572198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11C8291-6D45-4F83-97AB-F22500572198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11C8291-6D45-4F83-97AB-F22500572198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11C8291-6D45-4F83-97AB-F22500572198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896ABCF3-6CF8-478A-959B-645C2999FDDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896ABCF3-6CF8-478A-959B-645C2999FDDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896ABCF3-6CF8-478A-959B-645C2999FDDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896ABCF3-6CF8-478A-959B-645C2999FDDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E602F4E-6E96-4A43-B17F-5EC3F86E17A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E602F4E-6E96-4A43-B17F-5EC3F86E17A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E602F4E-6E96-4A43-B17F-5EC3F86E17A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E602F4E-6E96-4A43-B17F-5EC3F86E17A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

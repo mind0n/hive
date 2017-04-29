@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A671A5E4-01D4-4DB6-8CAF-8375D46BCBD0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ULib</RootNamespace>
+    <AssemblyName>ULib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Configs\AppConfig.cs" />
+    <Compile Include="Controls\ActionNode.cs" />
+    <Compile Include="Controls\AutoLabelPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ActionTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ActionTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\AutoSettingPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Data\DBConnector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Data\DBConnector.Designer.cs">
+      <DependentUpon>DBConnector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FileEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FileEditor.Designer.cs">
+      <DependentUpon>FileEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HistoryCombox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSchema\Alerting\TableRecordEntity.cs" />
+    <Compile Include="DataSchema\Entity.cs" />
+    <Compile Include="Debugging\Debugger.cs" />
+    <Compile Include="Executing\Commands\Common\ArrayCommand.cs" />
+    <Compile Include="Executing\Commands\Common\DescriptionsCommand.cs" />
+    <Compile Include="Executing\Commands\Common\InvokeCommand.cs" />
+    <Compile Include="Executing\Commands\Common\IfCommand.cs" />
+    <Compile Include="Executing\Commands\Common\ImportCommand.cs" />
+    <Compile Include="Executing\Commands\Common\SetCommand.cs" />
+    <Compile Include="Executing\Commands\Data\BackupDBCommand.cs" />
+    <Compile Include="Executing\Commands\Data\RunJobCommand.cs" />
+    <Compile Include="Executing\Commands\Data\ExecuteSqlCommand.cs" />
+    <Compile Include="Executing\Commands\Data\ParseDatasetCommand.cs" />
+    <Compile Include="Executing\Commands\Data\SqlConnectCommand.cs" />
+    <Compile Include="Executing\Commands\Data\ValidateDbCommand.cs" />
+    <Compile Include="Executing\Commands\FileSystem\BatchReplaceCommand.cs" />
+    <Compile Include="Executing\Commands\FileSystem\FileCopyCommand.cs" />
+    <Compile Include="Executing\Commands\FileSystem\ValidatePathCommand.cs" />
+    <Compile Include="Executing\Commands\OS\ConnectCommand.cs" />
+    <Compile Include="Executing\Commands\OS\RunCommand.cs" />
+    <Compile Include="Executing\Commands\OS\ServiceCommand.cs" />
+    <Compile Include="Executing\Commands\Special\BranchCompairCommand.cs" />
+    <Compile Include="Executing\Commands\Special\IpAt.cs" />
+    <Compile Include="Executing\Commands\Text\DupTextCommand.cs" />
+    <Compile Include="Executing\Commands\Text\JoinTextCommand.cs" />
+    <Compile Include="Executing\Commands\Text\ReplaceTextCommand.cs" />
+    <Compile Include="Executing\Commands\UI\TestConnectionButton.cs" />
+    <Compile Include="Executing\ExecutionParameter.cs" />
+    <Compile Include="Executing\Executor.cs" />
+    <Compile Include="Executing\ExecutionAttributes.cs" />
+    <Compile Include="Executing\UICommand.cs" />
+    <Compile Include="Forms\WizardStepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WizardStepForm.Designer.cs">
+      <DependentUpon>WizardStepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IOutput.cs" />
+    <Compile Include="Controls\LabelTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LabelTextBox.Designer.cs">
+      <DependentUpon>LabelTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LabelTextControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\LabelTextControl.Designer.cs">
+      <DependentUpon>LabelTextControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OutputBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\OutputBox.Designer.cs">
+      <DependentUpon>OutputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PathBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PathBrowser.Designer.cs">
+      <DependentUpon>PathBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DockTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DockTabControl.Designer.cs">
+      <DependentUpon>DockTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Wizard\StepButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Wizard\StepsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Wizard\StepsPanel.Designer.cs">
+      <DependentUpon>StepsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSchema\Dict.cs" />
+    <Compile Include="DataSchema\DockTag.cs" />
+    <Compile Include="DataSchema\Nodes.cs" />
+    <Compile Include="DataSchema\Result.cs" />
+    <Compile Include="Encoders\CertificateInfo.cs">
+      <DependentUpon>CertificateInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Encoders\Cryptor.cs" />
+    <Compile Include="Encoders\XmlConverter.cs" />
+    <Compile Include="Encoders\ObjectEncoder.cs" />
+    <Compile Include="Exceptions\ExceptionHandler.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Forms\ConfigScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigScreen.Designer.cs">
+      <DependentUpon>ConfigScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DockForm.Designer.cs">
+      <DependentUpon>DockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EmbededForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EmbededForm.Designer.cs">
+      <DependentUpon>EmbededForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HiddenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HiddenForm.Designer.cs">
+      <DependentUpon>HiddenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MsgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MsgForm.Designer.cs">
+      <DependentUpon>MsgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ModuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModuleForm.Designer.cs">
+      <DependentUpon>ModuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\WizardForm.Designer.cs">
+      <DependentUpon>WizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IEmbededModule.cs" />
+    <Compile Include="Interfaces\IDockableTag.cs" />
+    <Compile Include="NativeSystem\Native.FileSystem.cs" />
+    <Compile Include="NativeSystem\Native.Reg.cs" />
+    <Compile Include="NativeSystem\Native.Winform.cs" />
+    <Compile Include="Output\Logger.cs" />
+    <Compile Include="Output\OutputHandler.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Results\Result.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External\SMO\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External\SMO\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>External\SMO\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Executing\External\Smo\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Encoders\CertificateInfo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Data\DBConnector.resx">
+      <DependentUpon>DBConnector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FileEditor.resx">
+      <DependentUpon>FileEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LabelTextBox.resx">
+      <DependentUpon>LabelTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LabelTextControl.resx">
+      <DependentUpon>LabelTextControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\OutputBox.resx">
+      <DependentUpon>OutputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PathBrowser.resx">
+      <DependentUpon>PathBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DockTabControl.resx">
+      <DependentUpon>DockTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Wizard\StepsPanel.resx">
+      <DependentUpon>StepsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConfigScreen.resx">
+      <DependentUpon>ConfigScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DockForm.resx">
+      <DependentUpon>DockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MsgForm.resx">
+      <DependentUpon>MsgForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\WizardForm.resx">
+      <DependentUpon>WizardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="External\SMO\Microsoft.SqlServer.SmoExtended.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="External\SMO\Microsoft.SqlServer.SqlEnum.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Encoders\CertificateInfo.xml" />
+    <Content Include="External\SMO\Microsoft.SqlServer.ConnectionInfo.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="External\SMO\Microsoft.SqlServer.Management.Sdk.Sfc.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="External\SMO\Microsoft.SqlServer.Smo.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

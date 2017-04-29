@@ -1,0 +1,18 @@
+{
+	"mime": {
+		"js": "text/javascript",
+		"html": "text/html",
+		"css": "text/css",
+		"txt": "text/plain",
+		"gif": "image/gif",
+		"png": "image/png",
+		"jpg": "image/jpeg",
+		"ico": "image/x-icon",
+		"bmp": "image/bmp",
+		"pdf": "application/pdf",
+		"*": "application/octet-stream"
+	},
+	"mapping": {
+		"lh": "Infrastructure.LhBizUnit,Infrastructure"
+	}
+}

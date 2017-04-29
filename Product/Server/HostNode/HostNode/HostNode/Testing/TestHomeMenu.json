@@ -1,0 +1,30 @@
+﻿{
+    items: [
+        {key:1, text: 'Test Expanding', items:[
+			{key:6, pk:1, text: 'Test Flex', url: '/ts/read/testflex.html' }
+			, {key:7, pk:1, text: 'Test Mask', url: '/ts/read/testmask.html' }
+	        , {key:4, pk:1, text: 'Thin Form', func: 'TestThinForm' }
+			, {key:8, pk:1, text: 'Test Sub Exp', items:[
+				{key:9, pk:8, text: 'Son item 1' }
+				, {key:10, pk:8, text: 'Son item 2' }
+				, {key:11, pk:8, text: 'Son item 3' }
+			] }
+		] }
+        , {key:2, text: '3d Models', items:[
+			{key:14, pk:2, text: 'Fighter Prototype', url: '/ts/read/test3d.html#drawcube,fighter;0' }
+			, {key:15, pk:2, text: 'Bomber Prototype', url: '/ts/read/test3d.html#drawcube,bomber;0' }
+			, {key:16, pk:2, text: 'Scout Prototype', url: '/ts/read/test3d.html#drawcube,scout;0' }
+			, {key:17, pk:2, text: 'DuelCannon', url: '/ts/read/test3d.html#drawcube,cannonTowerB;0' }
+			, {key:18, pk:2, text: 'CannonTunnel', url: '/ts/read/test3d.html#drawcube,cannonTunnelB;0' }
+			, {key:19, pk:2, text: 'CannonTowerA', url: '/ts/read/test3d.html#drawcube,cannonTowerA;3' }
+		] }
+        , {key:21, text: '3d Testing', items:[
+			{key:22, pk:21, text: 'Texture offset', url: '/ts/read/test3d.html#drawcube,testCube;4' }
+		] }
+		, {key:3, text: 'Test Email', url: '/ts/email', $:{ disabled:'disabled' } }
+        , {key:5, text: 'Test Grid', items:[
+			{key:12, pk:5, text: 'Grid Header', url: '/ts/read/testgrid.html#header' }
+			, {key:13, pk:5, text: 'Sub item 2' }
+		] }
+    ]
+}

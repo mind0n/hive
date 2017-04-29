@@ -1,0 +1,6 @@
+﻿{
+    "Mapping": { 
+        "test": "Joy.Infrastructure.Mvc.TestInstance,Joy.Infrastructure.Mvc",
+        "mr": "Joy.Infrastructure.Mvc.MindInstance,Joy.Infrastructure.Mvc"
+    }
+}
